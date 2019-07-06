@@ -1,7 +1,4 @@
-# 2019_06_30Assignments
-Repo for Assignment Submissions
-
-# Following Structure should be mantained:
+# Maintain Folder Structure:
 - For each assignment, there will be a folder by name of assignment
   Ex: Assignment010, Assignment020....
 - Create solution files by your name 
@@ -19,13 +16,15 @@ Repo for Assignment Submissions
 # Commit format and Solution Format
 - Create solution file by your name
 - Upload assignments as plain text files in this format
+  
+  
   Q1
   Solution
   
   Q2
-  Solution
-  ...
-  ...
+  Solution  
+  ...  
+  ...  
 
 - Do not upload any PDF or Doc files.
 - For projects upload as .zip files with a readme.txt describing how to use your code.
