@@ -1,0 +1,56 @@
+# sanjiv's assignment
+
+Q1. 	6 19
+
+Q2.	print(len(input(" Enter a string: ")))
+
+Q3.	n1=int(input("Enter number 1: "))
+	n2=int(input("Enter number 2: "))
+ 	print("sum = ",n1+n2)
+	print("diff = ",n1-n2)
+
+Q4.	abde
+
+Q5.	abde
+
+Q6.	abababab
+
+Q7.	ab
+	ab
+	ab
+	ab
+
+Q8.	s=input("Enter string: ")
+	n=int(input("Enter number: "))
+	print(s*n)
+
+Q9.	Gaurav
+	None
+
+Q10.	<class 'int'>
+
+Q11.	<class 'str'>
+	26
+
+Q12.	sqrt()
+
+Q13.	n=int(input("Enter number: "))
+	print(sqrt(n))
+
+Q14.	n1=int(input("Enter number 1: "))
+	n2=int(input("Enter number 2: "))
+	n3=int(input("Enter number 3: "))
+	n4=int(input("Enter number 4: "))
+	print("avg= ",(n1+n2+n3+n4)/4)
+
+Q15.	help(abs)
+
+Q16.	__main__
+
+Q17.	__main__
+
+Q18.	No
+
+Q19.	__main__
+	builtins
+	int
