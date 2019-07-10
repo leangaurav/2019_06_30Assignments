@@ -1,0 +1,165 @@
+Assignment solution
+
+1) 
+### Predict output
+s1 = 'Gaurav'
+s2 = 'tuteur.py@gmail.com'
+print (len(s1),len(s2))
+
+Ans:
+6 and 19
+
+-----------------------------------------------------------------------------------------------------------
+2) WAP to input a string and print its length.
+Ip_string = input("Enter string to find length ")
+print("Entered string is:",Ip_string)
+print ("Length of entered string is :",len(Ip_string))
+-------------------------------------------------------------------------------------------------------------
+
+3) ### WAP to input two numbers and find its sum and difference
+big_no = int (input("enter big number"))
+small_no = int(input("enter small number"))
+sum_two = (big_no + small_no)
+diff_two = (big_no - small_no)
+print ("sum of number is :", sum_two)
+print ("difference  of number is :", diff_two)
+---------------------------------------------------------------------------------------------------------
+
+4) & 5) ## Predict Output
+
+s1 = 'ab'
+s2 = 'de'
+s3 = s1+s2
+print(s3)
+
+Ans : abde
+--------------------------------------------------------------------------------------------------------
+
+6)s1 = 'ab' *4
+print(s1)
+
+Ans: abababab
+---------------------------------------------------------------------------------------------------------
+
+7)s1 = 'ab\n'*4
+print(s1)
+
+Ans: 
+ab
+ab
+ab
+ab
+----------------------------------------------------------------------------------------------------------
+8)WAP to input a string s and a number n. Print the string n times on the screen, each should
+appear in a separate line (do not use any kind of loops, use the multiplication operator).
+
+str1 = str(input("Enter string to print"))
+num1 = int(input("Enter how many times to print string"))
+print("Entered string is :",str1)
+print("Number of time to print :",num1)
+op = (str1 + '\n' )* num1
+print(op)
+
+---------------------------------------------------------------------------------------------------------------
+9)### predict output
+res = print('Gaurav')
+print(res)
+
+Ans:
+Gaurav
+None
+
+------------------------------------------------------------------------------------------------------------------
+10)res = len('tuteur.py@gmail.com')
+print (type(res))
+
+Ans:
+<class 'int'>
+--------------------------------------------------------------------------------------------------------------------
+
+11)### predict output
+s1 = 'Gaurav'
+s2 =  'tuteur.py@gmail.com'
+s3 =  s1 + '\n' + s2
+print(type(s3))
+print(len(s3))
+
+Ans:
+<class 'str'>
+26
+---------------------------------------------------------------------------------------------------------------------
+
+12)Find the name of function to find the square root. (see all the options available in dir() of builtins)
+Ans:
+Name of the function is sqrt()
+
+---------------------------------------------------------------------------------------------------------------------
+
+13)### WAP to input a number and print its square root ()
+n1 = int(input("Enter number to find square root :"))
+num_sqrt = (n1) ** 0.5
+print("Squareroot of entered number is :" ,num_sqrt)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+14)### WAP to input 4 numbers from user and print their average
+n1 = int(input("Enter first number :"))
+n2 = int(input("Enter second number :"))
+n3 = int(input("Enter third number :"))
+n4 = int(input("Enter fourth number :"))
+num_avg =  (n1+n2+n3+n4)/4
+print ("Average of four number is :",num_avg)
+
+---------------------------------------------------------------------------------------------------------------------------
+
+15) Use the help function to check what the abs function in python does
+Ans:
+
+It s a built-in function, in module __builtins__. Returns the absolute value of the argument
+
+--------------------------------------------------------------------------------------------------------------------------
+
+16)What is the output of this code when run from python interpreter.
+print(__name__)
+Ans:
+__main__
+
+--------------------------------------------------------------------------------------------------------------------------
+
+17) What is the output of this code when run from a python script.
+
+Ans:
+print(__name__)
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+18)Does the dir of int class contain an attribute __name__ (Y/N).
+
+Ans:
+No
+----------------------------------------------------------------------------------------------------------------------------
+
+
+19) Predict output
+
+print(__name__)
+
+Ans: 
+__main__
+
+print(__builtins__.__name__)
+
+Ans: 
+builtins
+
+print(int.__name__)
+
+Ans. 
+int
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
