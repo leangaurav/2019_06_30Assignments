@@ -1,0 +1,71 @@
+#Sanjiv's Assignment
+
+Q1.	f=float(input("Enter temp in Fahrenheit: "))
+	print(" Temp in Celsius: ",((f-32)*5/9))
+
+Q2.	num=int(input("Enter a number: "))
+	print("Square: ",num**2)
+	print("Cube: ",num**3)	
+
+Q3.	n=int(input("Enter number1: "))
+	m=int(input("Enter number2: "))
+	print("Result is: ",(n**2)+(m**2))
+
+Q4.	# ** method
+	n=int(input("Enter number1: "))
+	m=int(input("Enter number2: "))
+	print(m**n)
+
+	# pow method
+	import math
+	n=int(input("Enter number1: "))
+	m=int(input("Enter number2: "))
+	print(math.pow(m,n))
+
+Q5.	p=int(input("Enter principal: "))
+	r=int(input("Enter rate: "))
+	t=int(input("Enter time: "))
+	SI=(p*r*t)/100
+	print("The simple interest is: ",SI)	
+
+Q6.	p=int(input("Enter principal: "))
+	r=int(input("Enter rate: "))
+	t=int(input("Enter time: "))
+	CI= p*((1+(r/100))**t)
+	print("The compound interest is: ",CI)
+
+Q7.	n=int(input("Enter a number: "))
+	sum=0
+	for i in range(n+1):
+    	    sum+=i
+	print(sum)
+
+Q8.	#unfortunately I know only temp way :P excuse me
+	n=int(input("Enter number1: "))
+	m=int(input("Enter number2: "))
+	print(" Original values: ",m,n)
+	temp=m
+	m=n
+	n=temp
+	print(" swapped values :",m,n)
+
+Q9.	# I have no clue xD
+
+Q10.	p=input("Enter a character: ")
+	ord(p)
+
+Q11.	import math
+	area=float(input("Enter Area: "))
+	r= math.sqrt(area/3.14)
+	print(" Radius: ",r)
+	print("Circumference: ",(2*3.14*r))
+
+Q12.	m1=int(input("Enter mark1: "))
+	m2=int(input("Enter mark2: "))
+	m3=int(input("Enter mark3: "))
+	m4=int(input("Enter mark4: "))
+	m5=int(input("Enter mark5: "))
+	tot=m1+m2+m3+m4+m5
+	print("Percentage: ", ((tot/500)*100))
+
+    
