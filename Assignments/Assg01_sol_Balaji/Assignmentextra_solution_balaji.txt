@@ -1,0 +1,116 @@
+
+# #### WAP to convert Fahrenheit temperature  to celsius temperature
+
+F_temp = float(input("Enter temperature in Fahrenheit :" ))
+T_Cel = float ((F_temp -32) * 5/9)
+print ("Temperature in Celsius is : " , T_Cel)
+
+
+# #### Write a program to input a number and print its square and cube
+
+
+num1 = float(input("Enter number to find its square and cube : "))
+num1_square = float(num1) ** 2
+num1_cube = float(num1)** 3
+print("Entered number is :" ,num1)
+print("Square of Entered number is :" ,num1_square)
+print("Cube   of Entered number is :" ,num1_cube)
+
+
+###WAP to input a number n and a number m and print the result of following n*n+,m*m
+
+n = int(input("Enter First number : "))
+m = int(input("Enter second number : "))
+Sqr_sum = n **2 + m**2
+print("Output is :", Sqr_sum)
+
+
+#### WAP to input a numbers M and N and print result of M power of N. (use both ** and pow)
+
+
+m = int(input("Enter base number :"))
+n = int(input("Enter exponent number :"))
+res = m ** n
+print ("result of m to power of n :", res)
+print("using pow function :" ,pow(m,n))
+
+##### Write a simple interest calculator
+
+Princ = int(input("Enter principal amount:"))
+Num_years = float(input("Enter number of years :"))
+Rat_Int = float(input("Enter rate of interest :"))
+Simple_Int = (Princ * Num_years * Rat_Int)/100
+print ("Simple Interest for entered Principal :" , Simple_Int)
+
+
+##### Input Principal, Rate, Time and print Compound Interest and Amount
+prin = int(input("Enter principal amount "))
+rat = float(input("Enter rate of interest "))
+tim = float(input("Enter number of years "))
+Tot_amt = prin *((1 + rat) ** tim)
+com_int = Tot_amt - prin
+print ("Total Amount is : ", Tot_amt)
+print("Compound interest is : ", com_int)
+
+
+##### WAP to print sum of first n natural numbers. (n needs to be taken as input).
+
+n12 = int(input("Enter natural number to find sum :"))
+sum_of_Nat = float(n12*(n12 + 1))/2
+print ("sum of natural number is :", sum_of_Nat)
+
+##### WAP to input 2 numbers and swap them. (write using both normal logic with temp variable and also the pythonic way)
+
+# pythonic way i guess
+a = int(input("Enter first number :"))
+b = int(input("Enter second number :"))
+print ("Befor swamping" , "value of a is :" , a , "value of b is :" , b)
+a,b = b ,a
+print ("After swamping" , "value of a is :" , a , "value of b is :" , b)
+              
+
+# using temp swamp numbers
+a = int(input("Enter first number : "))
+b = int(input("Enter second number : "))
+print ("Befor swamping" , "value of a is :" , a , "value of b is :" , b)
+temp = a
+a = b
+b = temp
+print ("After swamping using temp" , "value of a is :" , a , "value of b is :" , b)
+
+
+##### WAP to print ascii value of all white-space characters present in python
+
+
+#### Do not understand
+
+
+##### Input a single character and print its ascii values
+
+st1 = str(input("Enter single character to find its Unicode value :"))
+print("Unicode value for entered character  :", st1 , "is :" , ord(st1))
+
+##### WAP that takes area of a circle and gives back the radius and circumference
+
+import math
+Area_cir = float(input("Enter area of circle :"))
+Rad_cir = math.sqrt((Area_cir)*7/22)
+Circumf_cir = (2 *22* Rad_cir)/7
+print("Radius of circle is :", Rad_cir)
+print("Circumference of circle is :",Circumf_cir)
+
+
+##### We need to input marks in 5 subjects out of 100 and print percentage
+
+
+m1 = int(input("Enter mark in subect 1 "))
+m2 = int(input("Enter mark in subect 2 "))
+m3 = int(input("Enter mark in subect 3 "))
+m4 = int(input("Enter mark in subect 4 "))
+m5 = int(input("Enter mark in subect 5 "))
+total_marks = (m1+m2+m3+m4+m5)
+print ("Total marks is : ", total_marks )
+per = float((total_marks)/500 * 100)
+print("Percentage is :", per)
+
+
