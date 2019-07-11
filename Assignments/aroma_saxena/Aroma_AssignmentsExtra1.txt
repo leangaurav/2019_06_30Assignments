@@ -1,0 +1,160 @@
+
+Q1:Solution
+
+Farenheit=float(input("Enter a number in Farenheit:"))
+Celcius=(F-32)*5/9
+print("Temperature in Celcius is:",Celcius)
+
+O/p-:
+Enter a number in Farenheit:68.0
+Temperature in Celcius is: 20.0
+
+Q2:Solution
+
+s1=int(input("Enter a number:"))
+Square=s1**2
+Cube=s1**3
+print("Square of a number is:", Square)
+print("Cube of a number is:", Cube)
+
+O/p-:
+
+Enter a number = 4
+Square of a number is: 16
+Cube of a number is: 64
+
+Q3:Solution
+
+ n=int(input("Enter a first number:"))
+ m=int(input("Enter a second number:"))
+ res=(n**2)+(m**2)
+ print("result of a number is:",res) 
+
+O/p-:
+Enter a first number:10
+Enter a second number:20
+
+result of a number is: 500
+
+
+Q4:Solution
+
+M=int(input("Enter a first number:"))
+N=int(input("Enter a second number:"))
+print("result of a ** Method is:",(M**N))
+print("result of a Pow Method is:",pow(M,N))
+
+0/p-:
+
+Enter a first number:10
+Enter a second number:2
+result of a ** Method is: 100
+result of a Pow Method is: 100
+
+Q5:Solution
+
+P=int(input("Enter a Principal:"))
+T=int(input("Enter a Time:"))
+R=int(input("Enter a Rate:"))
+
+S=(P*R*T)/100
+print("Simple Interest is:",S)
+
+O/p-:
+Enter a Principal:10
+Enter a Time:30
+Enter a Rate:5
+
+Simple Interest is: 15.0
+
+Q6:Solution
+
+P=int(input("Enter a Principal:"))
+T=int(input("Enter a Time:"))
+R=float(input("Enter a Rate:"))
+n=int(input("Enter no. of times interest compounded:"))
+SI=P*R*T                                        #R is in float as already divided by 100
+CI=P*((1+(R/n))**(n*T))
+A=P+SI
+print("Compound Interest is:",CI)
+print("Amount is:",A)
+
+O/p-:
+
+Enter a Principal:5000
+Enter a Time:10
+Enter a Rate:0.05
+Enter no. of times interest compounded:12
+Compound Interest is: 8235.0474884514
+Amount is: 7500.0
+
+
+Q7:Solution
+
+n=int(input("Enter a number  "))
+s=n*((n+1)/2)
+print("the sum of first n natural number is :",s)
+
+O/p-:
+Enter a number  6
+the sum of first n natural number is : 21.0
+
+
+Q8:Solution
+
+Not sure how to implement swap with progranning
+
+
+Q9.
+No idea how it will work
+
+
+
+Q10:Solution
+
+s=input("Enter a character:")
+Ascii=ord(s)
+print("Ascii Value of a char is :" Ascii)
+
+O/P-:
+
+Enter a character:p
+112
+
+Q11:Solution
+
+import math
+area=float(input("Enter a Area of a circle:"))
+radius=math.sqrt(area/3.14)
+circumference=2*3.14*radius
+print("radius of a circle is:",radius)
+print("circumference of a circle is:",circumference)
+
+O/p:
+
+Enter a Area of a circle:100
+radius of a circle is: 5.643326479831003
+circumference of a circle is: 35.440090293338706
+
+Q12:Solution
+
+sub1=int(input("Enter the marks of sub1:"))
+sub2=int(input("Enter the marks of sub2:"))
+sub3=int(input("Enter the marks of sub3:"))
+sub4=int(input("Enter the marks of sub4:"))
+sub5=int(input("Enter the marks of sub5:"))
+total=sub1+sub2+sub3+sub4+sub5
+print("Percentage is :",((total/500)*100))
+
+O/p-:
+
+Enter the marks of sub1:50
+Enter the marks of sub2:50
+Enter the marks of sub3:50
+Enter the marks of sub4:50
+Enter the marks of sub5:50
+Percentage is : 50.0
+
+
+
+
