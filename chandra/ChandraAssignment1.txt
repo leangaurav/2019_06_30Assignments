@@ -1,0 +1,104 @@
+Q1
+
+a) = 6
+b) = 18
+
+Q2 : code is :
+
+s1 = input("Enter a string :\n")
+print ("Length of entered string is :",len(s1))
+
+Q3: code is:
+
+# Sum and difference of two numbers:
+num1 = int(input("Enter number 1:\n")) # input type converted as interger
+num2 = int(input("Enter number 2:\n")) # input type converted as interger
+total = num1 + num2
+print("Sum of ",num1 ,"and", num2 ,"is :" , total )
+diff =  num1-num2
+print("Difference of ",num1 ,"and", num2 ,"is :" , diff )
+
+Q4 :
+
+abde ( s3 : sum of two strings)
+
+Q5 : repeat : abde
+
+
+Q6:
+
+abababab ( 4 times ab)
+
+Q7:
+
+Newline will be added and then multiplied with 4
+ab 4 times in 4 newline
+
+Q8 : faced issues with newline :
+
+#Input a string and a number
+number = input("Enter a number :\n") # input type converted as interger
+string = input("Enter string:\n")
+text = (str(string) * int(number))
+print (text)
+
+output:
+
+Enter a number :
+5
+Enter string:
+chan
+chanchanchanchanchan
+
+Q9 : res ? 
+
+
+
+
+Q 10 : res ?
+
+
+Q11
+
+s3 = string type
+    
+
+s3 = 26 , as \n will be counted
+
+Q12 : math.sqrt() for finding square root.
+
+
+Q13 : considering input as int:
+
+import math
+number = int(input("Enter a number :\n"))
+print("square root of entered number is:",math.sqrt(number))
+
+
+Q 14 : code is :
+
+num1 = int(input("Enter number 1:\n"))
+num2 = int(input("Enter number 2:\n"))
+num3 = int(input("Enter number 3:\n"))
+num4 = int(input("Enter number 4:\n"))
+sum = num1+num2+num3+num4
+print(sum)
+average = int(sum * 1 /4)
+print ("Average of four numbers is:", average)
+
+
+Q 15 : abs(x,/) : returns the absolute value of argument. ( help (abs)
+
+Q 16 : 
+
+ __main__
+
+Q17 : __main__
+
+Q18  No
+
+Q19 
+
+
+
+

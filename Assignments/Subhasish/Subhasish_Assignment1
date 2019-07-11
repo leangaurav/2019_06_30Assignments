@@ -1,0 +1,121 @@
+
+1. Predict Output:
+
+6 19
+
+2. WAP to input a string and print its length:
+
+a= input('enter a word : ')
+print(len(a))
+
+enter a word : abcd
+4
+
+3. WAP to input 2 numbers and print their sum and difference:
+
+a= int(input('enter first no'))
+b= int(input('enter second no'))
+print( a + b )
+print( a - b )
+
+enter first no10
+enter second no5
+15
+5
+
+4. Predict output:
+
+abde
+
+5. Predict output:
+
+abde
+
+6. Predict output:
+
+abababab
+
+7. Predict output:
+
+ab  
+ab  
+ab  
+ab  
+
+8. WAP to input a string s and a number n. Print the string n times on the screen, each should appear in a separate line (do not use any kind of loops, use the multiplication operator):
+
+a = input('Enter a String: ')
+b = int(input('Enter a Number: '))
+x = (a + '\n') * b
+print(x)
+
+Enter a String: mn
+Enter a Number: 2
+mn
+mn
+
+9. Predict Output:
+
+Gaurav
+None
+
+10. Predict Output:
+
+<class 'int'>
+
+11. Predict Output:
+
+<class 'str'>
+26
+
+12. Solution
+sqrt()
+
+13. WAP to input a number and print its square root ():
+
+n=int(input("Enter number: "))
+print(math.sqrt(n))
+
+Enter number: 400
+20.0
+
+14. WAP to input 4 numbers from user and print their average:
+
+a = int(input('enter first no :'))
+b = int(input('enter second no : '))
+c = int(input('enter third no : '))
+d = int(input('enter fourth no : '))
+Average = (a+b+c+d)/ 4
+print(Average)
+
+enter first no :10
+enter second no : 5
+enter third no : 5
+enter fourth no : 10
+7.5
+
+15. Use the help function to check what the abs function in python does. 
+
+help(abs)
+Returns the absolute value of the argument
+
+16. Solution
+
+__main__
+
+17.Solution
+
+__main__
+
+18. Does the dir of int class contain an attribute __name__ (Y/N)
+
+No
+
+19. Predict The Output:
+
+__main__
+builtins
+int
+
+
+
