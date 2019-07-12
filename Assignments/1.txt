@@ -1,0 +1,83 @@
+AssignmentPython1:
+
+1> 6,19
+
+2>
+s = input("Enter the string:")
+x = len(s)
+print ("Lenghth of the string is", x)
+
+3>
+s1 = int(input("Enter the 1st number:"))
+s2 = int(input("Enter the 2nd number:"))
+print ("Sum of both number is", s1 + s2)
+print ("Difference of both number is", s1 - s2) 
+
+4>
+abde
+
+5>
+abde
+
+6>
+abababab
+
+7>
+ab
+ab
+ab
+ab
+
+8>
+s = input("Enter the string:")
+n = int(input("Enter the number:"))
+print ((s + "\n") * n)
+
+9>
+
+
+10>
+integer
+
+11>
+string
+26
+
+12>
+math.sqrt()
+
+13>
+import math
+print (math.sqrt(int(input("Enter the number:"))))
+
+14>
+s1 = int(input("Enter the 1st number:"))
+s2 = int(input("Enter the 2nd number:"))
+s3 = int(input("Enter the 3rd number:"))
+s4 = int(input("Enter the 4th number:"))
+print ("Average of numbers is:",(s1+s2+s3+s4)/4)
+
+15>
+>>> help('abs')
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+
+	
+16>
+__main__
+
+17>
+__main__
+
+18>
+No
+
+19>
+__main__
+builtins
+int
+
+
+	
