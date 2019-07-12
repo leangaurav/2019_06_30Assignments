@@ -1,0 +1,89 @@
+Jupyter notebook 5.7.8
+
+1) Date time
+2) reverse slicing
+3) Display String  Position
+
+
+1) Op: 6 19
+
+2) s1=str(input('Enter the number:'))
+print(len(s1))
+
+3)  s1=int(input('Enter the number1 : '))
+s2= int(input('Enter the nmeber 2 : '))
+print('Sum of the two strings :: ', s1+s2)
+print('Diff of the two strings :: ', s1-s2)
+
+3)  s1='ab'
+    s2= 'de'
+    s3= s1+ s2
+print(s3)
+
+O/P: abde
+
+4)  res = print('Gaurav')
+    print(res)
+
+5)  s1= 'ab\n'*4
+print(s1)
+
+o\p: ab
+ab
+ab
+ab
+
+7) s1= 'ab'*4
+print(s1)
+
+8) 
+
+s1=int(input('Enter the Number1 : '))
+s2=str(input('Enter the String1 : '))
+s3=int(input('Enter the number of times to be repeated : '))
+print('s1 \n' *s3)
+print('s2 \n' *s3)
+
+9) res = print('Gaurav')
+   print(res) 
+ Gaurav
+None
+
+10) res = len('tuteur.py@gmail.com')
+ print(type(res))
+abababab
+
+11)res = len('tuteur.py@gmail.com')
+print(type(res))
+
+OP: <class 'int'>
+
+12) import math
+dir(math)
+
+Sqrt
+
+13) import math
+s1=int(input('Enter the Number1 : '))
+print('The square root of the number is : ',int(math.sqrt(s1)))
+
+14) 
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+15) trace back (most recent call last):
+ File"stdin"; line 1,  in (Module)
+NameErro: name '__Name' is not defined.
+__main__
+
+16) No
+
+17) 
+print(__name)
+print(__builtins__.__name)
+print
+
+__main__
+builtins
+int
