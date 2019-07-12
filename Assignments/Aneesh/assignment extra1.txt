@@ -1,0 +1,57 @@
+1>
+F = int(input("Enter the temp in fahrenheit:"))
+c = ((F - 32)*(5/9))
+print("temp in celcius is:",c)
+
+2>
+n = int(input("Enter the number:"))
+print ("Square of number is:",(n**2))
+print("cube of number is:",(n**3))
+
+3>
+n = int(input("Enter the 1st number:"))
+m = int(input("Enter the 2nd number:"))
+print ("Output of the number:",(n**2 + m**2))
+
+4>
+M = int(input("Enter the 1st number:"))
+N = int(input("Enter the 2nd number:"))
+print ("Output of the number:",(M**N))
+print ("Output of the number:", pow(M,N))
+
+5>
+P = float(input("Enter the principal amount : "))
+N = float(input("Enter the number of years : "))
+R = float(input("Enter the rate of interest : "))
+SI = (P * N * R)/100
+print ("Simple interest is:", SI)
+
+6>
+7>
+n = int(input("Enter the number:"))
+print ("Sum of natural number is :", n*((n+1)/2))
+
+8>
+M = int(input("Enter  M's value:"))
+N = int(input("Enter  N's value:"))
+temp = M
+M = N
+N = temp
+print ("New value of M and N is ", M , N)
+
+11>
+import math
+area = float(input("Enter the area of circle:"))
+radius = math.sqrt(area/3.14)
+print ("value of radius is :", radius)
+print ("value of circumference is :", (2*3.14*radius))
+ 
+12>
+a = int(input("Enter the 1st number:"))
+b = int(input("Enter the 2nd number:"))
+c = int(input("Enter the 3rd number:"))
+d = int(input("Enter the 4th number:"))
+e = int(input("Enter the 5th number:"))
+Average = (a+b+c+d+e)/5
+print ("Average of number is:", Average)
+print ("Percentage is", (a+b+c+d+e)/500*100)
