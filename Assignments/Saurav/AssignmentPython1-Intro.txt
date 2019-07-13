@@ -1,0 +1,62 @@
+1>> 6, 19
+
+2>>st=input("enter the string:")
+ln=len(st)
+print("length of string is", ln)
+
+
+3>>a=int(input("enter first number:"))
+b=int(input("enter the second number:"))
+s=a+b
+d=a-b
+print("sum is %i and difference is %i" %(s,d))
+
+4>>abde
+
+5>>abde
+
+6>>abababab
+
+7>>ab\nab\nab\nab\n
+
+8>>s=input("enter the string :")
+n=int(input("enter the number of loop:"))
+st=(s+"\n")*n
+print(st)
+
+
+9>>doubt----------------------------------
+res=print('gaurav')
+print(res)
+o/p-- none 
+
+
+10>>int
+
+11>string, 26
+
+12>>import math
+math.sqrt()
+
+13>>import math
+n=int(input("enter the number :"))
+s=math.sqrt(n)
+print("square root is :", s)
+
+
+14>>n=int(input("enter the no:"))
+s=0
+for i in range (1,n+1):
+    print("enter the %i number" %i)
+    a=int(input())
+    s=s+a
+print("sum is %i"  %s)
+
+
+15>>dir(__builtins__), return the absolute  value ie; the positive value
+
+
+16>>doubt------------------------------------------------
+print(__name__) will give output as "main"
+
+17>>
