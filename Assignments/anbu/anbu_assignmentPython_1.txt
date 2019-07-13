@@ -1,0 +1,168 @@
+
+
+Question1 
+
+>>> s1 = 'anbu'
+>>> s2 = 'xyz.py@gmail.com'
+>>> print(len(s1), len(s2))
+4 16
+
+
+
+
+
+Question 2
+
+>>> s = input("Enter a string")
+Enter a string hi
+>>> print(len(s))
+3
+>>> s = input("Enter a string  ")
+Enter a string  anbu
+>>> print(len(s))
+4
+
+
+Question 3: 
+
+>>> s1 = 1
+>>> s2 = 2
+>>> s3 = s1 + s2
+>>> print(s3)
+3
+>>> s4 = s1-s2
+>>> print(s4)
+-1
+
+
+OR
+
+
+
+>>> s = int(input("enter the first number"))
+enter the first number1
+
+>>> s2 = int (input("Enter a second number"))
+Enter a second number4
+>>> print(s1 + s2)
+5
+>>> print(s1 - s2)
+-3
+
+
+Question 4 :
+
+abde
+
+
+Question 5 :
+
+
+abde
+
+
+Question 6:
+
+abababab
+
+
+Question 7:
+
+
+ab
+ab
+ab
+ab
+
+Question 8 
+
+>>> s = input ("Enter a string to print n times")
+Enter a string to print n timesjoker
+>>> n = input("Enter the times in which teh string to be printed")
+Enter the times in which teh string to be printed 5
+>>> op = ( s + '\n') * int(n)
+>>> print(op)
+joker
+joker
+joker
+joker
+joker
+
+Question 9:
+
+
+None
+
+
+Question 10:
+
+<class 'int'>
+
+
+
+Question 11;
+
+>>> print(type(s3))
+<class 'str'>
+>>> print(len(s3))
+19
+
+
+
+Question 12:
+
+sqrt()
+
+
+Question 13:
+
+>>> import math
+>>> s1= input("Enter a number ")
+Enter a number 10
+>>> print (sqrt(s1))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sqrt' is not defined
+>>>
+
+
+
+Question 14:
+
+
+
+
+
+Question 15
+
+>>> help(abs)
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+
+
+Question 16
+
+__main__
+
+Question 17:
+
+__main__
+
+Question 18:
+
+
+No
+
+
+Question 19:
+
+>>> print(__name__)
+__main__
+>>> print(__builtins__.__name__)
+builtins
+>>> print(int.__name__)
+int
+>>>
+
