@@ -1,0 +1,73 @@
+
+1) 
+	6 19
+
+2)
+	s2=str(input(" Enter your name: "))
+	print("The length of String: ", len(s2))
+3)
+	a=int(input(" Enter the first number: "))
+	b=int(input(" Enter the second number: "))
+	print("The sum of two numbers: " ,a + b )
+	print("The difference of two numbers: " , a - b)
+	
+4) 
+	abde
+5) 
+	abde
+6)
+	abababab
+7) 
+	ab
+	ab
+	ab
+	ab
+8)
+	s1=str(input(" Enter the string:\n "))
+	s2=int(input(" Enter the number: "))
+	s3= (s1 + '\n')*s2
+	print(s3)
+
+9)	Gaurav
+	None
+
+10)
+  <class 'int'>
+ 
+11)
+	<class 'str'>
+	26
+	
+12)
+	math.sqrt()
+
+13)
+	import math
+	print (math.sqrt(int(input("Enter the number: "))))
+
+14)
+	s1 = int(input("Enter the first number: "))
+	s2 = int(input("Enter the second number: "))
+	s3 = int(input("Enter the third number: "))
+	s4 = int(input("Enter the fourth number: "))
+	print ("Average of numbers is: ",(s1+s2+s3+s4)/4)
+
+15)
+	Help on built-in function abs in module builtins:
+	abs(x, /)
+		Return the absolute value of the argument.
+	>>>
+	
+16)
+	__main__
+
+17)
+	__main__
+
+18)
+	No
+
+19)
+	__main__
+	builtins
+	int
