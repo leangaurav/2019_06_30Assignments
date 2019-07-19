@@ -1,0 +1,132 @@
+Q1: Solution -:
+
+s='Python is Object Oriented'
+print(s[-1])
+print(s[::-1])
+print(s[:-1])
+print(s[1:1])
+print(s[4:10])
+
+O/p-:
+
+d
+detneirO tcejbO si nohtyP
+Python is Object Oriente
+
+on is 
+
+Q2: Solution-:
+
+SyntaxError: EOL while scanning string literal
+
+Q3:
+s='Gaurav'
+print(s[1])
+
+O/p-: a
+
+Q4:Solution-:
+
+O/p-:
+a)
+
+6
+abc
+3
+
+B)
+
+['a#b#c#d#e']
+['a', 'b', 'c', 'd', 'e']
+a$b$c$d$e
+
+C)
+
+av
+
+
+D)
+
+False
+
+E)
+
+0,1,2
+
+F)
+
+abcba
+0,0,0,
+
+
+
+Q5: Solution:
+
+s="aa bb cd"
+new_str=s.replace(" ","")
+print(new_str)
+
+O/p:
+
+aabbcd
+
+Q6:
+
+
+Q7:
+print(dir(string))
+
+Q8:
+import string
+s=dir(str)
+print('rstrip' in s)
+
+O/p-:
+
+True
+
+Q9:
+
+
+Q10:
+s=input("Enter a string:")
+print(s)
+new_string=s.replace(" ","\n")
+print(new_string)
+
+O/p-:
+
+Enter a string:hello i am Aroma
+hello i am Aroma
+hello
+i
+am
+Aroma
+
+Q11.
+
+s=input(" Enter a complete name:")
+name=s.replace(" ","")
+name_uppercase=name.upper()
+first_name=name_uppercase[0:5]
+second_name=name_uppercase[5:12]
+print(first_name,len(first_name))
+print(second_name,len(second_name))
+
+
+O/P-:
+
+ Enter a complete name:aroma saxena
+AROMA 5
+SAXENA 6
+
+
+Q12:
+
+s='strings'
+new=s.split('i')
+print(new)
+
+
+
+
