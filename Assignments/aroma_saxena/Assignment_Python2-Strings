@@ -123,9 +123,14 @@ SAXENA 6
 
 Q12:
 
-s='strings'
-new=s.split('i')
-print(new)
+s = input("Enter an  string to split : " )
+len = len(s)
+index = len//2
+first_half=s[ : index]
+second_half=s[index : ]
+print( len)
+print(first_half)
+print(second_half)
 
 
 
