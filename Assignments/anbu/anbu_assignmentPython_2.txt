@@ -1,0 +1,136 @@
+1. Guess output of each slice:
+
+
+>>> s = 'Python is Object Oriented'
+>>> s[-1]
+'d'
+>>> s[::-1]
+'detneirO tcejbO si nohtyP'
+>>> s[:-1]
+'Python is Object Oriente'
+>>> s[1:]
+'ython is Object Oriented'
+>>> s[4:10]
+'on is '
+>>> s[1:1]
+''
+
+
+
+2. What error do you see for following statements:
+
+>>> s=''
+>>> print(s[1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>>
+
+
+
+3. Do you get any error for the following code, if not give the output:
+
+
+
+>>> S='Gaurav'
+>>> print(s[1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+
+
+
+
+4. Find output of the following:
+
+
+
+
+a)   >>> s ='a b cd'
+>>> print(len(s))
+6
+>>> print(s[::2])
+abc
+>>> print(len(s[::2]))
+3
+>>>
+
+
+>>> s = 'a#b#c#d#'
+>>> print(s.split())
+['a#b#c#d#']
+>>> print(s.split('#'))
+['a', 'b', 'c', 'd', '']
+>>> l= s.split('#')
+>>> s='$'.join(l)
+>>> print(s)
+a$b$c$d$
+>>> s= 'Gaurav'
+>>> s= s[::-2][::2]
+>>> s= s[::-2][::-2]
+>>> print(s)
+a
+>>> print(1>2)
+False
+>>> print(4%2, 5%2, 2%5, sep=',')
+0,1,2
+>>> s='abcba'
+>>> s.upper()
+'ABCBA'
+>>> print(s)
+abcba
+>>> print(s.count('A'),end =',')
+0,>>> print(s.count('A', 2,4), end = ',')
+0,>>> print(s.count('a',2,4), end = ',')
+0,>>>
+
+
+
+5. WAP to input a string and remove all spaces from it.
+
+
+>>> s = " this is a string"
+>>> print(s.rstrip())
+ this is a string
+>>>
+
+
+
+6. What does this symbol denote:
+[]
+
+
+list
+
+
+7. program to print all methods in string
+
+
+>>> import string
+>>> dir(string)
+['Formatter', 'Template', '_ChainMap', '_TemplateMetaclass', '__all__', '__built
+ins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__packag
+e__', '__spec__', '_re', '_string', 'ascii_letters', 'ascii_lowercase', 'ascii_u
+ppercase', 'capwords', 'digits', 'hexdigits', 'octdigits', 'printable', 'punctua
+tion', 'whitespace']
+>>>
+
+
+
+8. Write statement to check if rstrip method is available in the str class.
+(Hint : Use the find function or in)
+
+
+
+
+9. WAP to store the following patterns in a string variable and then print them:
+
+
+
+
+
+
+
+
+
+
