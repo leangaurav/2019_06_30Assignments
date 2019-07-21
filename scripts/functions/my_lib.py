@@ -4,4 +4,4 @@ def add(x,y):
 def sub(x,y):
   print(x - y)
   
-#print("my_lib", __name__)
+print("my_lib", __name__)
