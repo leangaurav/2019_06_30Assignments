@@ -1,0 +1,41 @@
+1>
+Q: WAP to input 2 strings and swap the strings
+
+A:
+s1 = input("Enter the string:")
+s2 = input("Enter the string:")
+print (s1,s2)
+temp =('')
+temp = s1
+s1 = s2
+s2 = temp
+print (s1, s2)
+
+2>
+Q: WAP to generate 4 random numbers in the range 0-26 and print their average
+A:
+from random import randint
+x1 = randint(0,26)
+x2 = randint(0,26) 
+x3 = randint(0,26)
+x4 = randint(0,26)
+print (x1,x2,x3,x4)
+Average = (x1 + x2 +x3 + x4)/4
+print (Average)
+
+3>
+Q: 
+
+
+
+
+
+11>
+Q:Find output:
+A:
+X = 2
+X *= 3
+X= X%4
+Y = - X
+print (X,Y)
+2 -2
