@@ -1,0 +1,97 @@
+# Sanjiv's Assignment
+
+
+Q1.	n=int(input("Enter a number: "))
+	for i in range(1,n+1):
+        	print(i)
+
+
+Q2.	n=int(input("Enter a number: "))
+	s=0
+	for i in range(1,n+1):
+        	s+=i
+	print(s)
+
+
+Q3.	n=int(input("Enter a number: "))
+	for i in range(n,0,-1):
+        	print(i)
+
+
+Q4.	n=int(input("Enter a number: "))
+	f=n
+	fac=1
+	for i in range(1,n+1):
+  		fac*=f
+    		f-=1
+	print(fac)
+
+
+Q5.	n=int(input("Enter a number: "))
+	n1 = 0
+	n2 = 1
+	c= 0
+
+	if n == 1:
+    		print("Fibonacci sequence upto",n,":")
+    		print(n1)
+	else:
+    		print("Fibonacci sequence upto",n,":")
+    		while count < n:
+       			print(n1,end=' ')
+        		nth = n1 + n2
+        		n1 = n2
+        		n2 = nth
+        		c+= 1
+
+
+Q6.	n=int(input("Enter a number: "))
+	li=list(n)
+	for i in range(len(li)):
+		print(li[i])
+
+
+Q7.	n=input("Enter a number: ")
+	s=0
+	for i in range(len(n)):
+    		s+=int(n[i])
+	print(s)
+
+
+Q8.	
+
+
+Q9.	b=int(input("Enter a base: "))
+	e=int(input("Enter a exponent: "))
+	c=0
+	s=1
+	while c<e:
+    		s*=b
+    		c+=1
+	print(s)
+
+
+Q10.	# 1					# 2
+	for j in range(6):			for j in range(5,-1,-1):
+    print('*'*j)					print('*'*j)
+
+
+	
+	# 3					# 4
+	for i in range(6):			
+        	for j in range(6-i-1):		
+            		print(" ", end='')
+        	for j in range(i+1):
+            		print("*", end='')
+        print()
+
+
+Q11.	
+
+
+Q12.	# 3
+	s=65
+	for j in range(0,5):
+    		print(chr(s+j)*(j+1))
+	print()
+		
