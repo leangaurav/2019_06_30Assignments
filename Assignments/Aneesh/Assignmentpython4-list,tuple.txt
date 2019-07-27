@@ -1,0 +1,140 @@
+1>
+Q:
+Convert a Tuple t = (1,2,3,4,5) to a list
+A:
+t = (1,2,3,4,5)
+a =list(t)
+print (a)
+
+2>
+Q:
+WAP to join a list and a tuple:
+L = [1,3,5,7]
+T = (8,6,4,2)
+Store the result in a list LS
+A:
+L = [1,3,5,7]
+T = (8,6,4,2)
+S = list(T)
+print (L + S)
+
+3>
+Q:
+What is difference between list and tuple.
+A:
+lists are mutable whereas tuples are immutable.
+
+4>
+Q: 
+Print the list in reverse order
+l = [‘a’, ‘d’, ‘c’, ‘A’, ‘C’]
+A:
+l = ['a','b','c','A','C']
+x = (reversed(l))
+print (list(x))
+
+5>
+Q:
+Print Elements at Odd indexes from a list (Do not use loop)
+l = [10,11,20, 21,30, 31, 40, 41]
+A:
+l = [10,11,20, 21,30, 31, 40, 41]
+print (l[0 : len(l): 2])
+
+6>
+Q:
+How many ways you can copy a list.
+A:
+lst1 = list(lst)
+lst2 = lst[:]
+
+7:
+Q:
+Predict output
+n_list = ["Happy" , [2,0,1,5]]
+print (n_list[0][1])
+print (n_list[1][3])
+A:
+a
+5
+
+8:
+Q:
+Predict output
+odd = [2,4,6,8]
+odd[0] = 1
+odd[1:4] = [3,5,7]
+print (odd)
+A:
+[1, 3, 5, 7]
+
+9:
+Q:
+Predict output
+odd =[1,3,5]
+odd.append([7,9])
+print (odd)
+odd.extend([11,13])
+print (odd)
+A:
+[1, 3, 5, [7, 9]]
+[1, 3, 5, [7, 9], 11, 13]
+
+10:
+Q:
+Predict output
+x = 1,2,3 ; print (type(x))
+x = (1) ; print (type(x))
+x = 1 ; print (type(x))
+x = 1, ; print (type(x))
+
+A:
+<class 'tuple'>
+<class 'int'>
+<class 'int'>
+<class 'tuple'>
+
+11:
+Q:
+Try to represent a matrix with following data in python:
+1 2 3
+4 5 6
+7 8 9
+A:
+k =1 
+for i in range(3):
+    for j in range(3):
+        print (k, end =' ')
+        k += 1
+    print ()
+	
+12:
+Predict output
+Q:
+t1 = tuple('string')
+t3 = t1 + (t2)
+print (t3)
+A:
+NameError: name 't2' is not defined
+
+13:
+Q:
+t = tuple('string')
+print (t)
+print (t[::-1])
+print (t[::2][::-2]
+
+A:
+('s', 't', 'r', 'i', 'n', 'g')
+('g', 'n', 'i', 'r', 't', 's')
+('n', 's')
+
+14:
+
+
+
+
+
+
+
+
