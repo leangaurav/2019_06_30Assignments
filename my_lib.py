@@ -5,3 +5,5 @@ def input_list_numbers():
     for data in l:
         res.append(int(data))
     return res
+    
+    
