@@ -1,0 +1,191 @@
+1) WAP to input 2 strings and swap the strings
+	n1 = input("Enter the string: ")
+	n2 = input("Enter the 2nd string: ")
+	temp = n1
+	n1= n2
+	n2= temp
+	print(n1, n2)
+	
+2) WAP to generate 4 random numbers in the range 0-26 and print their average
+	import random
+	from random import  randint
+
+	r1 = randint(0,27)
+	r2 = randint(0,27)
+	r3 = randint(0,27)
+	r4 = randint(0,27)
+	print(r1,r2,r3,r4)
+	result = (r1+r2+r3+r4)/4
+	print("Average = " , result)
+	
+3) 
+	import random
+	import  string
+	s = str(input("Enter the strings: "))
+	ran = random.randrange(len(s))
+	newstrupper = s[ran].upper()
+	newtrlower = s[ran].lower()
+	print(newtrlower)
+	print(newstrupper)
+
+4) 
+	def get_si():
+		p = int(input("Enter the principle: "))
+		r = int(input("Enter the Rate: "))
+		t = int(input("ENter the Time: "))
+		si = (p * r * t)/100
+		return si
+	si = get_si()
+	print(si)
+	=============
+	def get_si(principle,rate,time):
+		si = (principle * rate * time)/100
+		return si
+	si = get_si(20,3,5)
+	print(si)
+	
+5) 
+	def get_si(principle,rate,time):
+			si = (principle * rate * time)/100
+			return si
+	si = get_si(20,10,1)
+	print(si)
+	def get_amount(principle):
+		total_amount = principle + si
+		return total_amount
+	total_amount = get_amount(20)
+	print(total_amount)
+
+7) 
+	def get_q_r(n1,n2):
+		quotient = n1/ n2
+		remainder = n1 % n2
+		result = (quotient, remainder)
+		return result
+	output = get_q_r(6,12)
+	print(output)
+	print(type(output))
+8)
+
+	import math
+
+	base = int(input("Enter the base of triangle: "))
+	height = int(input("Enter the height of triangle: "))
+
+	hypotenuse = math.sqrt(base * base + height * height)
+	print(hypotenuse)
+9)
+	time  = int(input("Input time in second: "))
+	day = time // (24 * 3600)
+	time = time % (24 * 3600)
+	hour = time // 3600
+	time %= 3600
+	minutes = time // 60
+	time %= 60
+	seconds = time
+	result = "{0}day {1}hour {2}minutes {3}seconds: ".format(day,hour,minutes,seconds)
+	print(result)
+10)
+	python --version
+11)
+	X = 2
+	X *= 3
+	X = X%4
+	Y = - X
+	print(X,Y)
+	Output:- 2, -2
+12)
+	def funt():
+	pass
+	print(funt())
+
+	Output:-	None
+
+13)
+	real = int(input("Enter the real number: "))
+	imaginary = int(input("Enter the imaginary: "))
+	complex_no = complex(real,imaginary)
+	print("Complex number: ", complex_no)
+	print("Real number: ", complex_no.real)
+	print("Imaginary Number: ", complex_no.imag)
+
+14)
+
+	def input_complex():
+		re = int(input("Enter the real number: "))
+		im = int(input("Enter the imaginary number: "))
+		tuples_result = (re,im)
+		print(tuples_result)
+		print_complex(re,im)
+	def print_complex(re, im):
+		complex_no = complex(re,im)
+		print("Complex number: ", complex_no)
+		print("Real Number:", complex_no.real)
+		print("Imaginary Number: ", complex_no.imag)
+	input_complex()
+
+15) 
+	def input_complex():
+		re1 = int(input("Enter the real number: "))
+		im1 = int(input("Enter the imaginary number: "))
+		re2 = int(input("Enter the 2nd real number: "))
+		im2 = int(input("Enter the 2nd imaginary number: "))
+		tuples_result = (re1,im1, re2,im2)
+		print(tuples_result)
+		print_complex(re1,im1)
+		add(re1,im1,re2,im2)
+	def print_complex(re1, im1):
+		complex_no = complex(re1,im1)
+		print("Complex number: ", complex_no)
+		print("Real Number:", complex_no.real)
+		print("Imaginary Number: ", complex_no.imag)
+	def add(re1,im1,re2,im2):
+		complex_no1 = complex(re1,im1)
+		complex_no2 = complex(re2,im2)
+		sum = complex_no1 + complex_no2
+		sum_value_intuple= (sum.real, sum.imag)
+		print(sum_value_intuple)
+	input_complex()
+	
+16)
+	def input_complex():
+		re1 = int(input("Enter the real number: "))
+		im1 = int(input("Enter the imaginary number: "))
+		re2 = int(input("Enter the 2nd real number: "))
+		im2 = int(input("Enter the 2nd imaginary number: "))
+		tuples_result = (re1,im1, re2,im2)
+		print(tuples_result)
+		print_complex(re1,im1)
+		add(re1,im1,re2,im2)
+		conj(re1,im1)
+		mul(re1,im1,re2,im2)
+		div(re1,im1,re2,im2)
+	def conj(re1,im1):
+		complexn = complex(re1,im1)
+		conjugatevalue = complexn.conjugate()
+		value_of_Conjugate =(conjugatevalue.real, conjugatevalue.imag)
+		print(value_of_Conjugate)
+	def print_complex(re1, im1):
+		complex_no = complex(re1,im1)
+		print("Complex number: ", complex_no)
+		print("Real Number:", complex_no.real)
+		print("Imaginary Number: ", complex_no.imag)
+	def add(re1,im1,re2,im2):
+		complex_no1 = complex(re1,im1)
+		complex_no2 = complex(re2,im2)
+		sum = complex_no1 + complex_no2
+		sum_value_intuple= (sum.real, sum.imag)
+		print(sum_value_intuple)
+	def mul(re1,im1,re2,im2):
+		complex_muply1 = complex(re1,im1)
+		complex_muply2 = complex(re2,im2)
+		multiple = complex_muply1 * complex_muply2
+		mul_complx = multiple.real,multiple.imag
+		print(mul_complx)
+	def div(re1,im1,re2,im2):
+		complex_div1 = complex(re1,im1)
+		complex_div2 = complex(re2,im2)
+		division = complex_div1 / complex_div2
+		div_complx = division.real,division.imag
+		print(div_complx)
+	input_complex()
