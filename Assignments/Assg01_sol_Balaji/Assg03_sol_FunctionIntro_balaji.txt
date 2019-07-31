@@ -1,0 +1,199 @@
+Q1: WAP to input 2 strings and swap the strings
+
+## Normal pythonic way
+
+def swap_strings():
+    s1=input("Enter a string:")
+    s2=input("Enter a string:")
+    print("Before swappig :" , s1)
+    print("Before swappig :" ,s2)
+    s1,s2=s2,s1
+	print("After swapping")
+    print(s1)
+    print(s2)
+    
+swap_strings()
+
+## Using temp method
+
+	def swap_str(a,b):
+		temp=a
+		a=b
+		b=temp
+		return a,b
+	st1=input("Enter the string: ")
+	st2=input("Enter the string: ")
+	swap_str()
+	
+	
+Q2: WAP to generate 4 random numbers in the range 0-26 and print their average
+
+from random import randint
+def random_numbers():
+    n1=randint(0,26)
+    print(n1)
+    n2=randint(0,26)
+    print(n2)
+    n3=randint(0,26)
+    print(n3)
+    n4=randint(0,26)
+    print(n4)
+    avg=(n1+n2+n3+n4)/4
+    print("Average of 4 generated random numbers :", avg)
+
+random_numbers()
+
+Q3: WAP to generate and print a random uppercase or lowercase alphabet.
+
+import string
+import random
+input_str = string.ascii_letters
+print(input_str)
+print(random.choice(input_str))
+
+
+Q4: WAF get_si() that takes Principle, Rate and Time as arguments and returns the Simple
+Interest.
+
+def get_si(p,r,t):
+    si=(p*r*t)/100
+    return si
+res=get_si(1000,1,1)
+print(res)
+
+
+Q5: WAF get_amount() that takes Principle, Rate and Time as arguments and returns the
+Total amount using the get_si() function from above to calculate the SI. Also provide
+Rate = 10 and Time = 1 as default arguments.
+
+def get_si(p,r,t):
+    si=(p*r*t)/100
+    return si
+res=get_si(1000,1,1)
+print(res)
+
+def get_amt(p,r=10,t=5):
+    si=get_si(1000,1,1)         
+    amount=si+p
+    return amount
+am =get_amt(100)
+print(am)
+
+Q6:WAP get_ci() that takes Principle, Rate and Time as arguments and returns the
+Compound Interest.
+
+def get_ci(p,r,t):
+    ci= p*((1+(r/100))**t)
+    return ci
+get_ci(100,1,1)
+
+
+Q7:WAP get_q_r() taking 2 numbers as parameters and returns the quotient and
+remainder in the form of a tuple.
+
+def get_q_r(a,b):
+		p=(a//b,a%b)
+		return p
+
+	n1=int(input("Enter the num: "))
+	n2=int(input("Enter the num: "))
+	get_q_r(n1,n2)	
+	
+	
+Q8:WAP to find the length of hypotenuse of a right angled triangle, input the height and
+base from user.
+
+def length(height,base):
+    le =((height)**2 + (base)**2)
+    return le
+
+res=length(n1,n2)
+
+eg
+length(3,4)
+
+Q9:WAP to input number of seconds and print in days, hours, minutes and seconds
+
+time = float(input("Input time in seconds: "))
+day = time // (24 * 3600)
+time = time % (24 * 3600)
+hour = time // 3600
+time %= 3600
+minutes = time // 60
+time %= 60
+seconds = time
+print(" %i day %i hours %i minutes %i seconds" % (day, hour, minutes, seconds))
+
+
+Q10. Check your version of python interpreter without opening the interpreter (Which command needs to be used on the command line).
+
+In cmd prompt type below lines
+import sys
+sys.version_info
+
+ o/p It gives major, minor,micro  version number
+ 
+Q11.Find output:
+
+ x =2
+ x *= 3
+ x= x%4
+ y =-x
+ print(x,y)
+ 
+ o/P : 2 ,-2
+ 
+Q12.Find output:
+ 
+ def funct():
+	pass
+print(funct())
+
+o/P: None
+
+13. WAP to input the real and imaginary part of a complex number and print it on screen.
+output should look like re:10 im:20 if the user gives input as 10 and 20. Save the code in a script complex.py
+
+rea =input("Enter the real part: ")
+img =input("Enter the imaginary part: ")
+print("rea:{} img:{}".format(r,i))
+
+14.Update complex.py and create a functions input_complex() and print_complex().
+[Note: DO not use the built-in complex class]
+input_complex() : takes input from user and returns the real and imaginary part in a tuple.
+print_complex(re, im): takes the 2 arguments real and imaginary part as arguments and prints
+the number on screen in the format: re:10 im:20
+Now use the 2 functions to input 2 complex numbers and print them on screen
+
+def input_complex():
+		comp =[]
+		r=input("Enter the real part: ")
+		i=input("Enter the imaginary part: ")
+		comp.append(r)
+		comp.append(i)
+		return comp
+
+def print_complex(r,i):
+    print("re:{} im:{}".format(r,i))
+    
+input_complex()
+
+15. Update complex.py to add another function i) add():
+takes 4 arguments: (re1, im1, re2, im2) denoting the real and imaginary parts of
+the complex numbers to be added. The function adds and returns a single tuple
+denoting the resulting complex number.
+Ex: add (10, 20, 5, -30) should return (15, -10).
+ii) sub() - similar to add
+
+Donot understand need to study
+
+
+
+
+
+
+
+
+
+
+
