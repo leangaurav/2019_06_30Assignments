@@ -66,27 +66,63 @@ print(get_si(10,10,1))
 Total amount using the get_si() function from above to calculate the SI. Also provide
 Rate = 10 and Time = 1 as default arguments.
 
+def get_amount(p,r=10,t=1):
+		get_si()
+
+print(get_amount())
 
 
 6. WAP get_ci() that takes Principle, Rate and Time as arguments and returns the
 Compound Interest.
 
 
+def get_ci():
+        p= int(input())
+        r =int(input())
+        t =int(input())
+        ci = p*((1+(r/100))**t)
+        return ci
+
+print(get_ci())
+
+
 
 7. WAP get_q_r() taking 2 numbers as parameters and returns the quotient and
 remainder in the form of a tuple.
 
+def get_q_r(i,j):
+    p=(i/j,i%j)
+    return p
 
+print(get_q_r(10,20))
+        
 
 
 8. WAP to find the length of hypotenuse of a right angled triangle, input the height and
 base from user.
+
+def triangle(b, h ):
+    t = 1/2 * b * h
+    return t
+
+print(triangle(1,2))
+
+
 9. WAP to input number of seconds and print in days, hours, minutes and seconds
 ex: input = 10000
 Output = 0 day 2 hour 46 minute 40 second
+
+
+
 10. Check your version of python interpreter without opening the interpreter (Which
 command needs to be used on the command line).
+
+python
+
+
 11. Find  output
+
+2-2
 
 
 12. find output 
@@ -102,6 +138,22 @@ None
 13. WAP to input the real and imaginary part of a complex number and print it on screen.
 output should look like
 re:10 im:20
+
+
+
+	
+t = int(input("Input time in seconds: "))
+	day = t // (24 * 3600) 
+	t = t % (24 * 3600)
+	hour = t // 3600
+	t %= 3600
+	minutes = t // 60
+	t %= 60
+	seconds = t
+	a="{}day {}hour {}minutes {}seconds".format(day,hour, minutes,seconds)
+	print(a)
+	
+	
 
 
 
