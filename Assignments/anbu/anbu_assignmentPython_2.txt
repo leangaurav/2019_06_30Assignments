@@ -119,17 +119,49 @@ tion', 'whitespace']
 
 8. Write statement to check if rstrip method is available in the str class.
 (Hint : Use the find function or in)
+	
 
-
+rstrip in dir(str)
 
 
 9. WAP to store the following patterns in a string variable and then print them:
 
+10. WAP to input a string and replace all space with new lines (\n) and print again.
+
+>s = "Hello This is python program"
+
+>>> print("", s.replace(" ","\n "))
+
+ Hello
+ This
+ is
+ python
+ program
+
+
+11. WAP to input complete name(first and last name separated by space) and print first and last
+name separately along with their length in upper case.
 
 
 
+s = "anbuselvi ekambaram"
+>>> print("first name:", s.upper().replace(" ","\n "+"Last name:"))
+first name: ANBUSELVI
+ Last name:EKAMBARAM
 
 
+
+12. WAP to input a string and split it into 2 halves. The string can be of any length
+Ex-1: Input = “String”
+S1 = Str
+S2 = ing
+Ex-2: Input = “words”
+S1 = wo
+S2 = ds
+
+>>> s = input("enter a string")
+enter a stringhihkkaskkhjshakhshlahl
+>>> print( "s1 = ", s[:mid], "\n" , "s2 = ",s[mid:] )
 
 
 
