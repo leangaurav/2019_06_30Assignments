@@ -1,0 +1,307 @@
+1. WAP to input 2 numbers and check whether the first is divisible by the second and print true or false depending on the divisibility.
+
+n1 = int(input("Enter number:"))
+n2 = int(input("Enter number:"))
+if n1%n2 == 0:
+    print(True)
+else:
+    print(False)
+
+Enter number:17
+Enter number:4
+False
+
+2. In the palindrome example, make the code case insensitive i.e. Naman should also be treated as a palindrome (HINT: first convert to either upper orlower case).
+
+s = input().upper()
+s1 = s[::-1]
+if s1 == s:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+Naman
+Palindrome
+
+3. WAP to input the sides of a triangle and print whether equilateral(all sides equal), isosceles (2 sides equal), or scalene (no sides equal).
+
+n1 = int(input("Enter Side1 : "))
+n2 = int(input("Enter Side2 : "))
+n3 = int(input("Enter Side3 : "))
+if n1==n2==n3:
+    print("Equilateral")
+elif n1==n2 or n2==n3 or n3==n1:
+        print('Isoscale')
+else:
+    print("Scalene")
+
+Enter Side1 : 10
+Enter Side2 : 5
+Enter Side3 : 6
+Scalene
+
+4. WAP to input a number and print if it is even or odd.
+
+n= int(input('Enter a Number : '))
+if n%2==0:
+    print('Even')
+else:
+    print('Odd')
+
+Enter a Number : 4
+Even
+
+5. WAP to input age and print the respective text depending on the age ranges as present in the table.
+
+n=int(input('Enter Age : '))
+if n <= 12:
+    print('child')
+elif n<=14:
+    print('Teen')
+elif n<=50:
+    print('Adult')
+elif n<=100:
+    print('Senior Citizen')
+else:
+    print('Contratulations')
+
+Enter Age : 12
+child
+
+6. WAP to input year (check if user enters valid year. Should be 4-digit number and should not be negative) and print whether leap year or not. (If really interested in why you also have to check the divisibility by 400 just google the exact time it takes for the earth to revolve around the sub)
+
+year = int(input("Enter Year : "))
+
+if (( year%400 == 0)or (( year%4 == 0 ) and ( year%100 != 0))):
+    print("%d is a Leap Year" %year)
+else:
+    print("%d is Not the Leap Year" %year)
+
+Enter Year : 1000
+1000 is Not the Leap Year
+
+7. WAP to input a string and convert it to Upper Case if number of characters is odd and convert to lower case otherwise.
+
+n= input('Enter a String :')
+length=len(n)%2
+if length==0:
+    s=n.upper()
+    print(s)
+
+else:
+    s=n.lower()
+    print(s)
+
+Enter a String :good
+GOOD
+
+8. WAP to input a string and print Veg if the string doesn’t contain the word egg. Otherwise print Non-Veg. As usual eggs can be both big and small.
+
+n= input("Enter a String :")
+
+if 'egg' in n:
+    print('Non-Veg')
+else:
+    print('Veg')
+
+Enter a String :egg
+Non-Veg
+
+9. Give output of:
+
+if not 1:
+    print('False')
+else:
+    print('True')
+
+    
+
+if 1:
+    print('True')
+else:
+    print('False')
+
+​
+
+if 'a' > 'A':
+    print('Weird !!')
+else:
+    print('Makes Sense')
+
+​
+
+a=[1,2,3,4]
+if 1>1:
+    a=a[::-1]
+else:
+    a=a[-1::-1]
+
+print(a)
+
+True
+True
+Weird !!
+[4, 3, 2, 1]
+
+## 10. WAP to input marks in 5 subjects and print the grade as per following logic:
+% between 90-100 Grade-A
+% between 80 - 89 Grade-B
+% between 60 - 79 Grade-C
+% < 60 Grade-F
+
+
+s1 = int(input("Enter Subject1 : "))
+
+s2 = int(input("Enter Subject2 : "))
+
+s3 = int(input("Enter Subject3 : "))
+
+s4 = int(input("Enter Subject4 : "))
+
+s5 = int(input("Enter Subject5 : "))
+
+avg=(s1+s2+s3+s4+s5)/5
+
+print(avg)
+
+if(avg>=90 and avg<=100):
+    print("Grade-A")
+elif(avg>=80 and avg<=89):
+    print("Grade-B")
+elif(avg>=60 and avg<=79):
+    print("Grade-C")
+
+else:
+    print("Grade-F")
+
+Enter Subject1 : 98
+Enter Subject2 : 75
+Enter Subject3 : 65
+Enter Subject4 : 55
+Enter Subject5 : 45
+67.6
+Grade-C
+
+11. WAP to input age and salary and calculate Tax as per tax rates if following table:
+
+Doubt
+
+12. Try each of the below statements separately (remember difference between statement and expression) on the python interpreter and guess the output before trying:
+
+print(20 if not 1 == 1 else 10)
+10
+
+print(30 if not 1 == 1 else 20 if 'a' < 'A' else 10)
+10
+
+print(40 if not 1 == 1 else 30 if 'a' < 'A' else 20 if '' else 10)
+10
+
+print('No' if not 1 == 1 else ('No' if 'a' < 'A' else ('OMG' if 'Oh!!' else 'No')))
+OMG
+
+## 13. WAF: bmi() that takes the weight in kg and height in cm of a person, calculates and returns the BMI.
+
+Write code that calls this function after taking height and weight as inputs and then prints
+
+underweight, normal, overweight or obese depending on the value of BMI.
+
+def BMI(height, weight): 
+    bmi = weight/(height**2) 
+    return bmi
+
+height = float(input("Enter height in meters : "))
+weight = float(input("Enter weight in kg : "))
+
+bmi = BMI(height, weight) 
+print("Your BMI is: {0} and you are: ".format(bmi), end='')
+
+if ( bmi < 15):
+    print("Very severely underweight")
+    
+elif ( bmi>=15 and bmi < 16):
+    print("severely underweight")
+    
+elif ( bmi >= 16 and bmi < 18.5):
+    print("underweight")
+
+elif ( bmi >= 18.5 and bmi < 25):
+    print("Healthy")
+
+elif ( bmi >= 25 and bmi < 30):
+    print("overweight")
+
+elif ( bmi >=30 and bmi < 35):
+    print("Obese Class I (Moderately obese)")
+
+elif ( bmi >=35 and bmi < 40):
+    print("Obese Class II (Severely obese) ")
+
+elif ( bmi >=40 and bmi < 45):
+    print("Obese Class III (Very severely obese)")
+
+elif ( bmi >=45 and bmi < 50):
+    print("Obese Class IV (Morbidly Obese) ")
+
+elif ( bmi >=50 and bmi < 55):
+    print("Obese Class V (Super Obese)")
+else:
+    print("Obese Class VI (Hyper Obese) ")
+
+Enter height in meters : 1.82
+Enter weight in kg : 75
+Your BMI is: 22.6421929718633 and you are: Healthy
+
+14. Take input of age of 3 people by user and determine oldest and youngest among them
+
+Age1=int(input('Enter the Age : '))
+Age2=int(input('Enter the Age : '))
+Age3=int(input('Enter the Age : '))
+
+if Age1 > Age2 and Age1 > Age3:
+
+    print("Age1 is the oldest") 
+
+elif Age2 > Age1 and Age2 > Age3:
+
+    print("Age2 is the oldest")
+
+elif Age3 > Age1 and Age3 > Age2:
+
+    print("Age3 is the oldest")
+
+elif Age1 < Age2 and Age1 < Age3:
+
+    print("Age1 is the youngest") 
+
+elif Age2 < Age1 and Age2 < Age3:
+
+    print("Age2 is the youngest")
+
+elif Age3 < Age1 and Age3 < Age2:
+
+    print("Age3 is the youngest")  
+
+else:
+
+    print("All are Equal")
+
+Enter the Age : 30
+Enter the Age : 35
+Enter the Age : 35
+Age1 is the youngest
+
+15. WAP to input a number and check if number is divisible by both 5 and 7.
+
+n=int(input('Enter a No : '))
+
+if n%5==0 and n%7==0:
+
+    print('The No is Divisible by both 5 and 7')
+
+else:
+
+    print('Not Divisible by both 5 and 7')
+	
+Enter a No : 35
+The No is Divisible by both 5 and 7
