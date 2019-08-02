@@ -114,6 +114,19 @@ Output = 0 day 2 hour 46 minute 40 second
 
 
 
+	
+t = int(input("Input time in seconds: "))
+	day = t // (24 * 3600) 
+	t = t % (24 * 3600)
+	hour = t // 3600
+	t %= 3600
+	minutes = t // 60
+	t %= 60
+	seconds = t
+	a="{}day {}hour {}minutes {}seconds".format(day,hour, minutes,seconds)
+	print(a)
+	
+
 10. Check your version of python interpreter without opening the interpreter (Which
 command needs to be used on the command line).
 
@@ -140,24 +153,19 @@ output should look like
 re:10 im:20
 
 
+re = int(input())
+im = int(input())
 
-	
-t = int(input("Input time in seconds: "))
-	day = t // (24 * 3600) 
-	t = t % (24 * 3600)
-	hour = t // 3600
-	t %= 3600
-	minutes = t // 60
-	t %= 60
-	seconds = t
-	a="{}day {}hour {}minutes {}seconds".format(day,hour, minutes,seconds)
-	print(a)
-	
+print("re:{} im:{}".format(re,im))
+
 	
 
 
 
 if the user gives input as 10 and 20. Save the code in a script complex.py
+
+
+
 14. Update complex.py and create a functions input_complex() and print_complex().
 [Note: DO not use the built-in complex class]
  input_complex() :
@@ -167,6 +175,22 @@ takes the 2 arguments real and imaginary part as arguments and prints
 the number on screen in the format:
 re:10 im:20
 Now use the 2 functions to input 2 complex numbers and print them on screen
+
+def input_complex():
+        p=()
+        r=input("Enter the real part: ")
+        i=input("Enter the imaginary part: ")
+        p.append(r)
+        p.append(i)
+        return p
+def print_complex(r,i):
+        print("re:{} im:{}".format(r,i))  
+
+
+
+
+
+ 	
 15. Update complex.py to add another function
  add():
 takes 4 arguments: (re1, im1, re2, im2) denoting the real and imaginary parts of
@@ -174,19 +198,29 @@ the complex numbers to be added. The function adds and returns a single tuple
 denoting the resulting complex number.
 Ex: add (10, 20, 5, -30) should return (15, -10).
  sub(): similar to add
+
+
+
+
+def add(re1,im1,re2,im2):
+        p=()
+        r=()
+        r =re1+re2
+        i = im1+im2
+        return (r,i)
+print(add(1,2,3,4))
+def sub(re1,im1,re2,im2):
+        p=()
+        r=re1-re2
+        i=im1-im2
+        return (r,i)
+print(sub(1,2,3,4))
+
+
 16. Update complex.py with the functions:
  conj(re, im): returns the conjugate as a tuple
  mul(re1, im1, re2, im2): returns the product of 2 complex numbers
  div(re1, im1, re2, im2): returns the division of 2 complex numbers as a tuple.
-
-
-
-
-
-
-
-
-
 
 
 
