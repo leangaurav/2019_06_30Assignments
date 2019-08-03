@@ -1,0 +1,93 @@
+1)
+	1.1) s[-1] :- d
+	1.2) s[::-1] :- detneirO tcejbO si nohtyP
+	1.3) s[:-1] :- Python is Object Oriente
+	1.4) s[4:10] :-  on is
+2) 	s= ‘’
+	print(s[1])
+	IndexError: string index out of range
+
+
+3) IndexError: string index out of range
+
+ 
+4)
+  a)
+	6
+	abc
+	3
+  b)
+	['a#b#c#d#']
+	['a', 'b', 'c', 'd', '']
+	a$b$c$d$
+  c)
+    av
+  d)
+    False
+  e)
+    0,1,2
+  f)
+	abcba
+	0,0,0,
+5) 
+	n = str(input("Enter the String: "))
+	s = n.split()
+	print(s)
+	s = ''.join(s)
+	print(s)
+6)
+	[] :- Array, List, Indexing
+7)
+	print(dir(str))
+8) 
+	s=dir(str)
+	print('rstrip' in s)
+	
+	True
+9)
+ 	s='''
+     *****
+	   *
+	   *
+	   *
+	   *
+	'''
+    print(s)
+	s='''
+    *     *  
+    * * * *
+    *  *  *
+    *     *
+	'''
+    print(s)
+	
+	s='''
+    _____
+    |    |
+	o    | 
+   /|\   |   
+   / \   |
+   ______|    
+    '''
+
+
+print(s)
+10)
+	s = input("Enter the String: ")
+	s = s.replace(' ', '\n')
+	print(s)
+
+11)
+	s = input("Enter Your Complete Name: " )
+	name = s.upper()
+	s1 = name.split()
+	print(s1)
+	print(s1[0],len(s1[0]))
+	print(s1[1],len(s1[1]))		
+12)
+	n = input("Enter the String: ")
+	s = len(n)//2
+	print(n[:s])
+	print(n[s:])
+
+ 

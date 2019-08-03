@@ -1,0 +1,73 @@
+# Sanjiv's assignment
+
+Q1.	1) d
+	2) detneirO tcejbO si nohtyP
+	3) Python is Object Oriente
+	4) ' '
+	5) on is Ob
+
+
+Q2.	IndexError: string index out of range
+
+Q3.	yes, we would get an error since 'S' is initialised not 's'
+
+Q4.	a) 6
+	   abc
+	   135
+	
+	b) ['a#b#c#d#']
+	   ['a','b','c','d']
+	   ['a$b$c$d$']
+
+	c) ' '
+
+	d) False
+
+	e) 0,1,2
+
+	f) abcba
+	   0,0,0
+
+Q5.	p=input("Input the string: ")
+	t=p.replace(" ",'')
+	print(t)
+
+
+Q6.	Empty list
+
+
+Q7.	dir(string)
+
+
+Q8.	
+
+
+Q9.	a= '''
+		*****		*     *		_______
+		  *		* * * *		 |	|
+		  *		*  *  *		 o      |
+		  *		*     *	   	/|\	|
+		  *				/ \   	|
+							|		
+						________|  '''
+	print(a)
+
+
+Q10.	p=input("Input the string: ")
+	t=p.replace(" ",'\n')
+	print(t)
+
+
+Q11.	p=input("Input the string: ")
+	t=p.replace(" ",'\n')
+	print(t.upper())
+
+
+Q12.	p=input("Input the string: ")
+	for i in range(len(p)):
+    		if i==(len(p)//2):
+       			print()
+   	print(p[i],end='')
+
+
+		

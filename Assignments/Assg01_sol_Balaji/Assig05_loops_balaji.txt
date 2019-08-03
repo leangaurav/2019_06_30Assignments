@@ -1,0 +1,294 @@
+### 1. WAP to print first n natural numbers (input n from user)
+n1 = int(input("Enter natural number :" ))
+
+while i < n1 :
+    i += 1
+    print (i)
+O/P:	
+Enter natural number :5
+1
+2
+3
+4
+5
+
+### 2. WAP to find sum of first n natural numbers
+
+n3 = int(input("enter number to find sum of natural number : "))
+su = 0
+for i in range(1,n3+1):
+    su = su + i
+print (su) 
+
+
+## i  0 1   2    3
+## su 0 0+1 1+2  3+3
+O/P:
+
+enter number to find sum of natural number : 100
+5050
+
+### 3. WAP to print first n natural numbers in reverse order
+
+n4 = int(input("Enter any natural number to print in reverse order: "))
+i = n4
+while(i > 0):
+    print(i)
+    i -= 1
+ O/P:
+ 
+Enter any natural number to print in reverse order: 5
+5
+4
+3
+2
+1
+
+#### 4. WAP to input a number and print its factorial
+
+n5 = int(input("Enter a number to find its factorial : "))
+ft = 1
+for i in range(1,n5+1):
+    ft = ft * i
+print (ft)
+
+
+## i   0 1 2 
+## ft  0 2 6
+O/P:
+
+Enter a number to find its factorial : 10
+3628800
+
+### 5. WAP to print Fibonacci sequence till n.
+### 0,1,1,2,3,5,8,11,......
+
+n_fb = int(input("Enter number to find fibonacci series :"))
+a = 0
+b = 1
+c = 0
+print(a, end =',')
+print(b, end = ',')
+for i in range(2,n_fb + 1):
+    c = a+b
+    a = b
+    b = c
+    print(c , end =',')
+
+	
+O/P.
+Enter number to find fibonacci series :7
+0,1,1,2,3,5,8,13,
+
+Q.6: WAP to print all digits of a number input from user.
+
+nu1 = int(input("Enter number of digits :"))
+a = []
+for i in range(1,nu1+1):
+    n = input("Enter digits : ")
+    a.append(n)
+enum = ''.join(a)
+print("Entered number is :", enum)
+
+O/P:
+Enter number of digits :2
+Enter digits : 3
+Enter digits : 5
+Entered number is : 35
+
+
+Q.7:WAP to find sum of all digits of a number.
+
+s = 0
+num = input("Enter number to sum :")
+s_l = list(num)
+for i in range(len(s_l)):
+    s = s + int(s_l[i])
+print (s)
+
+O/p:
+Enter number to sum :856
+19
+
+Q.8 #WAP to find sum of following series given n as input from user
+#1!+2!+3!.......n!
+
+n1 = int(input("Enter a number :"))
+ft =1
+su =0
+for i in range(1,n1+1):
+    ft = ft*i
+    su = su + ft
+print(su)
+
+O/P:
+Enter a number :3
+9
+
+## 9. WAP to input base and exponent and print result without using inbuilt function pow(use for or while loop).
+
+b = int(input("Enter base number :"))
+e = int(input("Enter exponent number : "))
+res = 1
+for i in range(1,e+1):
+    res = res * b
+print(res)
+
+O/P:
+Enter base number :3
+Enter exponent number : 2
+9
+
+## 10.(i) Print following  patterns:
+for j in range(1,6):
+    print('*'*j)
+	
+O/P
+*
+**
+***
+****
+*****
+
+## 10.(ii) Print following  patterns:
+
+for j in range(5,0,-1):
+    print('*'*j)
+	
+O/P:
+*****
+****
+***
+**
+*
+
+
+## 10.(iii) Print following  patterns:
+
+for i in range(5):
+    for j in range(5-i):
+        print(' ',end = '')
+    for j in range(i+1):
+        print('*',end = '')
+    print()
+	
+	
+O/p:
+     *
+    **
+   ***
+  ****
+ *****
+
+ ## 10.(iv) Print following  patterns:
+
+for i in range(5):
+    for j in range(5-i):
+        print(' ',end = '')
+    for j in range(i+1):
+        print('* ',end = '')
+    print()
+	
+O/p:
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+
+ 
+## 11.(i) Print following number patterns:
+
+for i in range(1,6):
+    for j in range(i):
+        print(i, end = '')
+    print()
+	
+O/P:
+1
+22
+333
+4444
+55555
+
+## 11.(ii) Print following number patterns:
+
+for i in range(1,6):
+    for j in range(i):
+        print(j+1, end = '')
+    print()
+
+O/P
+1
+12
+123
+1234
+12345
+
+## 11.(iii) Print following number patterns:
+
+for i in range(5,0,-1):
+    for j in range(6-i):
+        print(i,end="")
+    print()
+	
+O/P
+
+5
+44
+333
+2222
+11111
+
+##12 (i) Print following character patterns:
+for i in range(65,71):
+    for j in range(65,i):
+        print(chr(j),end="")
+    print()
+	
+O/P:
+A
+AB
+ABC
+ABCD
+ABCDE
+
+
+##12 (ii) Print following character patterns:
+s=64
+for i in range(1,6):
+    for j in range(s,s+i):
+        print(chr(j+i),end="")
+    print()
+	
+O/P:
+A
+BC
+CDE
+DEFG
+EFGHI
+
+
+##12 (iii) Print following character patterns:
+
+for i in range(65,70):
+    for j in range(64,i):
+        print(chr(i),end="")
+    print()
+	
+O/P:
+
+A
+BB
+CCC
+DDDD
+EEEEE
+
+
+##12 (iv) Print following character patterns:
+
+Confusing not done
+
+
+
+    

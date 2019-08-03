@@ -1,0 +1,92 @@
+Q1.
+
+d={}
+for i in range(1,6):
+    d[i]=-i
+print(d)    
+
+i=1
+d={}
+while (i<6):
+    d[i]=-i
+    i+=1
+print(d)    
+
+Q2. 
+
+d={1:2,2:3}
+
+d={(1,2),(2,3)}
+
+d={'a':'A','b':1,'c':[1234]}
+
+d=dict([(1,2),(2,3)])
+
+d=dict(((1,2),(2,3)))
+
+d=dict(x=2,y=3)
+
+Q3.
+
+l1 = [1,2,3,4]
+l2 = [10,20,30,40]
+d=dict(zip(l1,l2))
+print(d)
+
+Q4.
+
+d={}
+for i in range(65,91):
+    d[chr(i)]=i
+print(d)
+
+Q5.
+
+d={0:'zero',1:'one',2:'two',3:'three'}
+num=int(input('enter a number: '))
+print('%d in word format is %s' %(num,d[num]))
+print('keys : ', d.keys())
+print('values: ',d.values())
+print('items: ',d.items())
+
+Q6.
+
+{'A': 'Apple', 'B': 'Ball', 'C': 'Cat', 'D': 'Dog'}
+
+{'A': 'Apple', 'C': 'Cat'}
+
+Q7.
+
+s=input()
+d={}
+for c in s.lower():
+    if c in ('a','e','i','o','u'):
+        d[c]=d[c]+1 if c in d else 1
+print(d)          
+for i in sorted(d):
+    print(i,':',d[i])
+
+
+Q8.
+	
+s=input()
+d={}
+for c in s.lower():
+    if c.isalpha():
+        d[c]=d[c]+1 if c in d  else 1
+print(d)   
+for i in sorted(d):
+    print(i,':',d[i])
+
+Q9.
+
+s='count the words in the sentence in ,. '
+l=s.split()
+d={}
+for data in l:
+    if data.isalpha():
+        d[data]=d[data]+1 if data in d  else 1
+for i in d:
+    print(i,':',d[i])	
+	
+	

@@ -1,0 +1,133 @@
+# Sanjiv's Assignment
+
+Q1.	def swap_str(a,b):
+		temp=a
+		a=b
+		b=temp
+
+	s1=input("Enter the string: ")
+	s2=input("Enter the string: ")
+	swap_str()
+
+
+Q2.	import random
+	n1=random.randint(0,26)
+	n2=random.randint(0,26)
+	n3=random.randint(0,26)
+	n4=random.randint(0,26)
+	print("avg=",(n1+n2+n3+n4)/4)	
+
+
+Q3.	import string, random
+	s=string.ascii_letters
+	p=random.randrange(len(s))
+	print(s[p])
+
+
+Q4.	def get_si():
+		p=int(input("Enter the principal: "))
+		r=int(input("Enter the rate: "))
+		t=int(input("Enter the time: "))
+		si=(p*r*t)/100
+		return si
+
+Q5.	def get_amount(p,r=10,t=1):
+		get_si()
+
+
+Q6.	def get_ci():
+		p=int(input("Enter the principal: "))
+		r=int(input("Enter the rate: "))
+		t=int(input("Enter the time: "))
+		ci= p*((1+(r/100))**t)
+		return ci
+
+Q7.	def get_q_r(a,b):
+		p=(a/b,a%b)
+		return p
+
+	n1=int(input("Enter the num: "))
+	n2=int(input("Enter the num: "))
+	get_q_r(n1,n2)	
+
+
+Q8.	impot math
+	def len_hyp(b,h):
+		hy=math.sqrt(b**2+h**2)
+		return hy
+
+	h=input("Enter the height: ")
+	b=input("Enter the base: ")
+	len_hyp(b,h)
+
+
+Q9.	t = int(input("Input time in seconds: "))
+	day = t // (24 * 3600) 
+	t = t % (24 * 3600)
+	hour = t // 3600
+	t %= 3600
+	minutes = t // 60
+	t %= 60
+	seconds = t
+	a="{}day {}hour {}minutes {}seconds".format(day,hour, minutes,seconds)
+	print(a)
+	
+
+Q10.	python
+
+Q11.	2 -2
+
+Q12.	None
+
+Q13.	r=input("Enter the real part: ")
+	i=input("Enter the imaginary part: ")
+	print("re:{} im:{}".format(r,i))
+
+Q14.	def input_complex():
+		p=()
+		r=input("Enter the real part: ")
+		i=input("Enter the imaginary part: ")
+		p.append(r)
+		p.append(i)
+		return p
+
+	def print_complex(r,i):
+		print("re:{} im:{}".format(r,i))
+
+Q15.	def add(re1,im1,re2,im2):
+		p=()
+		r_tot=re1+re2
+		i_tot=im1+im2
+		p.append(r_tot)
+		p.append(i_tot)
+		return p
+
+	def sub(re1,im1,re2,im2):
+		p=()
+		r_tot=re1-re2
+		i_tot=im1-im2
+		p.append(r_tot)
+		p.append(i_tot)
+		return p
+
+
+Q16.	def conj(re,im):
+		p=()
+		p.append(re)
+		im=0-im
+		p.append(im)
+		return p
+
+	def mul(re1,im1,re2,im2):
+		prod= re1*re2 +re1*im2 +im1*re2 +im1*im2
+		return prod
+
+	def div(re1,im1,re2,im2):	
+		divi=(re1+im1)/(re2+im2)
+		return divi
+
+
+
+		
+			
+		

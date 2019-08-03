@@ -1,0 +1,9 @@
+import re
+def pattern_find(str):
+    
+    pattern = re.sub(r".,", " ", str)
+    print(pattern.split())
+
+    
+str = "this is a string to.,practice"
+print(pattern_find(str))

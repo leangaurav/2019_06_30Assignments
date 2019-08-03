@@ -1,0 +1,78 @@
+Q1.
+
+'d'
+
+'detneirO tcejbO si nohtyP'
+
+'Python is Object Oriente'
+
+'on is '
+
+Q2.
+
+IndexError: string index out of range
+
+Q3.
+
+NameError: name 's' is not defined
+
+Q4.
+
+6
+abc
+3
+
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+av
+False
+0, 1, 2
+abcba
+0 ,0 ,0 ,
+
+Q5.
+
+s=input("enter a string")
+s.replace(' ','')
+
+
+Q6.
+
+Empty list
+
+Q7.
+
+dir(str)
+
+Q8.
+
+l=dir(str)
+print(' '.join(l))
+
+Q9.
+
+'rstrip' in dir(str)
+
+
+Q10.
+
+
+
+Q11.
+
+
+Q12.
+
+s='dg balu'
+l=s.split(' ')
+print('Firstname:',l[0]+' Lastname:',l[1])
+print(l[1][::-1],l[0][::-1])
+
+
+Q13.
+
+from math import ceil
+s='strings'
+print(s[:int(len(s)/2)],s[int(ceil(len(s)/2)):])
