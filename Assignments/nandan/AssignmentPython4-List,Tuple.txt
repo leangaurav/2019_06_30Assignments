@@ -1,0 +1,207 @@
+1. Convert a Tuple t = (1,2,3,4,5) to a list
+
+t = (1,2,3,4,5)
+l =list(t)
+print(l, type(l))
+
+[1, 2, 3, 4, 5] <class 'list'>
+
+2. WAP to join a list and a tuple
+
+l = [1,3,5,7]
+tups = (8,6,4,2)
+l.extend(tups)
+print (l)
+
+[1, 3, 5, 7, 8, 6, 4, 2]
+
+## 3. What is difference between list and tuple.
+
+List is mutable 
+Tuple is immutable
+
+4. Print the list in reverse order
+
+l = ['a', 'e', 'i', 'o', 'u']
+l.reverse()
+print(l)
+
+
+['u', 'o', 'i', 'e', 'a']
+
+5. Print Elements at Odd indexes from a list (Do not use loop)
+
+l = [10,11,20, 21,30, 31, 40, 41]
+ 
+print(l[1::2])
+
+for i in range (1,len(l),2) :
+    print (l[i] , end=',')
+
+
+[11, 21, 31, 41]
+11,21,31,41,
+
+6. How many ways you can copy a list
+Four ways : 
+
+n=[1,2,3,4]
+
+x = n[:]
+print(x)
+
+y=n.copy()
+print(y)
+
+z=list(n)
+print(n)
+
+n=[1,2,3,4]
+
+m = n [::]
+print(m, type(m))
+
+
+
+[1, 2, 3, 4]
+[1, 2, 3, 4]
+[1, 2, 3, 4]
+
+[1, 2, 3, 4] <class 'list'>
+==================================================
+
+7. Predict output
+
+n_list = ['Happy',[2,0,1,5]]
+print(n_list[0][1])
+print(n_list[1][3])
+
+a
+5
+
+8. Predict output
+
+odd = [2,4,6,8]
+odd[0] =1
+print(odd)
+odd[1:4] = [3,5,7]
+print (odd)
+
+[1, 4, 6, 8]
+[1, 3, 5, 7]
+
+9. Predict output
+
+odd = [1,3,5]
+odd.append([7,9])
+print(odd)
+odd.extend([11,13])
+print(odd)
+
+[1, 3, 5, [7, 9]]
+[1, 3, 5, [7, 9], 11, 13]
+
+10. Predict output
+
+x =1,2,3
+print(type(x))
+x = (1)
+print(type(x))
+x =1
+print(type(x))
+x =1,
+print(type(x))
+
+<class 'tuple'>
+<class 'int'>
+<class 'int'>
+<class 'tuple'>
+
+11. Try to represent a matrix with following data in python:
+
+a= [[1,2,3]]
+b=[[4,5,6]]
+c=[[7,8,9]]
+print(a)
+print(b)
+print(c)
+
+[[1, 2, 3]]
+[[4, 5, 6]]
+[[7, 8, 9]]
+
+import numpy as np
+a = np.array([[1, 2, 3],[4,5,6],[7,8,9]])
+print(a)            
+print(type(a)) 
+
+12  Predict output
+
+Here t2 is not defind
+
+13. Predict output
+
+t = tuple('string')
+print(t)
+print(t[: : -1])
+print(t[: : 2][: : -2] )
+
+('s', 't', 'r', 'i', 'n', 'g')
+('g', 'n', 'i', 'r', 't', 's')
+('n', 's')
+
+14. Predict output
+
+t3  = tuple ([10,20,30,40,50,60])
+print (60 in t3)
+print ('60' in t3)
+print (int (10 in t3)) 
+print (int (1 in t3)) 
+
+
+True
+False
+1
+0
+
+15. Write a program to input a string and print if it is palindrome or not
+
+t1 = input("Enter a string : ")
+n =["Not Palindrome","Palindrome"]
+print(n[t1==t1[::-1]])
+
+Enter a string : xyx
+Palindrome
+
+16. Use the range method and create a tuple containing the following values: (20, 15, 10, 5)
+
+l= range (5,25,5)
+tup = tuple(l)
+print(tup, type(tup))
+
+(5, 10, 15, 20) <class 'tuple'>
+
+17. WAP to convert string to list of characters.
+
+name = input("Enter a string:")
+x =list(name)
+print( x, type(x))
+
+Enter a string:Nandan
+['N', 'a', 'n', 'd', 'a', 'n'] <class 'list'>
+
+18. What is the return type of:
+
+print(type('1 2'.split()))  # <class 'list>'
+print(type([1,2,3].sort())) # <class 'None>'
+print(type('abc'.upper() )) # class 'str' 
+print(type ( 1 in [1,2]))  # <class 'bool' >
+
+
+<class 'list'>
+<class 'NoneType'>
+<class 'str'>
+<class 'bool'>
+
+===================================================================
+
