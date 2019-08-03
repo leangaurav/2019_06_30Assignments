@@ -1,0 +1,161 @@
+# Sanjiv's_Assignment
+
+Q1.	n1=int(input(" Enter num 1: "))
+	n2=int(input(" Enter num 2: "))
+	if n1%n2==0:
+		print("True")
+	else:
+		print("False")
+
+
+Q2.	flag=0
+	s=input("Enter string: ").upper()
+	for i in range(len(s)//2):
+    		if s[i]==s[len(s)-1-i]:
+        		flag=1
+	if flag==1:
+    		print("Pallindrome")
+	else:
+    		print("not")
+
+
+Q3.	n1=int(input(" Enter side 1: "))
+	n2=int(input(" Enter side 2: "))
+	n3=int(input(" Enter side 3: "))
+	if n1==n2==n3:
+    		print("Equilateral")
+	if (n1==n2 and (n1!=n3 or n2!=n3)) or (n2==n3 and (n1!=n2 or n1!=n3)) or (n1==n3 and (n2!=n1 or n2!=n3)) :
+    		print("Isosceles")
+	if n1!=n2 and n2!=n3 and n3!=n1:
+    		print("Scalene")
+
+
+Q4.	p=int(input("Enter a num: "))
+	if p%2:
+    		print("Odd")
+	else:
+    		print("Even")
+
+
+Q5.	age=int(input("Enter age: "))
+	if 0<=age<=12:
+    		print("Child")
+	elif 13<=age<=17:
+    		print("Teen")
+	elif 18<=age<=50:
+    		print("Adult")
+	elif 51<=age<=100:
+   		print("Senior Citizen")
+	else:
+    		print("Congratulations")
+
+
+Q6.	import calendar
+	year=int(input("Enter year"))
+	if year<0 or len(year)!=4:
+    		print("Enter a valid string")
+	if calendar.isleap(year)==True:
+    		print("Leap year")
+	else:
+    		print("Not a leap year")
+
+
+Q7.	s=input(" Enter string: ")
+	if len(s)%2==0:
+    		print(s.lower())
+	else:
+   		print(s.upper())
+
+
+Q8.	s=input("Enter the string: ").upper()
+	if "EGG" in s:
+    		print("Non-Veg")
+	else:
+    		print("Veg")
+
+
+Q9.	1> True
+	2> True
+	3> Weird !!
+	4> [4,3,2,1]
+
+
+Q10.	grade=list(input().rstrip().split())
+	s=0
+	for i in grade:
+    		s+=int(i)
+	p=s/500*100
+	if 90<=p<=100:
+    		print("grade A")
+	elif 80<=p<=89:
+    		print("grade B")
+	elif 60<=p<=79:
+    		print("grade C")
+	else:
+    		print("grade F")
+
+
+Q11.	age=int(input("age: "))
+	salary=int(input("salary: "))
+	if age<60 and 0<=salary<=250000:
+    		print("Tax=0")
+	elif age>=60 and 0<=salary<=250000:
+    		print("Tax=0")
+    
+	if age<60 and 250001<=salary<=500000:
+    		print("Tax=",(salary*5/100)
+	elif age>=60 and 0<=salary<=500000:
+    		print("Tax=",salary*3/100)
+          
+	if age<60 and 500001<=salary<=1000000:
+    		print("Tax=",salary*10/100)
+	elif age>=60 and 500001<=salary<=1000000:
+    		print("Tax=",salary*8/100)
+          
+	if age<60 and salary<1000001:
+    		print("Tax=",salary*15/100)
+	elif age>=60 and salary>1000001:
+    		print("Tax=",salary*12/100)
+
+
+Q12.	10
+	10
+	10
+	OMG
+
+
+Q13.	def bmi(w,h):
+		bmi=w/(h**2)
+		if bmi<18.5:
+			print("underweight")
+		elif bmi==18.5:
+			print("Normal")
+		elif 18.5<bmi<=25:
+			print("Overweight")
+		else:
+			print("Obese")
+	weight=int(input())
+	height=int(input())
+	bmi(weight,height)
+
+
+
+Q14.	age=input().strip().split()
+	print("Oldest: ", max(age))
+	print("Youngest: ", min(age))
+
+
+
+Q15.	num=int(input("enter num "))
+	if num%5==0 and num%7==0:
+		print("Yes")
+	else:
+		print("No")	
+
+
+		
+		
+	
+
+    	
+	
