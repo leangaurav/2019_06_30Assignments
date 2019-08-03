@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Q.1 WAP to input temp in F and print in Celsius 
 
 fh = float(input('Enter F :'))
@@ -154,3 +155,161 @@ enter marks of subject5 : 80
 
 
 
+=======
+Q.1 WAP to input temp in F and print in Celsius 
+
+fh = float(input('Enter F :'))
+
+celsius = (fh - 32)*5/9
+print ('Celsius:', celsius)
+====================================================
+Q.2. Write a program to input a number and print its square and cube
+
+n= int(input('Enter a Number'))
+
+def square (n):
+    return n*n
+def cube (n):
+    return n*n*n
+
+print("Square of number",n,"is:",square(n))
+print("Cube of number",n,"is:",cube(n))
+
+
+Enter a Number4
+Square of number 4 is: 16
+Cube of number 4 is: 64
+====================================================
+
+3. WAP to input a number N and a number M and print the result of (N pow 2 + M pow 2)
+
+N= int(input('enter first no : '))
+M= int(input('enter second no : '))
+print( (N**2)+(M**2) )
+
+enter first no : 2
+enter second no : 3
+13
+
+4.WAP to input a numbers M and N and print result of N Pow of M (use both ** and pow)
+
+M= int(input('enter first no : '))
+N= int(input('enter second no : '))
+print( M**N )
+pow( M , N )
+
+enter first no : 2
+enter second no : 3
+8
+
+8
+
+5. Write a simple interest calculator
+
+P= int(input('Enter Principal : '))
+T= int(input('Enter Time : '))
+R= int(input('Enter Rate Percentage : '))
+SI= (P*T*R)/100
+print(SI)
+
+Enter Principal : 10000
+Enter Time : 3
+Enter Rate Percentage : 10
+3000.0
+
+6. Input Principal, Rate, Time and print Compound Interest and Amount
+
+P= int(input('Enter Principal : '))
+T= int(input('Enter Time : '))
+r= int(input('Enter Rate Percentage : '))
+SI= (P*T*r)/100
+CI= (P * (1 + r/100 )**T - P )
+print(CI)
+print(SI)
+
+Enter Principal : 10000
+Enter Time : 2
+Enter Rate Percentage : 10
+2100.000000000002
+2000.0
+
+7. WAP to print sum of first n natural numbers. (n needs to be taken as input)
+
+n= int(input('Enter a Natural No : '))
+sum= n * (n + 1)/2
+print(sum)
+
+Enter a Natural No : 5
+15.0
+
+8. WAP to input 2 numbers and swap them. (write using both normal logic with temp variable and also the pythonic way)
+
+M= int(input('enter first no : '))
+N= int(input('enter second no : '))
+M,N= N,M
+print(M)
+print(N)
+
+enter first no : 5
+enter second no : 6
+6
+5
+
+9. WAP to print ascii value of all white-space characters present in python
+
+Couldn't get it .
+
+10. Input a single character and print its ascii values
+
+s= input('enter a character : ') 
+print(' Ascii Value ', ord(s))
+enter a character : a
+ Ascii Value  97
+
+11. WAP that takes area of a circle and gives back the radius and circumference
+
+import math
+Area= int(input('Enter Area: '))
+r = (math.sqrt(Area/3.141))
+print(r)
+C= (2 * 22/7 * r)
+print(C)
+
+Enter Area: 154
+7.00206909885034
+44.013005764202134
+
+12. We need to input marks in 5 subjects out of 100 and print percentage
+
+s1= int(input('enter marks of subject1 : '))
+s2= int(input('enter marks of subject2 : '))
+s3= int(input('enter marks of subject3 : '))
+s4= int(input('enter marks of subject4 : '))
+s5= int(input('enter marks of subject5 : '))
+percentage= ((s1+s2+s3+s4+s5)/500 *100) 
+print(percentage)
+
+enter marks of subject1 : 95
+enter marks of subject2 : 90
+enter marks of subject3 : 94
+enter marks of subject4 : 85
+enter marks of subject5 : 80
+88.8
+
+    © 2019 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
+
+
+
+>>>>>>> cf5d0012d047d357f829d96b19781599f54cb2fe

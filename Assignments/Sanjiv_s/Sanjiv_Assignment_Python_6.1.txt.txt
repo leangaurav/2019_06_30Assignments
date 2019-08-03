@@ -1,0 +1,104 @@
+# Sanjiv's Assignment
+
+Q1.	str=list(input("Enter string: "))
+	for i in str:
+    		print(i)
+
+
+Q2.	str=list(input("Enter string: "))
+	for i in str:
+    		print(ord(i))
+
+
+
+Q3.	def sum_odd(l):
+    		lis=[]
+    		s=0
+    		for i in l:
+        		for n in range(0,i%2):
+            			lis.append(i)
+            			s+=i
+    		print(lis)
+    		print(s)
+	sum_odd([2,6,4,11,3])
+    
+
+
+Q4.	arr=tuple(input().strip().split())
+	n=input("Enter element: ")
+	print(arr.index(n))
+
+
+Q5.	import random
+	arr=[]
+	s=0
+	for i in range(11):
+    		arr.append(random.randint(1,100))
+	print(arr)
+	for i in arr:
+    		s+=i
+	print(s)
+	print(s/len(arr))
+
+
+Q6.	arr=[]
+	for i in range(11):
+    		n=int(input("Enter num: "))
+    		arr.append(n)
+	print(arr)
+	s=0
+	for j in arr:
+    		s+=j
+	print(s)	
+
+
+Q7.	n=int(input("enter number: "))
+	for i in range(1,11):
+    		print("7 x",i,"=",7*i)
+
+
+
+Q8.	c=0
+	st=input("Enter string: ")
+	for i in st:
+    		if i==' ':
+       		c+=0
+	print(c)
+
+
+
+Q9.	st=input("Enter string: ").upper()
+	c=0
+	for i in st:
+    		if i=="A" or i=='E' or i=='I' or i=='O' or i=='U':
+        		c+=1
+	print(c)
+
+
+Q10.	st=list(input("Enter string: ").upper())
+	for i in range(len(st)):
+    		if st[i]=="A" or st[i]=='E' or st[i]=='I' or st[i]=='O' or st[i]=='U':
+        		st[i]="_"
+	print("".join(st))
+
+
+
+
+Q11.	0				0
+	Loop Ends			Loop Ends
+
+
+
+Q12.	*************************		122333444455555
+
+
+	*					
+	**
+	***					********************
+	****
+	*****	
+
+
+
+	
+    
