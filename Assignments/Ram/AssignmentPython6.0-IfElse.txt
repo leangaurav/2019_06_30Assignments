@@ -1,0 +1,173 @@
+Q1.
+
+n1=int(input("enter a number: "))
+n2=int(input("enter second number: "))
+if (n1%n2==0):
+    print("True")
+else:
+    print("False")
+	
+Q2.
+
+s=input("enter a string: ")
+if(s.lower()==s[::-1].lower()):
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+Q3.
+
+s1=input("enter side 1: ")
+s2=input("enter side 2: ")
+s3=input("enter side 3: ")
+if(s1==s2==s3):
+    print("Equilateral triangle")
+elif(s1==s2 or s1==s3 or s2==s3):
+    print("Isosceles triangle")
+else:
+    print("scalene")
+    
+Q4.
+
+n=int(input("enter a number: "))
+if(n%2==0): 
+    print("even")
+else:
+    print("odd")
+
+Q5.
+
+age=int(input("enter the age: "))
+if (0 < age <= 12):
+    print("Child")
+elif(13 <= age <= 17 ):  
+    print("Teen")
+elif(18 <= age <= 50 ):  
+    print("Adult")
+elif(51 <= age <= 100 ):  
+    print("Senior citizen")
+elif(age > 101):  
+    print("Congrats ")    
+
+Q6.
+
+yr=int(input("enter the year: "))
+if(yr<0 or len(str(yr)) != 4):
+    print("Not a valid year")
+elif(yr%4==0 ):
+    if (yr%100==0):
+        if(yr%400==0):
+            print("Its leap year")
+        else:
+            print("Not a leap year")
+    else:
+          print("its a leap year")
+else:
+    print("Not a leap year")        
+        
+Q7.
+
+s=input("Enter a string: ")
+if(len(s)%2!=0):
+    print(s.upper())
+else:
+    print(s.lower())
+
+Q8.
+
+food=input("Enter a dish: ")
+print(food.lower().find('egg'))
+if (food.lower().find('egg')==-1):
+    print('veg')
+else:
+    print('non veg')
+
+Q9.
+
+True
+
+True
+
+Weird
+
+[4, 3, 2, 1]
+
+Q10.
+
+m=int(input("enter marks: "))
+if ( 90<=m<=100 ):
+    print("Grade-A")
+if ( 80<=m<=89 ):
+    print("Grade-B")
+if ( 60<=m<=79 ):
+    print("Grade-C")
+if ( m<60 ):
+    print("Grade-F")    
+
+Q11.
+
+age=int(input("enter age: "))
+sal=int(input("enter sal: "))
+if (age<60):
+    if (0<=sal<=250000):
+        print("Your tax rate is 0%-0")
+    elif (250001<=sal<=500000):
+        print("Your tax rate is 5%-",.05*sal)    
+    elif (500001<=sal<=1000000):
+        print("Your tax rate is 10%-",0.1*sal)
+    elif (sal>1000000):
+        print("Your tax rate is 15%-0",0.15*sal)
+else:
+    if (0<=sal<=250000):
+        print("Your tax rate is 0%-0")
+    elif (250001<=sal<=500000):
+        print("Your tax rate is 3%-",.03*sal)    
+    elif (500001<=sal<=1000000):
+        print("Your tax rate is 8%-",0.08*sal)
+    elif (sal>1000000):
+        print("Your tax rate is 12%-0",0.12*sal)        	
+		
+		
+Q12.
+
+10
+10
+10
+
+Q13.
+
+def bmi(wt,ht):
+    bmi=(wt/(ht/100*ht/100))
+    print(bmi)
+    if (bmi<18.5):
+        bmi_result='under weight'
+    elif (18.5<bmi<25):
+        bmi_result='Normal'
+    elif (25<bmi<30):
+        bmi_result='Over weight'
+    elif (bmi>30):
+        bmi_result='Obese'
+    return bmi_result
+print(bmi(80,174))
+
+Q14.
+
+p1=int(input("enter the age of first person"))
+p2=int(input("enter the age of second person"))
+p3=int(input("enter the age of third person"))
+youngest=oldest=p1
+if(p2>oldest):
+    oldest=p2
+elif(p2<youngest):
+    youngest=p2
+if(p3>oldest):
+    oldest=p3
+elif(p3<youngest):
+    youngest=p3
+print("Youngest is ", youngest )
+print("Oldest is ", oldest)
+
+Q15.
+
+n=int(input("enter a number"))
+print("this number is divisible by both 5 and 7") if (n%5==0 and n%7==0) else print("number is not divisible by both 5 and 7")		

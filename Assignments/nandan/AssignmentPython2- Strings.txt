@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1. Guess output of each slice:
 
 s= 'Python is Object Oriented' 
@@ -202,3 +203,209 @@ zon
 
 ​
 
+=======
+1. Guess output of each slice:
+
+s= 'Python is Object Oriented' 
+print(s[-1])
+print(s[::-1])
+print(s[:-1])
+print(s[1:1])
+print(s[4:10])
+
+d
+detneirO tcejbO si nohtyP
+Python is Object Oriente
+
+on is 
+
+2.What error do you see for following statements:
+
+s= ''
+print(s[1])
+
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+<ipython-input-6-1d0d5b971d35> in <module>
+      1 s= ''
+----> 2 print(s[1])
+
+IndexError: string index out of range
+
+3. Do you get any error for the following code, if not give the output:
+
+S='Gaurav'
+print(S[1])
+
+a
+
+4. Find output of the following:
+
+a)
+s='a b cd'
+print(len(s))
+print(s[::2])
+print(len(s[::2]))
+
+6
+abc
+3
+
+b)
+s='a#b#c#d#'
+print(s.split())
+print(s.split('#'))
+l=s.split('#')
+s='$'.join(l)
+print(s)
+
+
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+
+c)
+S='Gaurav'
+S=S[::-2][::-2]
+print(S)
+
+av
+
+d)
+print(1>2)
+False
+
+e)
+print(4%2, 5%2, 2%5, sep=',')
+
+0,1,2
+
+f)
+s='abcba'
+s.upper()
+print(s)
+print(s.count('A'), end = ',')
+print(s.count('A', 2,4) , end = ',')
+print(s.count('a', 2,4) , end = ',')
+
+abcba
+0,0,0,
+
+5. WAP to input a string and remove all spaces from it.
+
+s = input("Enter the string separated by space:")
+s = s.split()
+print (s)
+s = ''.join(s)
+print (s)
+
+
+Enter the string separated by space:Nandan Kumar
+['Nandan', 'Kumar']
+NandanKumar
+
+6. What does this symbol denote:
+
+[]
+
+This is List
+
+[]
+
+7. WAP to print all methods(functions/operations) available in a string (Hint : dir())
+
+print(dir(str))
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+
+8. Write statement to check if rstrip method is available in the str class.
+
+a=dir(str)
+print('rstrip' in a)
+
+True
+
+9. WAP to store the following patterns in a string variable and then print them:
+
+s1 = '*****'
+s2 = '  *  '
+
+print (s1,s2,s2,s2,s2, sep = '\n')
+
+s1 = '*     *'
+s2 = '* * * *'
+s3 = '*  *  *'
+s4 = '*     *'
+print (s1,s2,s3,s4, sep = '\n')
+
+
+s1 ='_______'
+s2 =' |     |'
+s3 =' O     |'
+s4 ='/|\    |'
+s5 ='/ \    |'
+s6 ='       |'
+
+print (s1,s2,s3,s4,s5,s6,s1, sep = '\n')
+
+
+*****
+  *  
+  *  
+  *  
+  *  
+*     *
+* * * *
+*  *  *
+*     *
+_______
+ |     |
+ O     |
+/|\    |
+/ \    |
+       |
+_______
+
+
+10. WAP to input a string and replace all space with new lines (\n) and print again.
+
+s = input("Enter a String : ")
+s = s.replace(' ', '\n')
+print (s)
+
+Enter a String : Nandan Kumar
+Nandan
+Kumar
+
+
+11. WAP to input complete name(first and last name separated by space) and print first
+and last name separately along with their length in upper case.
+
+s = input("Enter a String : ")
+l=s.upper()
+print (l)
+l=l.split(' ')
+print(l[0], len(l[0]))
+print(l[1], len(l[1]))
+
+
+Enter a String : nandan kumar
+NANDAN KUMAR
+NANDAN 6
+KUMAR 5
+
+12. WAP to input a string and split it into 2 halves. The string can be of any length:
+
+s = input("Enter a String : ")
+a = len(s)//2
+print  (s[:a])
+print (s[a:])
+
+
+Enter a String : Amazon
+Ama
+zon
+
+​
+
+>>>>>>> cf5d0012d047d357f829d96b19781599f54cb2fe

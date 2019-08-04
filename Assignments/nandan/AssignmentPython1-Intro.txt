@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Q.1.
 
 s1='Gaurav'
@@ -147,3 +148,154 @@ __main__
 builtins
 int
 =====================================================
+=======
+Q.1.
+
+s1='Gaurav'
+s2='tuteur.py@gmail.com'
+print (len(s1), len(s2))
+
+6 19
+
+Q.2 : WAP to input a string and print its length 
+
+s = str(input("Enter a string :"))
+print ("Length :",len(s))
+
+Q3: WAP to enter 2 numbers and print their sum and difference
+
+def sum(n1,n2):
+    return n1+n2
+
+def diff (n1,n2):
+    return n1-n2 
+
+n1 = int(input("Enter number 1:\n")) # input type converted as interger
+n2 = int(input("Enter number 2:\n")) # input type converted as interger
+
+print("Sum of ",n1,"and", n2 ,"is :" , sum(n1,n2) )
+print ("Difference of", n1,"and" , n2, "is :",diff(n1,n2) )
+
+Q4 :
+
+s1='ab'
+s2='de'
+s3=s1+s2
+print(s3)
+
+abde
+
+Q5 : Same as 4 
+
+=====================================================
+Q6:
+
+s1='ab'*4
+print(s1)
+
+abababab ( 4 times ab)
+=====================================================
+Q7:
+
+s1='ab\n'*4
+print(s1)
+
+
+ab
+ab
+ab
+ab
+Newline will be added and then multiplied with 4
+ab 4 times in 4 newlines
+=====================================================
+Q.8
+WAP to input a string s and number n .
+Print the string n times on the screen , each should appear in a separate line 
+
+num = int(input("Enter a number :\n")) # input type converted as interger
+s = str(input("Enter string:\n"))
+print ((s+"\n")*num)
+
+=====================================================
+Q.9
+res=print('Gaurav')
+print(res)
+
+Gaurav
+None
+=====================================================
+Q.10
+res=len('tuteur.py@gmail.com')
+print (type(res))
+
+
+<class 'int'>
+=====================================================
+Q.11
+
+s1='Gaurav'
+s2='tuteur.py@gmail.com'
+
+s3=s1+'\n'+s2 
+
+print (s3)
+print(len (s3))
+
+
+Gaurav
+tuteur.py@gmail.com
+26
+=====================================================
+Q12 : math.sqrt() for finding square root.
+
+Q.13 
+import math
+num = int(input("Enter a number :\n")) # input type converted as interger
+
+print (int(math.sqrt(num)))
+=====================================================
+Q.14 WAP to input 4 numbers from user and print their average 
+
+def avg(n1,n2,n3,n4):
+    return (n1+n2+n3+n4)/4
+
+num1 = int(input("Enter number 1:\n"))
+num2 = int(input("Enter number 2:\n"))
+num3 = int(input("Enter number 3:\n"))
+num4 = int(input("Enter number 4:\n"))
+
+print ("Average of four numbers is:", avg(num1,num2,num3,num4))
+=====================================================
+
+Q.15 : 
+help(abs)
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+
+x=10.4
+print(abs(x))
+=====================================================
+Q.16
+>>> print(__name__)
+__main__
+
+Q.17
+C:\Users\i504610\OneDrive - SAP SE\Python_ws>python example.py
+__main__
+
+Q18  No
+
+Q.19
+
+print (__name__)
+print(__builtins__.__name__)
+print(int.__name__)
+
+
+__main__
+builtins
+int
+=====================================================
+>>>>>>> 1b098d1d481bbe1dc8064be9bb5f5a1e9a187c78
