@@ -120,13 +120,12 @@
 			for j in range(count,count+i):
 				print(chr(j+i),end="")
 			print()
-			
+	
 	c)
 		for i in range(65,70):
 		for j in range(64,i):
 			print(chr(i),end="")
 		print()
-		
 	d)
 		k=1
 		for i in range(65,71):
