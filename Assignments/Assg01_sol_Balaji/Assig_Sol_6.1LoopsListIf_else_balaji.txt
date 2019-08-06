@@ -1,0 +1,350 @@
+
+
+### AssignmentPython6.1Loops List, If-else
+
+
+## 1. WAP to input a string and print individual characters in the string using for loop.
+
+st1 = input("Enter a string : ")
+for c in st1:
+    print(c)
+
+o/p:
+Enter a string : LearBay
+L
+e
+a
+r
+B
+a
+y
+
+
+
+
+## 2. WAP to input a string and print the ASCII value of each character in the string.
+
+st1 = input("Enter a string : ")
+for c in st1:
+    print("Character is ",c, "ASCII value of character is ",ord(c))
+
+
+o/p;
+Enter a string : chaRacter
+Character is  c ASCII value of character is  99
+Character is  h ASCII value of character is  104
+Character is  a ASCII value of character is  97
+Character is  R ASCII value of character is  82
+Character is  a ASCII value of character is  97
+Character is  c ASCII value of character is  99
+Character is  t ASCII value of character is  116
+Character is  e ASCII value of character is  101
+Character is  r ASCII value of character is  114
+
+
+## 3. Write a function that takes a list of numbers from user as argument and returns the sum of only
+## odd numbers (Use only for loop. No need to use if statement).
+
+def list_of_num():
+    n = int(input("Enter how many numbers :"))
+    a1 = []
+    for i in range(1,n+1):
+        print("Enter number :", i)
+        b = int(input())
+        a1.append(b)
+    return a1
+num_list = list_of_num()
+
+sum_odd = []
+for val in num_list:
+    for i in range(0,val%2 != 0):
+        sum_odd.append(val)
+        ad = sum(sum_odd)
+print(sum_odd)
+print("Entered list of numbers :", num_list)
+print("List of odd number is :", sum_odd)
+print("sum of odd number is :", ad)
+
+
+o/p;
+nter how many numbers :3
+Enter number : 1
+6
+Enter number : 2
+8
+Enter number : 3
+3
+[3]
+Entered list of numbers : [6, 8, 3]
+List of odd number is : [3]
+sum of odd number is : 3
+
+## 4. WAP to input a list of numbers and store in a tuple. Now input another number and print the
+## index of this number in the tuple. [Use index function]
+
+lis = []
+n3 = int(input("Enter how many number : "))
+for x in range(n3):
+    n4 = int(input("Enter number"))
+    lis.append(n4)
+last_num = int(input("enter number to add in tuple : "))
+lis.append(last_num)
+tu = tuple(lis)
+print(tu)
+print(tu.index(last_num))
+
+o/p:
+
+Enter how many number : 3
+Enter number1
+Enter number23
+Enter number56
+enter number to add in tuple : 8
+(1, 23, 56, 8)
+3
+
+
+## 5 Create a list of 10 random numbers and then print the list, sum of all numbers and average. Use
+## a for loop. Also print elements at only even indexes in the list
+import random
+
+ran_list= []
+for i in range(1,11):
+    n = random.randint(1,11)
+    ran_list.append(n)
+print("Generated list of random numbers :", ran_list)
+print("sum of all number is :", sum(ran_list))
+print("Average of list is :", sum(ran_list)/len(ran_list))
+even_ind = ran_list[1: : 2]
+odd_ind = ran_list[0: :2]
+print("List of numbers at even index is : ", even_ind)
+print("List of numbers at odd index is :", odd_ind)
+ 
+
+
+o/p:
+
+Generated list of random numbers : [8, 11, 8, 10, 5, 1, 8, 5, 10, 4]
+sum of all number is : 70
+Average of list is : 7.0
+List of numbers at even index is :  [11, 10, 1, 5, 4]
+List of numbers at odd index is : [8, 8, 5, 8, 10]
+
+
+## 6. WAP to input 10 numbers repeatedly (using range based for loop) and store them in a list. Print
+## the list and sum of numbers in the list
+a1 =[]
+for i in range(1,11):
+    print("Enter number :", i)
+    j = int(input())
+    a1.append(j)
+print(a1)
+print(sum(a1))
+
+
+o/p:
+
+Enter number : 1
+25
+Enter number : 2
+56
+Enter number : 3
+58
+Enter number : 4
+55
+Enter number : 5
+55
+Enter number : 6
+58
+Enter number : 7
+95
+Enter number : 8
+57
+Enter number : 9
+89
+Enter number : 10
+89
+[25, 56, 58, 55, 55, 58, 95, 57, 89, 89]
+637
+
+
+
+## 7. WAP to input a number and print its table. Ex: if user enters the number as 7, output should be 
+## 7 X 1 = 7 ..........7 X 10 = 70
+
+n_t = int(input("Enter a number to print table : "))
+for i in range(1,11):
+    print (n_t , "X" , i , "=" ,n_t*i )
+
+o/p:
+
+Enter a number to print table : 7
+7 X 1 = 7
+7 X 2 = 14
+7 X 3 = 21
+7 X 4 = 28
+7 X 5 = 35
+7 X 6 = 42
+7 X 7 = 49
+7 X 8 = 56
+7 X 9 = 63
+7 X 10 = 70
+
+
+## 8. WAP to print total number of spaces in a string (Use for loop to iterate over the string. Don’t use
+## count function).
+
+sp_st = input("Enter a string : ")
+c = list(sp_st)
+su = 0
+print("Entered string is", c)
+for i in c:
+    if(i == ' '):
+        su += 1 
+print("Number of spaces in string is :", su)
+    
+o/p:
+
+Enter a string : fjdf 0i0949 ii4
+Entered string is ['f', 'j', 'd', 'f', ' ', '0', 'i', '0', '9', '4', '9', ' ', 'i', 'i', '4']
+Number of spaces in string is : 2
+ 
+
+
+## 9. WAP to input a string and count number of vowels in the string. [Note: it should work for both
+## capital and small alphabets]
+
+ip_st = input("Enter a string : ")
+ip_li = list(ip_st)
+vowels = ['a','e','i','o','u','A','E','I','O','U']
+co_vo = 0
+for i in range(len(ip_li)):
+    if (ip_li[i] in vowels):
+        co_vo = co_vo + 1
+print("Number of vowels in string :" , co_vo)
+
+
+o/p:
+
+Enter a string : umberella
+Number of vowels in string : 4
+
+
+## 10. WAP to input a string and replace all vowels with ‘_’.
+## [Hint: Convert string to list. Remember!! Strings are immutable. Replace in the list and then join]
+
+st2 = input("Enter a string")
+b1 = list(st2)
+for i in range(len(b1)):
+    if(b1[i] == 'A' or b1[i] == 'E' or b1[i] == 'I' or  b1[i] == 'O' or b1[i] == 'U' or
+       b1[i] == 'a' or b1[i] == 'e' or b1[i] == 'i' or  b1[i] == 'o' or b1[i] == 'u'):
+        b1[i] = '_'
+print(''.join(b1))
+
+o/p:
+
+Enter a stringthis to to replace vowels with underscore
+th_s t_ t_ r_pl_c_ v_w_ls w_th _nd_rsc_r_
+       
+ 
+
+
+
+
+## 11.(i) Find output:
+for num in range(10):
+    print("Num :", num)
+    if(num%4 == 0):
+        break
+print("Loop Ends")
+
+
+o/p:
+
+Num : 0
+Loop Ends
+
+
+## 11.(ii) Find output:
+import sys
+for num in range(10):
+    print("Num :", num)
+    if(num%4 == 0):
+        sys.exit()
+print("Loop Ends")
+
+
+o/p;
+
+Num : 0
+An exception has occurred, use %tb to see the full traceback.
+
+SystemExit
+
+
+C:\Program Files\ArcGIS\Pro\bin\Python\envs\arcgispro-py3\lib\site-packages\IPython\core\interactiveshell.py:2971: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.
+  warn("To exit: use 'exit', 'quit', or Ctrl-D.", stacklevel=1)
+
+
+## 12.(i) Find the output of the following code snippets.
+
+for i1 in range(1,6):
+    for i2 in range(5):
+        print('*' , end ='')
+    print()
+
+
+o/p:
+
+*****
+*****
+*****
+*****
+*****
+
+
+
+## 12.(ii) Find the output of the following code snippets.
+
+for i1 in range(1,6):
+    for i2 in range(i1):
+        print(i1 , end ='')
+    print()
+
+o/p:
+
+1
+22
+333
+4444
+55555
+
+
+
+## 12.(iii) Find the output of the following code snippets.
+for i1 in range(1,6):
+    print(str(i1)*i1)
+
+
+o/p:
+
+1
+22
+333
+4444
+55555
+
+
+## 12.(iv) Find the output of the following code snippets.
+for i1 in range(1,6):
+    for i2 in range(i1+1):
+        print('*' , end ='')
+    print()
+
+o/p:
+
+**
+***
+****
+*****
+******	
