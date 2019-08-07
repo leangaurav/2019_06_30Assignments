@@ -1,0 +1,174 @@
+1)
+	s= input("Enter the string:")
+	for i in range(len(s)):
+		print(s[i])
+2)
+	s=input("Enter the string: ")
+	for i in range(len(s)):
+		print(ord(s[i]))
+3)
+	def sum_odd(num):
+		lst=[]
+		sum=0
+		for i in num:
+			for n in range(0,i%2):
+				lis.append(i)
+				sum +=i
+		print(lst)
+		print(sum)
+	sum_odd([2,6,9,11])	
+
+		Or
+		
+	lst=[]
+	sum=0
+	n=int(input("Enter number of elements : "))
+	for i in range(0,n):
+		number=int(input())
+		lst.append(number)
+	print(lst)
+	for i in lst:
+		if i%2==1:
+			sum =sum +i
+	print("Sum of odd numbrer is:",sum)
+
+
+4)
+	lst=[]
+	for i in range(0,5):
+		n=int(input())
+		lst.append(n)
+	print(lst)
+	tu=tuple(lst)
+	print(tu)
+	print(type(tu))
+	
+
+5)
+	lst=[]
+	sum=0
+	for i in range(0,10):
+		num=int(input())
+		lst.append(num)
+		sum+=i
+		avg=sum/10
+	print(sum)
+	print(avg)
+
+6)
+	lst=[]
+	sum=0
+	#n=int(input("Enter the number:"))
+	for i in range(0,10):
+		num=int(input())
+		lst.append(num)
+		sum+=i
+	print(sum)
+	print(lst)
+
+7)
+	n = int(input("Enter the number to print the tables for :"))
+	for i in range(1,11):
+		print(n,"x",i,"=",n*i)
+		
+8)
+    c=0
+    s = str(input("enter the string:"))
+    for i in s:
+        if i==' ':
+            c=c+1
+    print(c) 
+
+9)
+	n=str(input("Enter the string:"))
+	vowels="aeiouAEIOU"
+	final=[vow for vow in n if vow in vowels]
+	print(len(final))
+	print(final)
+10)
+    s=str(input("Enter the string:"))
+    vowels="aeioAEIOU"
+    for vow in vowels:
+        s=s.replace(vow,'_')
+    print(''.join(s)) 
+    or
+    s=str(input("Enter the string:"))
+    vowels="aeiouAEIOU"
+    r=['_' if c in vowels else c for c in s]
+    print(r)
+
+11)
+	a)
+	for num in range(10):
+		print("Num: ", num)
+		if num % 4==0:
+			break
+		print("Loop Ends")
+
+	Output:- 
+	Num:  0
+	Loop Ends
+	b)
+	import sys
+	for num in range(10):
+		print("Num:", num)
+		if num % 4 == 0:
+			sys.exit()
+	print("Loop Ends")
+
+
+	Output:-
+
+	Num: 0
+
+	An exception has occurred, use %tb to see the full traceback.
+
+	SystemExit
+
+12)
+	a) 
+	for i1 in range(1,6):
+		for i2 in range(5):
+			print("*",end ="")
+		print()
+
+	Output:-
+	*****
+	*****
+	*****
+	*****
+	*****
+	b)
+	for i1 in range(1,6):
+		for i2 in range(i1):
+			print(i1,end='')
+		print()
+	Output:-
+	1
+	22
+	333
+	4444
+	55555
+
+	c)
+	for i1 in range(1,6):
+		print(str(i1)*i1)
+	Output:-
+	1
+	22
+	333
+	4444
+	55555
+	d)
+	for i1 in range(1,6):
+		for i2 in range(i1+1):
+			print("*",end='')
+		print()
+	Output:-
+	**
+	***
+	****
+	*****
+	******
+
+

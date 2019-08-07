@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 1. WAP to print first n natural numbers (input n from user).
 
@@ -328,4 +329,336 @@ for i in range(65,71):
  ABCDEDCBA
 ABCDEFEDCBA
 
+=======
+
+1. WAP to print first n natural numbers (input n from user).
+
+num = int(input("Enter a number :\n"))
+for i in range(num) :
+    print(i+1,end=" ")
+    
+
+Enter a number :
+12
+1 2 3 4 5 6 7 8 9 10 11 12 
+
+=================================================================
+
+2. WAP to find sum of first n natural numbers
+
+def sum_n (n) :
+    sum=0
+    i=0
+    for i in range(n+1) :
+        sum +=i
+    return sum 
+
+num = int(input("Enter a number :\n"))
+sum = sum_n(num)
+print (sum)
+    
+
+Enter a number :
+6
+21
+=================================================================
+3. WAP to print first n natural numbers in reverse order
+
+num=int(input("Enter a number: "))
+for i in range(num,0,-1) :
+    print(i,end=" ")
+
+
+Enter a number: 12
+12 11 10 9 8 7 6 5 4 3 2 1 
+=================================================================
+4. WAP to input a number and print its factorial.
+
+# WAP to input a number and print its factorial
+
+def fact (n):
+    fact =1
+    for x in range(1,n+1):
+        fact=fact*x
+    return fact
+    
+
+num=int(input("Enter a number: "))
+print (fact(num))
+    
+
+Enter a number: 7
+5040
+=================================================================
+5. WAP to print Fibonacci sequence till n.
+
+n = int(input("Enter the number:"))
+a=0
+b=1
+print("Fibonacci Sequence : ")
+for i in range(n):
+    print(a,end=" ")
+    c=a+b
+    a=b
+    b=c
+
+
+Enter the number:12
+Fibonacci Sequence : 
+0 1 1 2 3 5 8 13 21 34 55 89 
+=================================================================
+6. WAP to print all digits of a number input from user.
+
+n = input("Enter the number:")
+lst= list(n)
+for i in range (len(lst)): 
+    print (lst[i])
+
+
+Enter the number:1234
+1
+2
+3
+4
+
+7. WAP to find sum of all digits of a number.
+
+n = input("Enter the number:")
+sum=0 
+for i in range (len(n)): 
+    sum+=int(n[i])
+print (sum)
+
+Enter the number:3458
+20
+=================================================================
+8. WAP to find sum of following series given n as input from user - 1 + 2! + 3! + 4! + 5! + ….n! Where n! denotes the factorial of number n.
+
+n=int(input("Enter a number:"))
+sum=0
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+    sum=sum+fact
+   
+print(sum)
+
+Enter a number:6
+873
+
+9. WAP to input base and exponent and print result without using inbuilt function pow(use for or while loop).
+
+a=int(input("Enter a Base : "))
+b=int(input("Enter a Exponent : "))
+n=1
+for i in range(b):
+    n=n*a   
+print(n)
+
+Enter a Base : 3
+Enter a Exponent : 3
+27
+
+10. Print following patterns:
+
+a)
+
+for i in range(5): # Outer: for Lines
+    for j in range(i+1): #Inner: For no of symbols in a line
+        print("*", end='')
+    print()
+
+*
+**
+***
+****
+*****
+
+
+b)
+
+for i in range(5): # Outer: for Lines
+    for j in range(5-i): #Inner: For no of symbols in a line
+        print("*", end='')
+    print()
+
+*****
+****
+***
+**
+*
+
+c)
+
+for i in range(1,6): # Outer: for Lines
+    for j in range(5-i): #Inner: For no of symbols in a line
+        print(" ", end='')
+    print("*"*i)
+
+
+    *
+   **
+  ***
+ ****
+*****
+
+for i in range(5): # Outer: for Lines
+    for j in range(5-i): #Inner: For no of symbols in a line
+        print(" ", end='')
+    for j in range(i+1): #Inner
+        print("*", end='')
+    print()  
+
+     *
+    **
+   ***
+  ****
+ *****
+
+d)
+
+n = int(input("Enter the number:"))
+for i in range(n):
+    for j in range(n-i):
+        print(' ', end='')
+    for j in range(i+1):
+        print('* ', end='')
+    print()
+
+Enter the number:6
+      * 
+     * * 
+    * * * 
+   * * * * 
+  * * * * * 
+ * * * * * * 
+
+
+11. Print following number patterns:
+
+a)
+
+for i in range(5):
+    for j in range (i+1) :
+        print (i+1 , end ='')
+    print()
+
+
+1
+22
+333
+4444
+55555
+
+
+b)
+
+for i in range(5):
+    for j in range (i+1) :
+        print (5-i , end ='')
+    print()
+
+5
+44
+333
+2222
+11111
+
+c)
+
+for i in range(5):
+    for j in range (i+1) :
+        print (j+1 , end ='')
+    print()       
+
+1
+12
+123
+1234
+12345
+
+
+d)
+
+for i in range(5):
+    for j in range (5-i) :
+        print (" ", end ='' )
+    for j in range (i+1) :
+        print (i+1 , end ='')
+    print()
+
+     1
+    22
+   333
+  4444
+ 55555
+
+12. Print following character patterns:
+
+a)
+
+for i in range(65,71):
+    for j in range(65,i):
+        print(chr(j),end="")
+    print()
+
+for i in range(ord('A'),ord('F')):
+    for j in range(ord('A'),i+1):
+        print(chr(j),end="")
+    print()
+
+A
+AB
+ABC
+ABCD
+ABCDE
+
+count=64
+
+b)
+count=64
+for i in range(1,6):
+    for j in range(count,count+i):
+        print(chr(j+i),end="")
+    print()
+
+A
+BC
+CDE
+DEFG
+EFGHI
+
+c)
+
+for i in range(ord('A'),ord('F')):
+    for j in range (ord('A'),i+1):
+        print(chr(i),end="")
+    print()
+A
+BB
+CCC
+DDDD
+EEEEE
+
+d)
+
+k=1
+for i in range(65,71):
+    for j in range(6-k,0,-1):
+        print(" ",end="")
+    k+=1
+    for m in range(65,i+1):
+        print(chr(m),end="")
+    for n in range(i-1,64,-1):
+        print(chr(n),end="")
+    print()
+
+     A
+    ABA
+   ABCBA
+  ABCDCBA
+ ABCDEDCBA
+ABCDEFEDCBA
+
+>>>>>>> 4c4ff4ed1a70482c79d81a17b9d2694336699743
 ================================================================

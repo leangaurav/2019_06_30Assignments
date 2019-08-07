@@ -1,0 +1,39 @@
+Q1.
+
+with open('file_alpha.txt','w') as f:
+    import string
+    alpha=string.ascii_uppercase
+    for c in alpha:
+        print(c, file=f)
+        
+Q2.
+
+import sys
+file=sys.argv[0]
+with open(file,'r') as f:
+    for line in f:
+        print(line)
+
+
+Q3.
+
+python f4_test.py 
+0
+line
+4      
+
+Q4.
+
+f1=open('file_alpha.txt','r')
+f2=open('file2.txt','w')
+f2.write(f1.read())
+f1.close()
+f2.close()
+
+Q5.
+
+with open('file.txt','r') as f1:
+    f2=open('file_case.txt','w')
+    for line in f1:
+        print(line.swapcase(),file=f2)
+f2.close()        

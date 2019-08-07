@@ -18,8 +18,26 @@ def input_a_number():
         if n.isdigit():
             return int(n)
 
+def input_a_float():
+    while True:
+        n = input("Enter a float:")
+        try:
+            r = float(n)
+            return r
+        except ValueError:
+            pass
+
+def input_a_float_wrong():
+    while True:
+        try:
+            n = input("Enter a float:")
+            r = float(n)
+            return r            
+        except BaseException: # except:
+            pass
+            
 if __name__ == '__main__':     
-    a = input_a_number()
+    a = input_a_float_wrong()
     print(__name__)
 
     

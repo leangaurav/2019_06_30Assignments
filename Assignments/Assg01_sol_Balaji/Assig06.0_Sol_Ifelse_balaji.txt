@@ -1,0 +1,332 @@
+
+## Assg 06 If else pdf
+
+
+### 1. WAP to input 2 numbers and check whether the first is divisible by the second and print true or false depending on the 
+### divisibility.
+
+n1 = float(input("Enter first number : "))
+n2 = float(input("Enter second number : "))
+
+if  n1 % n2 == 0 :
+    print("True", n1 ,"divisible by", n2,end = ' ')
+else:
+    print("False", n1, "not divisible by" , n2,end = ' ')
+
+
+o/p:
+Enter first number : 6.5
+Enter second number : 3
+False 6.5 not divisible by 3.0 
+
+
+### 2. In the palindrome example, make the code case insensitive.
+### i.e. Naman should also be treated as a palindrome (HINT: first convert to either upper or lower case).
+
+
+st1 = input("Enter a string : ")
+st2 = st1.upper()
+st3 = st2[: : -1]
+if (st2 == st3):
+    print("Its palindrome")
+else:
+    print("Its not palindrome")
+
+
+o/p:
+Enter a string : MADAM
+Its palindrome
+
+
+### 3. WAP to input the sides of a triangle and print whether equilateral(all sides equal), isosceles (2
+## sides equal), or scalene (no sides equal).
+
+
+a = int(input("Enter side a of triangle: "))
+b = int(input("Enter side b of triangle: "))
+c = int(input("Enter side c of triangle: "))
+
+if (a==b==c):
+    print("All sides are equal", "Its a equlateral trinagle")
+elif (a==b) or (b==c) or (a==c):
+    print("Two sides are equal", "Its a isoceles trinagle")
+else:
+    print("Three sides are unequal", "Its a scalene trinagle")
+
+
+o/p;
+Enter side a of triangle: 2
+Enter side b of triangle: 6
+Enter side c of triangle: 2
+Two sides are equal Its a isoceles trinagle
+
+
+##4. WAP to input a number and print if it is even or odd
+num = int(input("Enter a number : "))
+if(num % 2 == 0):
+    print("Even number")
+else:
+    print("Odd number")
+    
+o/p;
+Enter a number : 11
+Odd number
+
+
+## 5. WAP to input age and print the respective text depending on the age ranges as present in the table
+## 0-12 child, 13-17 Teen,18-50 Adult,51-100 - Senior citizen age >100 congratulations
+
+age1 = int(input("Enter age : "))
+
+if (age1 >= 0 and age1 <=  12):
+    print("child")
+elif(age1 >= 13 and age1 <= 17):
+    print("Teen")
+elif(age1 >= 18 and age1 <= 50):
+    print("Adult")
+elif(age1 >= 51 and age1 <=100):
+    print("Senior citizen")
+else:
+    print("Congratulations")
+
+o/p:
+Enter age : 13
+Teen
+
+
+## 7. WAP to input a string and convert it to Upper Case if number of characters is odd and convert to lower case otherwise.
+
+st_ip = input("Enter a string : ")
+no_ch = len(st_ip)
+if no_ch%2 != 0 :
+    st_up = st_ip.upper()
+    print("odd number of characters: " , st_up)
+else:
+    st_lo = st_ip.lower()
+    print("even number of charaters :" , st_lo)
+    
+o/p:
+Enter a string : bala
+even number of charaters : bala
+
+
+
+## 8. WAP to input a string and print Veg if the string doesn’t contain the word egg. Otherwise print Non-Veg. 
+## As usual eggs can be both big and small.
+
+n1 = input("Enter a string :")
+ref_li = ['egg','EGG']
+if(ref_li[0] == n1 or ref_li[1] == n1):
+    print("Non-veg")
+else:
+    print("Veg")
+
+o/p:
+Enter a string :Rice
+Veg
+
+
+## 9. Give output of:
+if not 1:
+    print ("False")
+else:
+    print("True")
+	
+o/p:
+True
+
+
+o/p:
+True
+
+## 9 Give output of:
+if 1:
+    print("True")
+else:
+    print("False:")
+
+
+
+
+
+## 9 Give output of:   
+if 'a' > 'A':
+    print("Weird !!")
+else:
+    print('Make sense')
+    
+
+### Here ascii value of 'a' is 97 for 'A' is 65 so condition is true
+
+
+o/p:
+Weird !!
+
+
+a = [1,2,3,4]
+if 1 > 1 :
+    a = a[: : -1]
+else:
+    a = a[-1 : : -1]
+print(a)
+### a[: : -1] and a[-1: :-1] gives reverse of the input list
+
+
+o/p;
+[4, 3, 2, 1]
+
+
+### 10. WAP to input marks in 5 subjects and print the grade as per following logic:
+### % bet 90-100 Grade A,  % bet 80-89 Grade B , % bet 60-79 Grade C and  % < 60 Grade F
+
+m1 = int(input("Enter subject 1 marks : "))   
+m2 = int(input("Enter subject 2 marks : "))   
+m3 = int(input("Enter subject 3 marks : "))   
+m4 = int(input("Enter subject 4 marks : "))   
+m5 = int(input("Enter subject 5 marks : "))
+tot = m1+m2+m3+m5+m5
+per = (tot/500)*100
+print("Percentage is : ", per)
+if(per >= 90 and per <= 100):
+    print("Grade A")
+elif(per >= 80 and per <= 89):
+    print("Grade B")
+elif(per >= 60 and per <= 79):
+    print("Grade C")
+else (per >= 0 and per <= 60):
+    print("Grade F")
+
+    
+o/p:
+Enter subject 1 marks : 88
+Enter subject 2 marks : 56
+Enter subject 3 marks : 32
+Enter subject 4 marks : 21
+Enter subject 5 marks : 2
+Percentage is :  36.0
+Grade F
+
+
+
+
+# ##11. WAP to input age and salary and calculate Tax as per tax rates if following table:
+
+age = int(input("Enter age :"))
+sal = int(input("Enter salary : "))
+if(age<60):
+    if(sal >= 0 and sal <= 250000):
+            print("Your tax rate is 0% ")
+    elif(sal >= 250001 and sal <= 500000):
+            print("Your tax rate is 05% ", sal*0.5)
+    elif(sal >= 500001 and sal <= 1000000):
+            print("Your tax rate is 10% ", sal*0.1)
+    elif(sal >= 1000000):
+            print("Your tax rate is 15% ", sal*0.15)
+else:
+    
+    if(sal >= 0 and sal <= 250000):
+            print("Your tax rate is 0% ")
+    elif(sal >= 250001 and sal <= 500000):
+            print("Your tax rate is 03% ", sal*0.3)
+    elif(sal >= 500001 and sal <= 1000000):
+            print("Your tax rate is 08% ", sal*0.8)
+    elif(sal >= 1000000):
+            print("Your tax rate is 12% ", sal*0.12)
+ 
+o/p:
+Enter age :39
+Enter salary : 1000009
+Your tax rate is 15%  150001.35
+
+
+
+## 12 Try each of the below statements separately (remember difference between statement and
+## (expression) on the python interpreter and guess the output before trying:
+
+print(20 if not 1 == 1 else 10)
+
+print(30 if not 1 == 1 else 20 if 'a' < 'A' else 10)
+
+print(40 if not 1 == 1 else 30 if 'a' < 'A' else 20 if '' else 10)
+
+print('No' if not 1 == 1 else ('No' if 'a' < 'A' else ('OMG' if 'Oh!!' else 'No')))
+
+o/p:
+
+10
+10
+10
+OMG
+
+##  WAF: bmi() that takes the weight in kg and height in cm of a person, calculates and returns the  BMI.
+## Write code that calls this function after taking height and weight as inputs and then prints
+## underweight, normal, overweight or obese depending on the value of BMI.
+## https://en.wikipedia.org/wiki/Body_mass_index
+
+def bmi1(w,h):
+    h1 = h/100
+    bmi = w/(h1*h1)
+    return bmi
+w = float(input("Enter weight in kilogram :"))
+h = float(input("Enter height in centimeters :"))
+
+res = bmi1(w,h)
+      
+print ("Your BMI is : {0} and you are : ".format(res), end = '') 
+
+if (res >= 0 and res <= 15):
+    print("Very severely underweight")
+elif (res >= 15 and res <= 16):
+    print("everely underweight")
+elif (res >= 16 and res <= 18.5):
+    print("Underweight")
+elif (res >= 18.5 and res <= 25):
+    print("Normal healthy weight")
+elif (res >= 25 and res <= 30):
+    print("Overweight")
+elif (res >= 30  and res <= 35):
+    print("Obese Class I")
+elif (res >= 35 and res <= 40 ):
+    print("Obese Class II")
+elif (res >=40 and res <= 45):
+    print("Obese Class III")
+elif (res >= 45 and res <= 50):
+    print("Obese Class IV")
+elif (res >=50 and res <= 60):
+    print("Obese Class V")
+elif (res > 60):
+    print("Obese Class VI")
+    
+ o/p:
+Enter weight in kilogram :100
+Enter height in meters :145
+Your BMI is : 47.56242568370987 and you are : Obese Class IV 
+
+
+## 14. Take input of age of 3 people by user and determine oldest and youngest among them
+print("Enter age of three people separated by space")
+age=input().strip().split()
+print("Entered ages are :" , age)
+print("Oldest: ", max(age))
+print("Youngest: ", min(age))
+
+o/p:
+Enter age of three people separated by space
+98 58 96
+Entered ages are : ['98', '58', '96']
+Oldest:  98
+Youngest:  58
+
+## 15. WAP to input a number and check if number is divisible by both 5 and 7.
+
+n_1 = int(input("Enter a number to check :"))
+if(n_1%5 == 0 and n_1%7 == 0):
+    print("Entered number",n_1, "is divisible by 5 and 7")
+else:
+    print("Not divisible by 5 and 7")
+	
+o/p;
+
+Enter a number to check :35
+Entered number 35 is divisible by 5 and 7
+
