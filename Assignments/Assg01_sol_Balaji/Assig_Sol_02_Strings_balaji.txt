@@ -1,0 +1,260 @@
+1. Guess output of each slice:
+s='Python is Object Oriented'
+print(s[-1])
+print(s[: : -1])
+print(s[:-1])
+print(s[1:1])
+print(s[4:10])
+
+o/p:
+d
+detneirO tcejbO si nohtyP
+Python is Object Oriente
+
+on is 
+
+
+2. What error do you see for following statements:
+
+s= ''
+print(s[1])
+
+o/p:
+
+IndexError                                Traceback (most recent call last)
+<ipython-input-27-1d0d5b971d35> in <module>
+      1 s= ''
+----> 2 print(s[1])
+
+IndexError: string index out of range
+
+3. Do you get any error for the following code, if not give the output:
+
+S ='Gaurav'
+print(s[1])    # value of s is stored as s = '' from previous row
+
+o/p:
+IndexError                                Traceback (most recent call last)
+<ipython-input-26-48374c465be0> in <module>
+      1 S ='Gaurav'
+----> 2 print(s[1])
+
+IndexError: string index out of range
+
+
+4. Find output of the following:
+
+s = 'a b cd'
+print(len(s))
+print(s[: : 2])
+print(len(s[: : 2]))
+
+o/p:
+
+6
+abc
+3
+
+s='a#b#c#d#'
+print(s.split())
+print(s.split('#'))
+l = s.split('#')
+s = '$'.join(l)
+print(s)
+
+
+o/p:
+
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+
+S = 'Gaurav'
+#    654321    
+S = S[: : -2][: : -2]
+print(S)
+## perfroming indexing twice 
+
+o/p:
+av
+
+
+S = 'Gaurav'
+#    654321    
+S = S[: : -2]
+r = S[: : -2]
+print(S)
+print(r)
+
+
+o/p:
+
+vra
+av
+
+
+ print(1>2)
+
+o/p:
+
+False
+
+ print(4%2, 5%2, 2%5, sep=',')
+
+0/p:
+
+0,1,2
+
+
+s ='abcab'
+s.upper()           # str.upper() returns copy of  string which need to stored but here not stored so no change in s ie abcab
+print(s)
+print(s.count('A'), end = ',')
+print(s.count('A',2,4), end = ',')
+print(s.count('a',2,4), end = ',')
+
+o/p:
+
+abcab
+0,0,1,
+
+
+5. WAP to input a string and remove all spaces from it.
+
+ip = input("enter string with spaces :" )
+ops = ip.strip()
+print (ops)
+
+o/p:
+
+enter string with spaces :         jjr kker 900       llkfpfp
+jjr kker 900       llkfpfp
+
+
+6. What does this symbol denote:[]
+
+o/p:
+
+[] - it can be used for indexing as well as to denote list
+
+7. WAP to print all methods(functions/operations) available in a string (Hint : dir())
+
+o/p:
+
+print(dir(str)) # Doubt how to filter only functions/operations
+
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', 
+'__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', 
+'__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 
+'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 
+'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 
+'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+<method 'rstrip' of 'str' objects>
+
+
+
+8. Write statement to check if rstrip method is available in the str class.
+
+Use find function or in
+
+o/p:
+
+print('rstrip' in dir(str))
+
+
+True
+
+9. WAP to store the following patterns in a string variable and then print them:
+
+o/p:
+
+pat = '*'
+pat1 = pat * 5
+
+pat3 = '  * \n' *4
+
+print(pat1)
+
+print(pat3)
+*****
+  * 
+  * 
+  * 
+  * 
+
+
+ 
+10. WAP to input a string and replace all space with new lines (\n) and print again.
+
+o/p:
+
+st1 = input("enter an string :" )
+op = st1.replace(' ' , '\n')
+print(op)
+
+
+enter an string :this an example program tofind space and replace with new line
+this
+an
+example
+program
+tofind
+space
+and
+replace
+with
+new
+line
+
+
+11. WAP to input complete name(first and last name separated by space) and print first and last name separately along with their length in upper case.
+
+o/p:
+
+fn_sn = input("Enter first name and second name with space between first and second name :" )
+loc_sp = fn_sn.find(' ')
+## print(loc_sp)
+
+fh_U = (fn_sn[ : loc_sp]).upper()
+sh_U = (fn_sn[(loc_sp) + 1  : ]).upper()
+
+print("First name is : ", fh_U , "Length of first name is : " ,len(fh_U))
+print("Last name is : ", sh_U , "Length of last  name is : " ,len(sh_U))
+
+
+Enter first name and second name with space between first and second name :learn bay
+First name is :  LEARN Length of first name is :  5
+Last name is :  BAY Length of last  name is :  3
+
+
+12. WAP to input a string and split it into 2 halves. The string can be of any length¶
+
+
+o/p:
+
+st12 = input("Enter an  string to split : " )
+st_le = len(st12)
+st_ind = int((st_le)/2)
+print("Total length of string is : ", st_le)
+print("String index value is  : ", st_ind)
+print("first half of string is :" , st12[ : st_ind])
+print("second half of string is : ", st12[st_ind : ])
+
+Enter an  string to split : words
+Total length of string is :  5
+String index value is  :  2
+first half of string is : wo
+second half of string is :  rds
+
+
+
+
+
+
+
+
+
+
+
+
