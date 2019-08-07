@@ -1,0 +1,322 @@
+
+#
+##AssignmentPython7_Dict_If-else_loops
+
+
+## 1. WAP to create a dictionary of numbers mapped to their negative value for numbers from 1-5.
+## The dictionary should contain something like this:
+## Do with both with and without range based for loop. {1:-1,2:-2,3:-3….}
+## using range based for loop
+
+d = {}
+for i in range(1,6):
+    d[i] = -i
+print(d)
+
+
+0/p:
+{1: -1, 2: -2, 3: -3, 4: -4, 5: -5}
+
+
+## with out using range based for loop -- Doubt
+
+
+
+## 2. Check which of the following declarations will work
+#(i) 
+d = {1=2,2=3}
+print(d)
+
+o/p:
+
+ File "<ipython-input-23-f4aee184dd85>", line 3
+    d = {1=2,2=3}
+          ^
+SyntaxError: invalid syntax
+
+
+## 2(ii)
+d ={1:2, 2:3}
+print(d)
+
+ o/p:
+{1: 2, 2: 3}
+
+
+## 2(iii)
+d ={1,2,; 2,3}
+print(d)
+
+o/p:
+
+File "<ipython-input-25-c1289d7dea22>", line 1
+    d ={1,2,; 2,3}
+            ^
+SyntaxError: invalid syntax
+
+
+## 2(iv)
+d ={(1,2), (2,3)}
+print(d)
+
+o/p:
+{(1, 2), (2, 3)}
+
+## 2(v) -- Doubt
+
+d = {'a':'A','b':1, c:[1234]}
+print(d)
+
+o/p:
+
+{'a': [1234], 'b': 1}
+
+
+## 2(vi)
+d = {'a':'A','b':1,'c':[1234]}
+print(d)
+
+
+o/p:
+
+{'a': 'A', 'b': 1, 'c': [1234]}
+
+
+## 2(vii)
+d = dict([(1,2), (2,3)])
+print(d)
+
+
+o/p;
+
+{1: 2, 2: 3}
+
+
+## 2(viii)
+d = dict(((1,2),(2,3)))
+print(d)
+
+o/p:
+
+{1: 2, 2: 3}
+
+
+## 2(ix)
+## 2(viii)
+d = dict(((1,2),(2,3])
+print(d)
+
+o/p:
+File "<ipython-input-34-4b66c47c832b>", line 3
+    d = dict(((1,2),(2,3])
+                        ^
+SyntaxError: invalid syntax
+
+
+## 2(x)
+d = dict(x=2,y =3)
+print(d)
+
+
+o/p:
+
+{'x': 2, 'y': 3}
+
+
+## 2(xi)
+d = dict('x'=2 , 'y' =3)
+print(d)
+
+
+o/p:
+
+File "<ipython-input-3-38a94bc06513>", line 2
+    d = dict('x'=2 , 'y' =3)
+            ^
+SyntaxError: keyword can't be an expression
+
+
+
+## 2(xii)
+d = dict(1=2 , 2=3)
+print(d)
+
+o/p:
+File "<ipython-input-3-38a94bc06513>", line 2
+    d = dict('x'=2 , 'y' =3)
+            ^
+SyntaxError: keyword can't be an expression
+
+
+## 3. Read help for zip and write a program that has two lists
+## l1 = [1,2,3,4]  l2 = [10,20,30,40] 
+## And converts them to a dictionary d containing { 1:10,2:20 …….}
+
+L1 = [1,2,3,4]
+L2 = [10,20,30,40]
+
+d = dict(zip(L1,L2))
+print(d)
+
+print()
+
+help(zip)
+
+o/p:
+
+{1: 10, 2: 20, 3: 30, 4: 40}
+
+Help on class zip in module builtins:
+
+class zip(object)
+ |  zip(iter1 [,iter2 [...]]) --> zip object
+ |  
+ |  Return a zip object whose .__next__() method returns a tuple where
+ |  the i-th element comes from the i-th iterable argument.  The .__next__()
+ |  method continues until the shortest iterable in the argument sequence
+ |  is exhausted and then it raises StopIteration.
+ |  
+ |  Methods defined here:
+ |  
+ |  __getattribute__(self, name, /)
+ |      Return getattr(self, name).
+ |  
+ |  __iter__(self, /)
+ |      Implement iter(self).
+ |  
+ |  __new__(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  __next__(self, /)
+ |      Implement next(self).
+ |  
+ |  __reduce__(...)
+ |      Return state information for pickling.
+
+
+## 4. Use range based for loop to store all upper case alphabets and their corresponding ASCII
+## values in the dictionary d. The result should be d = {‘A’: 65, ‘B’:66,…..}
+
+d = {}
+for a in range(65,91):
+    d[chr(a)] = a
+print(d)
+
+
+o/p:
+
+{'A': 65, 'B': 66, 'C': 67, 'D': 68, 'E': 69, 'F': 70, 'G': 71, 'H': 72, 'I': 73, 'J': 74, 'K': 75, 'L': 76, 'M': 77, 'N': 78, 'O': 79, 
+'P': 80, 'Q': 81, 'R': 82, 'S': 83, 'T': 84, 'U': 85, 'V': 86, 'W': 87, 'X': 88, 'Y': 89, 'Z': 90}
+
+
+## 5. Create a mapping of number to word from 0-9. (0:’zero’……)
+## • Ask user for a single digit number and print the corresponding word format.
+## • Print all keys of above dictionary ## • Print all Values of a dictionary
+## • Print all Key and Value pairs of above dictionary
+
+a1 = range(0,10)
+L1 = list(a1)
+L2 = ['ZERO','ONE','TWO','THREE','FOUR','FIVE','SIX','SEVEN','EIGHT','TEN']
+com = dict(zip(L1,L2))
+#print(com)
+c = int(input("Enter number from 0 to 9 :"))
+if (c <= 9):
+    print("Entered number is :", c, "word is ", com[c])
+    print(com.keys())
+    print(com.values())
+    print(com.items())
+else:
+    print("Enter valid integer from 0 to 9 ")
+
+
+o/p:
+
+Enter number from 0 to 9 :3
+Entered number is : 3 word is  THREE
+dict_keys([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+dict_values(['ZERO', 'ONE', 'TWO', 'THREE', 'FOUR', 'FIVE', 'SIX', 'SEVEN', 'EIGHT', 'TEN'])
+dict_items([(0, 'ZERO'), (1, 'ONE'), (2, 'TWO'), (3, 'THREE'), (4, 'FOUR'), (5, 'FIVE'), (6, 'SIX'), (7, 'SEVEN'), (8, 'EIGHT'), (9, 'TEN')])
+
+## 6. Predict Output of:
+l1 = ['A','B','C','D']
+l2 = ['APPLE','BALL','CAT','DOG']
+d1 = dict(zip(l1,l2))
+print(d1)
+d2 = dict(list(d1.items()) [: : 2])
+print(d2)
+
+
+o/p:
+
+{'A': 'APPLE', 'B': 'BALL', 'C': 'CAT', 'D': 'DOG'}
+{'A': 'APPLE', 'C': 'CAT'}
+
+
+
+## 7. WAP to input a string and count occurrence of each vowel in a string.
+## Ex: if user enters: “Beautiful Day” Output should Be: a:2 e:1 I :1 o:0 u:2
+e = {}
+st1 = input("Enter  string : ")
+vowels = ['A','E','I','O','U','a','e','i','o','u']
+for c in st1:
+    if c in vowels:
+        e[c] = e.get(c,0)+1
+print(e)
+        
+        
+
+o/p:
+
+Enter  string : Beautiful Day
+{'e': 1, 'a': 2, 'u': 2, 'i': 1}
+
+
+
+
+## 8. Update above program to print frequency of each alphabet present in string.
+
+d2 = {}
+st2 = input("enter a string :")
+for c in st2:
+    d2[c] = d2.get(c,0)+1
+
+for i in d2:
+    print(i, ":", d2[i])
+
+
+o/p:
+
+enter a string :university
+{'u': 1, 'n': 1, 'i': 2, 'v': 1, 'e': 1, 'r': 1, 's': 1, 't': 1, 'y': 1}
+u : 1
+n : 1
+i : 2
+v : 1
+e : 1
+r : 1
+s : 1
+t : 1
+y : 1
+
+
+## 9. WAP that takes a string as input and prints frequency of each word.
+## Ex: if input is “count the words in the sentence in” Output: count: 1 the: 2 words: 1 in: 2 sentence: 1
+
+st_s = input("Enter words separated by space :")
+co_w = []
+w_c = {}
+li_w = st_s.split()
+# print("Entered word in list : ", li_w)
+for i in li_w:
+    co_w.append(li_w.count(i))
+# print("count of words :", co_w)
+
+w_c = dict(zip(li_w, co_w))
+
+print("Word and count is :", w_c)
+
+o/p:
+
+Enter words separated by space :count the words in the sentence in
+Word and count is : {'count': 1, 'the': 2, 'words': 1, 'in': 2, 'sentence': 1}
+
