@@ -1,0 +1,93 @@
+Q1.
+
+def reverse_list(l):
+        start_idx=0
+        end_idx=len(l)-1
+        for i in l:
+                if start_idx<end_idx:
+                        swap=l[start_idx]
+                        l[start_idx]=l[end_idx]
+                        l[end_idx]=swap
+                        start_idx+=1
+                        end_idx-=1
+        return l
+print(reverse_list([1,6,7,3,4,5]))
+
+Q1.
+
+def count_even_odd(l):
+        d={}
+        cnt_even=cnt_odd=0
+        for i in l:
+                cnt_even+=(i%2==0)
+                cnt_odd+=(i%2!=0)
+        t=(cnt_even,cnt_odd)
+        return t
+
+print(count_even_odd([1,2,3,14,16]))
+
+Q2.
+
+def maximum(l):
+        max=0
+        for i in range(len(l)):
+                if l[i] > max:
+                        max=l[i]
+        return max
+
+print(maximum([1,2,300,98,4,90,900,900]))
+
+
+Q3.
+
+def second_maximum(l):
+        max=second_max=0
+        for i in range(len(l)):
+                if l[i] > max:
+                        second_max=max
+                        max=l[i]
+                else:
+                        l[i]>second_max
+                        second_max=l[i]
+        return second_max
+
+print(second_maximum([1,2,300,98,4,90,900,400,901]))
+
+
+Q4.
+
+def mean(l):
+        avg=sum=0
+        for i in range(len(l)):
+                sum=l[i]+sum
+                avg=sum/len(l)
+        return avg
+print(mean([1,2,4,53,2,1]))
+
+
+Q5.
+
+def mean(l):
+        avg=sum=0
+        for i in range(len(l)):
+                sum=l[i]+sum
+                avg=sum/len(l)
+        return avg
+print(mean([1,2,4,53,2,1]))
+
+
+Q6.
+
+def find_in_range(l,s,e):
+        for i in range(len(l)):
+                if l[i]==s:
+                        start_idx=i
+                if l[i]==e:
+                        end_idx=i
+        print(start_idx,end_idx)
+        nl=[]
+        for i in range(len(l)):
+                if s<=l[i]<=e:
+                        nl.append(l[i])
+        return nl
+print(find_in_range([4,5,6,2,3,5,10],3,5))
