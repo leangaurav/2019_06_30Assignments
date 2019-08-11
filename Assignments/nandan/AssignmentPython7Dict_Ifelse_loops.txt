@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Q1.
 
 WAP to create a dictionary of numbers mapped to their negative value for numbers from 1-5.
@@ -142,4 +143,150 @@ for key,val in d.items() :
     print(key ,"=",val)
 
 
+=======
+Q1.
+
+WAP to create a dictionary of numbers mapped to their negative value for numbers from 1-5.
+The dictionary should contain something like this:
+Do with both with and without range based for loop.
+{1:-1,2:-2,3:-3….}
+
+d={}
+for i in range(1,6):
+    d[i]=-i
+print(d)    
+
+d={}
+i=1 
+while (i< 6): 
+    d[i]=-i
+    i+=1
+
+print(d)
+=========================================================
+
+Q2. 
+
+d={1:2,2:3}
+
+d={(1,2),(2,3)}
+
+d={'a':'A','b':1,'c':[1234]}
+
+# List of tuples 
+d=dict([(1,2),(2,3)])
+# tuples of tuples 
+d=dict(((1,2),(2,3)))
+
+d=dict(x=2,y=3)
+
+=========================================================
+
+Q3.
+
+l1 = [1,2,3,4]
+l2 = [10,20,30,40]
+
+d=dict(zip(l1,l2))
+print(d)
+
+
+{1: 10, 2: 20, 3: 30, 4: 40}
+
+=========================================================
+Q.4 
+Use range based for loop to store all upper case alphabets and their corresponding ASCII
+values in the dictionary d.
+The result should be d = {‘A’: 65, ‘B’:66,…..}
+
+d=dict()
+for i in range (65,91):
+    d[chr(i)]= i
+print(d)
+
+
+Q5.
+
+Create a mapping of number to word from 0-9. (0:’zero’……)
+• Ask user for a single digit number and print the corresponding word format.
+• Print all keys of above dictionary
+• Print all Values of a dictionary
+• Print all Key and Value pairs of above dictionary
+
+
+d={0:'zero',1:'one',2:'two',3:'three'}
+num=int(input('enter a number: '))
+
+print ('%d in word format is %s' %(num, d[num]))
+
+print('keys : ', d.keys())
+print('values: ',d.values())
+print('items: ',d.items())
+
+Q6.
+
+l1=['A','B','C','D']
+l2=['Apple','Ball','Cat','Dog']
+
+d1=dict(zip(l1,l2))
+
+print(d1.items())  # Stored as list of tuples
+
+
+d2=dict(list(d1.items())[::2])
+
+print(d2)
+
+
+dict_items([('A', 'Apple'), ('B', 'Ball'), ('C', 'Cat'), ('D', 'Dog')])
+{'A': 'Apple', 'B': 'Ball', 'C': 'Cat', 'D': 'Dog'}
+{'A': 'Apple', 'C': 'Cat'}
+
+
+=========================================================
+Q7.
+# WAP to input a string and count occurrence of each vowel in a string.
+Ex: if user enters:
+“Beautiful Day”
+
+s=input()
+d={}
+
+for c in s.lower():
+    if c in ('a','e','i','o','u') : 
+        d[c]=d[c] + 1  if c in d else 1 
+
+for key,val in sorted(d.items()):
+    print(key ,"=",val)   
+=========================================================
+Q8.
+	
+s=input()
+d={}
+
+for c in s.lower():
+    if c.isalpha():
+        d[c]=d[c]+1  if c in d else 1 
+        
+for i in d :
+    print(i ,"=",d[i])
+
+=========================================================
+Q9.
+
+# WAP that takes a string as input and prints frequency of each word 
+
+name ='count the words in the sentence in , '
+l=name.split()
+d={}
+
+for data in l :
+    if data.isalpha():
+        d[data]=d[data]+1 if data in d  else 1
+
+for key,val in d.items() :
+    print(key ,"=",val)
+
+
+>>>>>>> 9cd367b0ecc34536d27c244073fd396e452eb9d1
 =========================================================

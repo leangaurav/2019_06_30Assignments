@@ -1,0 +1,155 @@
+
+
+## WAF: reverse_list() that takes a list as argument and reverses the elements of the list in
+## place (use indexing operations, not any function or slicing)
+## Logic: if l = [1,2,3,4,5] ; result = [5,4,3,2,1]
+
+def reverse_list(a1):
+    h_ind = len(a1) - 1
+    its = len(a1)//2
+    for i in range(0,its):
+        temp = a1[h_ind]
+        a1[h_ind] = a1[i]
+        a1[i] = temp
+        h_ind -= 1
+    return a1
+print("Reveresed list :", reverse_list([10,20,80,78,99]))
+
+
+o/p:
+
+Reveresed list : [99, 78, 80, 20, 10]
+
+
+
+## WAF: count_even_odd() that counts and returns how many numbers are even and how
+## many are odd in a list of numbers passed as argument.
+
+def count_even_odd(b1):
+    co_ev = 0
+    co_od = 0
+    for i in b1:
+        if i%2 == 0:
+            co_ev += 1
+        elif i%2 != 0:
+            co_od += 1
+    co = (co_ev,co_od)
+    return co
+
+print("count of even and odd in list is :", count_even_odd([4,6,9,3,4]))
+
+
+o/p:
+
+count of even and odd in list is : (3, 2)
+
+
+
+## 2. WAF: maximum() to return the largest number in a list of numbers (do not use max function). 
+## Function takes a list or tuple of numbers as argument.
+
+def maximum(c1):
+    max = 0
+    for i in range(len(c1)):
+        if c1[i] > max:
+            max = c1[i]
+    return max
+print("maximum number is :", maximum((78,90,56,45)) )   
+
+
+o/p:
+
+maximum number is : 90
+
+
+
+## 3. WAF: second_maximum() Create a new version of above code to return the second largest number
+
+def second_maximum(d1):
+    if(len(d1) > 2 ):
+        if d1[0] > d1[1]:
+            f_max = d1[0]
+            s_max = d1[1]
+        else:
+            f_max = d1[1]
+            s_max = d1[0]
+        for i in range(2,len(d1)):
+            if d1[i] > f_max:
+                s_max = f_max
+                f_max = d1[i]
+            
+            else:
+                d1[i] < s_max 
+                s_max = d1[i]
+        f_s = f_max,s_max
+        return f_s
+    else:
+        print("Enter list with atleast 3 numbers ")
+                    
+print("first and second maximum number is :" , second_maximum([10,28,98,78]))
+
+
+o/p:
+
+first and second maximum number is : (98, 78)
+
+
+
+
+
+# In[148]:
+
+
+## 4. WAF: mean() that returns the mean of list of numbers passed to the function as argument
+
+
+def mean_li(e1):
+    mea = 0
+    su = 0
+    s = len(e1)
+    for i in range(len(e1)):
+        su = su + e1[i]
+        mea = su/s
+    return mea
+
+print("Mean of list of number is : ", mean_li([2,5,8,9]))
+
+
+o/p:
+
+Mean of list of number is :  6.0
+
+
+
+### 5. WAF: find_in_range() that takes a three arguments: a list of numbers, start, end
+## The function returns a list of numbers from the original list, which lie between start and
+## end. Ex: find_in_range([3,10, 5, 8, 2, 7], 5, 9), List of numbers = [3,10, 5, 8, 2, 7]
+## start = 5   end = 9  list returned should be [5, 8, 7]
+
+def find_in_range(f1,x,y):
+    if x and y in f1:
+        a = x
+        b = y
+        print("start and end range is :", a,b)
+    else:
+        print("start and end range not found in list ")
+    g1 = []
+    for i in range(len(f1)):
+        if f1[i] >= a and f1[i] <= b:
+            g1.append(f1[i])
+        
+    print("List of number in the range is : ", g1)
+
+find_in_range([3,10, 5, 8, 2, 7], 5, 10)
+
+o/p:
+
+start and end range is : 5 10
+List of number in the range is :  [10, 5, 8, 7]
+
+        
+        
+            
+    
+
+
