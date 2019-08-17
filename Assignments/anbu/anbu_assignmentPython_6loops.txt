@@ -1,0 +1,173 @@
+1. i = input("Enter a string")
+
+for x in  i:
+    print(x)
+
+
+2.i = input("Enter a string")
+
+for x in i:
+    print(ord(x))
+
+
+
+
+
+
+## 3. Write a function that takes a list of numbers from user as argument and returns the sum of only
+## odd numbers (Use only for loop. No need to use if statement).
+
+def list_of_num():
+    n = int(input("Enter how many numbers :"))
+    a1 = []
+    for i in range(1,n+1):
+        print("Enter number :", i)
+        b = int(input())
+        a1.append(b)
+    return a1
+num_list = list_of_num()
+
+sum_odd = []
+for val in num_list:
+    for i in range(0,val%2 != 0):
+        sum_odd.append(val)
+        ad = sum(sum_odd)
+print(sum_odd)
+print("Entered list of numbers :", num_list)
+print("List of odd number is :", sum_odd)
+print("sum of odd number is :", ad)
+
+
+
+## 4. WAP to input a list of numbers and store in a tuple. Now input another number and print the
+## index of this number in the tuple. [Use index function]
+
+l = []
+n = input("Enter a nnumber")
+n = int(n)
+for x in range(n):
+    n1 = input()
+    n1 = int(n1)
+    l.append(n1)
+print(l)
+ln_ = input("enter number to add in tuple")
+ln_ = int(ln_)
+l.append(ln_)
+tup = tuple(l)
+print(tup)
+print(tup.index(ln_))
+
+
+
+## 5 Create a list of 10 random numbers and then print the list, sum of all numbers and average. Use
+## a for loop. Also print elements at only even indexes in the list
+
+
+
+import random
+
+ran = []
+for i in range(1,11):
+    n = random.randint(1,11)
+    ran.append(n)
+print("list of numbers", ran)
+print("sum of all number is ", sum(ran))
+print("Avg of list is ", sum(ran)/len(ran))
+even = ran[1::2]
+odd = ran[0::2]
+
+print("even numbers", even)
+print("odd numbers", odd)
+
+
+
+
+##6.
+
+
+a=[]
+for i in range(1,10):
+    print("enter number", i)
+    j = int(input())
+    a.append(j)
+print(a)
+print(sum(a))
+
+
+
+7.
+n = 4
+for i in range(1,11):
+    print(n, "X", i, "=", n * i)
+
+
+
+
+8.
+
+
+s = input("Enter a string : ")
+c = list(s)
+sp = 0
+print("Entered string is", c)
+for i in c:
+    if(i == ' '):
+        sp += 1 
+print("Number of spaces in string is :", sp)
+
+
+
+9. s = input("Enter a string")
+
+li = list(s)
+vowels = ['a','e','i','o','u','A','E','I','O','U']
+cvowels= 0
+for i in range(len(li)):
+    if(li[i] in vowels):
+        cvowels= cvowels+1
+print(cvowels)
+
+
+
+
+11.Num : 0
+Loop Ends
+
+
+
+12.i)
+
+*****
+*****
+*****
+*****
+*****
+
+12 ii)   
+1
+22
+333
+4444
+55555
+
+
+
+12iii)
+
+
+1
+22
+333
+4444
+55555
+
+
+12 iv)
+
+
+**
+***
+****
+*****
+******
+
