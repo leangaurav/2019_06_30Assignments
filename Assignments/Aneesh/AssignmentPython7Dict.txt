@@ -1,0 +1,202 @@
+1>
+Q:
+WAP to create a dictionary of numbers mapped to their negative value for numbers from 1-5.
+The dictionary should contain something like this:
+Do with both with and without range based for loop.
+A:
+d = {}
+for i in range(1,6):
+    d[i] = -i
+print (d)
+{1: -1, 2: -2, 3: -3, 4: -4, 5: -5}
+
+2>
+Q:
+i>
+d = { 1=2, 2=3}
+  File "<ipython-input-3-30cabed39691>", line 1
+    d = { 1=2, 2=3}
+           ^
+SyntaxError: invalid syntax
+
+ii>
+d = { 1:2, 2:3}
+print (d)
+{1: 2, 2: 3}
+
+iii>
+d = {1,2 ; 2,3}
+  File "<ipython-input-7-a8833e529f34>", line 1
+    d = {1,2 ; 2,3}
+             ^
+SyntaxError: invalid syntax
+
+iv>
+d = {(1,2) , (2,3)}
+print (d)
+{(1, 2), (2, 3)}
+
+v>
+d = {'a':'A', 'b':1, c:[123]}
+print (d)
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-9-0eeecaedb072> in <module>
+----> 1 d = {'a':'A', 'b':1, c:[123]}
+      2 print (d)
+      3 
+      4 
+
+NameError: name 'c' is not defined
+
+vi>
+d = {'a':'A', 'b':1, 'c':[123]}
+print (d)
+{'a': 'A', 'b': 1, 'c': [123]}
+
+
+
+vii>
+d = dict([(1,2),(2,3)])
+print (d)
+{1: 2, 2: 3}
+
+viii>
+d = dict(((1,2),(2,3)))
+print (d)
+{1: 2, 2: 3}
+
+ix>
+d = dict('x'=2, 'y'= 3)
+  File "<ipython-input-16-521619335d50>", line 1
+    d = dict('x'=2, 'y'= 3)
+            ^
+SyntaxError: keyword can't be an expression
+
+x>
+d = dict(x=2, y= 3)
+print (d)
+{'x': 2, 'y': 3}
+
+xi>
+d = dict(1=2, 2= 3)
+print (d)
+  File "<ipython-input-19-66b619bb2fcf>", line 1
+    d = dict(1=2, 2= 3)
+            ^
+SyntaxError: keyword can't be an expression
+
+
+3>
+Q:
+l1 =[1,2,3,4]
+l2 = [10,20,30,40]
+d = dict(zip(l1,l2))
+print (d)
+{1: 10, 2: 20, 3: 30, 4: 40}
+
+4>
+Q:
+Use range based for loop to store all upper case alphabets and their corresponding ASCII
+values in the dictionary d.
+The result should be d = {‘A’: 65, ‘B’:66,…..}
+A:
+d = {}
+for i in range(65,91):
+    a = chr(i)
+    d[a] = ord(a)
+print (d)
+
+{'A': 65, 'B': 66, 'C': 67, 'D': 68, 'E': 69, 'F': 70, 'G': 71, 'H': 72, 'I': 73, 'J': 74, 'K': 75, 'L': 76, 'M': 77, 'N': 78, 'O': 79, 
+'P': 80, 'Q': 81, 'R': 82, 'S': 83, 'T': 84, 'U': 85, 'V': 86, 'W': 87, 'X': 88, 'Y': 89, 'Z': 90}
+
+5>
+Q:
+Create a mapping of number to word from 0-9. (0:’zero’……)
+• Ask user for a single digit number and print the corresponding word format.
+• Print all keys of above dictionary
+• Print all Values of a dictionary
+• Print all Key and Value pairs of above dictionary
+A:
+d = {0:'zero', 1:'one', 2:'two', 3:'three', 4:'four', 5:'five',6:'six',7:'seven', 8:'eight', 9:'nine'}
+s = int(input("Enter the number to find the word: "))
+print("word for number is: ",d[s])
+print("All keys are: ",d.keys())
+print("All values are: ",d.values())
+print("All pairs are: ",d.items())
+print (d)
+
+6>
+Predict Output of:
+A:
+l1= ['A', 'B', 'C','D']
+l2=['Apple','Ball','cat','dog']
+d1 = dict(zip(l1,l2))
+print (d1)
+d2 = dict(list(d1.items()) [::2])
+print(d2)
+O/P:
+{'A': 'Apple', 'B': 'Ball', 'C': 'cat', 'D': 'dog'}
+{'A': 'Apple', 'C': 'cat'}
+
+
+7>
+Q:
+WAP to input a string and count occurrence of each vowel in a string.
+Ex: if user enters:
+“Beautiful Day”
+Output should Be:
+a:2
+e:1
+I :1
+o:0
+u:2
+A:
+s = input("Enter the string:")
+s = s.lower()
+d = {}
+for c in s:
+    if c in 'aeiou':
+        d[c] = d.get(c, 0) + 1
+print (d)
+
+8>
+Q:
+Update above program to print frequency of each alphabet present in string.
+A:
+s = input("Enter the string:")
+s = s.lower()
+d = {}
+for c in s:
+        d[c] = d.get(c, 0) + 1
+print (d)
+
+9>
+Q:
+WAP that takes a string as input and prints frequency of each word.
+Ex: if input is “count the words in the sentence in”
+Output:
+count: 1
+the: 2
+words: 1
+in: 2
+sentence: 1
+A:
+s = input("Enter the string separated by space:")
+l = s.split(' ')
+#print (l)
+d = {}
+for i in l:
+    d[i] = d.get(i,0) + 1
+print (d)
+
+
+
+
+
+
+
+
+
+
+

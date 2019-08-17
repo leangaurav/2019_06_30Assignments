@@ -1,0 +1,141 @@
+image_win = """
+  \\O/  
+   |
+  / \ 
+"""
+images= [
+
+"""
+       |
+       |
+       |
+       |
+ ______|
+""",
+"""
+    ---|
+       |
+       |
+       |
+ ______|
+""",
+"""
+   |---|
+       |
+       |
+       |
+ ______|
+""",
+"""
+   |---|
+   O   |
+       |
+       |
+ ______|
+""",
+"""
+   |---|
+   O   |
+   |   |
+       |
+ ______|
+""",
+"""
+   |---|
+   O   |
+  /|   |
+       |
+ ______|
+""",
+"""
+   |---|
+   O   |
+  /|\  |
+       |
+ ______|
+""",
+"""
+   |---|
+   O   |
+  /|\  |
+  /    |
+ ______|
+""",
+"""
+   |---|
+   O   |
+  /|\  |
+  / \  |
+ ______|
+"""
+]
+
+main_menu = """
+1. Play
+2. Rules
+3. Exit
+"""
+
+def play_game():
+    import random as rn
+    import numpy as np
+    l = rn.randint(3,6)
+    word = []
+    for i in range(0,l):
+        word.append(chr( rn.randint(65,90) ))
+    #print (word)
+    h = []
+    for i in range(0,l):
+        h.append('_')
+    
+    print (h)
+    i=1
+    while i <9:
+        value = input("Keep guessing and enter the character:")
+        if value in word:
+            values = np.array(word)
+            searchval = value
+            ii = np.where(values == searchval)[0]
+            #z = word.index(value)
+            #print (ii)
+            for k in range(0, len(ii)):
+                         h[ii[k]] = value
+                        
+            print (h)
+            print ()
+            if word == h:
+                print ("You have won")
+                print ("The word is:",''.join(h))
+                return
+                
+            
+        else:
+            print (images[i])
+            i += 1
+            print ("Attempts remaining",(9 - i))
+            print ()
+	    
+	    
+def print_rules():
+	"""
+	Read rules from file rules.txt and print on the screen
+	Use file handling for this
+	"""
+	f = open('rule.txt', 'r')
+	for line in f:
+            print (line)
+	
+	
+def exit():
+    print ("You have succefully exit the game")
+    return
+	
+	
+print (main_menu)
+x = input("Select the option either 1,2,3:")
+if x == '1':
+    play_game()
+elif x == '2':
+    print_rules()
+else:
+    exit()

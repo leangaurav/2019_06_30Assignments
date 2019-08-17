@@ -1,0 +1,169 @@
+1>
+Q:
+WAP to input a string and print individual characters in the string using for loop.
+A:
+s = input("Enter the string:")
+for i in s:
+    print (i)
+
+2>
+Q:
+WAP to input a string and print the ASCII value of each character in the string.
+A:
+s = input("Enter the string:")
+for i in s:
+    print (ord(i))
+
+3>
+Q:
+Write a function that takes a list of numbers from user as argument and returns the sum of only
+odd numbers (Use only for loop. No need to use if statement).
+A:
+a = input(" Enter the numbers separated by space")
+a = a.split(' ')
+add = 0
+for i in a:
+    i = int(i)
+    for _ in range(0,i%2):
+        add += i
+print (add)
+
+4>
+Q:
+WAP to input a list of numbers and store in a tuple. Now input another number and print the
+index of this number in the tuple. [Use index function]
+A:
+a = input(" Enter the numbers separated by space")
+a = a.split(' ')
+print (a)
+t = tuple(a)
+print (t)
+print (t.index('20'))
+
+5>
+Q:
+Create a list of 10 random numbers and then print the list, sum of all numbers and average. Use
+a for loop. Also print elements at only even indexes in the list.
+A:
+import random
+l = []
+add = 0
+for i in range(0,10):
+    x = random.randrange(1,100)
+    add += x
+    l.append(x)
+    
+print ("List is:" ,l)
+print ("Sum of all number is:", (add))
+print ("Average of all number is:" ,(add/10))
+print ("List at even index is:" ,(l[::2]))
+
+6>
+Q:
+WAP to input 10 numbers repeatedly (using range based for loop) and store them in a list. Print
+the list and sum of numbers in the list.
+A:
+l = []
+for i in range(0,10):
+    a = int (input ("Enter the number:"))
+    l.append(a)
+    add += a
+print ("list is:",l)
+print ("Sum is:",add)
+
+
+7>
+Q:
+WAP to input a number and print its table. Ex: if user enters the number as 7, output should be
+A:
+n = int (input ("Enter the number:"))
+for i in range(1,11):
+    print (n , ' x', i, ' = ', n*i )
+
+8>
+Q:
+WAP to print total number of spaces in a string (Use for loop to iterate over the string. Don’t use
+count function).
+A:
+s = input ("Enter the string:")
+count = 0
+for i in s:
+    if i == ' ':
+        count += 1
+print (count)
+
+9>
+Q:
+WAP to input a string and count number of vowels in the string. [Note: it should work for both
+capital and small alphabets]
+A:
+a = input("Enter a string:")
+s = a.lower()
+c = s.count('a') + s.count('e') + s.count('i') + s.count('o') + s.count('u')
+print(c)
+
+10>
+Q:
+WAP to input a string and replace all vowels with ‘_’.
+[Hint: Convert string to list. Remember!! Strings are immutable. Replace in the list and then join]
+A:
+a = input("Enter a string:")
+s = a.lower()
+s = s.replace('a','_').replace('e','_').replace('i','_').replace('o','_').replace('u','_')
+print (s)
+
+11>
+Q:
+i>
+Find output:
+A:
+for num in range(10):
+    print ("Num:", num)
+    if num%4 == 0:
+        break
+print ("End loop")
+Num: 0
+End loop
+
+ii>
+import sys
+for num in range(10):
+    print ("Num:", num)
+    if num%4 == 0:
+        sys.exit()
+print ("End loop")
+Num: 0
+
+An exception has occurred, use %tb to see the full traceback.
+
+SystemExit
+
+
+12>
+Q:
+for i1 in range(1,6):
+    for i2 in range(5):
+        print('*'. end= '')
+    print ()
+A:
+error came
+File "<ipython-input-21-66bcedeff822>", line 3
+    print('*'. end= '')
+         ^
+SyntaxError: keyword can't be an expression
+
+
+
+Q:
+for i1 in range(1,6):
+    print (str(i1)*i1)
+A:
+1
+22
+333
+4444
+55555
+
+
+
+	
