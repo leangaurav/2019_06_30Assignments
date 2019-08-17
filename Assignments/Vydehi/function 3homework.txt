@@ -1,0 +1,106 @@
+1. s = str(input("Enter a string"))
+e = str(input("Enter another string"))
+s,e = e,s
+print(s,e)
+
+Enter a stringred
+Enter another stringwhite
+white red
+​
+2.  from random import randint
+a = randint(0,26)
+b = randint(0,26)
+c = randint(0,26)
+d = randint(0,26)
+print(a,b,c,d)
+avg = (a+b+c+d)/4
+print(avg)
+
+20 24 2 10
+14.0
+
+3.  import string, random
+s = string.ascii_letters
+p = random.randrange(len(s))
+print(s[p])
+
+f
+
+4.   def get_si(p,t,r):
+    si = (p*t*r)/100
+    return(si)
+res = get_si(100,30,100)
+print(res)
+
+3000.0
+
+5. def get_amount(p, r = 10, t =1):
+    si = get_si(100,10,1)
+    amount = si+p
+    return amount
+res1 = get_amount(10)
+print(res1)
+
+20.0
+
+6.   def get_ci(p,t,r):
+    ci = p*((1+r/100)**t)
+    ci = ci-p
+    return ci
+get_ci(1000,30,10)
+
+16449.40226888645
+
+
+7.  def get_q_r(quotient,remainder):
+    q =(i/p, i%p)
+    return q
+i = int(input("Enter a number"))
+p = int(input("Enter another number"))
+get_q_r(i, p)
+
+Enter a number25
+Enter another number5
+(5.0, 0)
+
+
+8.  import math
+def len_Hypo(h,b):
+    l=((h)**2 + (b)**2)
+    return math.sqrt(l)
+res = len_Hypo(7,9)
+print("Length of hypothenus traingle is :", res)
+
+Length of hypothenus traingle is : 11.40175425099138
+
+9.   x = 2
+x *= 3
+x =x%4
+y = -x
+print(x,y)
+
+2 -2
+
+
+10.  def funct():
+    pass
+print(funct())
+
+None
+
+11.  python command
+
+
+12.   time = float(input("Input time in seconds: "))
+day = time // (24 * 3600)
+time = time % (24 * 3600)
+hour = time // 3600
+time %= 3600
+minutes = time // 60
+time %= 60
+seconds = time
+print("d:h:m:s-> %d:%d:%d:%d" % (day, hour, minutes, seconds))
+
+
+Input time in seconds: 567893
+d:h:m:s-> 6:13:44:53

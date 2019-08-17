@@ -1,0 +1,145 @@
+1..   s='Python is Object Oriented'
+s[4:10]
+
+'on is '
+
+2.  s= ''
+print(s[1])
+
+IndexError                                Traceback (most recent call last)
+<ipython-input-9-1d0d5b971d35> in <module>
+      1 s= ''
+----> 2 print(s[1])
+
+IndexError: string index out of range
+
+
+3.   S='Gaurav'  
+print(s[1])
+
+IndexError                                Traceback (most recent call last)
+<ipython-input-10-ac1e71af51eb> in <module>
+      1 S='Gaurav'
+----> 2 print(s[1])
+
+IndexError: string index out of range
+
+4.   s='a b cd' 
+print(len(s))
+print(s[::2])
+print(len(s[::2])) 
+
+6
+abc
+3
+
+5.  s='a#b#c#d#'
+print(s.split())
+print(s.split('#'))
+l=s.split('#')
+s='$'.join(l) 
+print(s)
+
+['a#b#c#d#']
+['a', 'b', 'c', 'd', '']
+a$b$c$d$
+
+
+
+6.  S='Gaurav' 
+S=S[::-2][::-2] 
+print(S) 
+
+av
+
+7.   print(1>2)
+False
+
+8.   print(4%2, 5%2, 2%5, sep=',')
+0,1,2
+
+9.   s='abcba'
+s.upper()
+print(s)
+print(s.count('A'), end = ',')
+print(s.count('A', 2,4) , end = ',')
+print(s.count('a', 2,4) , end = ',')
+abcba
+0,0,0,
+
+10.   s = input("Enter the string separated by space:")
+s = s.split()
+print (s)
+s = ''.join(s)
+print (s)
+
+Enter the string separated by space:redwood trees
+['redwood', 'trees']
+redwoodtrees
+
+11.  print(dir(str))
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+
+12.   s=dir(str)
+print('rstrip' in s)
+
+True
+
+13.   s1 = '*****'
+s2 = '  *  '
+s3 = '  *  '
+s4 = '  *  '
+s5 = '  *  '
+print (s1,s2,s3,s4,s5, sep = '\n')
+
+14.   s1 = '*     *'
+s2 = '* * * *'
+s3 = '*  *  *'
+s4 = '*     *'
+print (s1,s2,s3,s4, sep = '\n')
+
+
+15.    s1 ='_______'
+s2 =' |     |'
+s3 =' O     |'
+s4 ='/|\    |'
+s5 ='/ \    |'
+s6 ='       |'
+s7 ='_______'
+print (s1,s2,s3,s4,s5,s6,s7, sep = '\n')
+
+
+
+16.  s = input("Enter a String : ")
+s = s.replace(' ', '\n')
+print (s)
+
+Enter a String : redwood trees are the best
+redwood
+trees
+are
+the
+best
+
+
+
+17.   s = input("Enter your name:")
+f = s.upper()
+l = s.split()
+print(l[0], len(l[0]))
+print(l[1], len(l[1]))
+
+Enter your name:Vydehi Dhulipala
+Vydehi 6
+Dhulipala 9
+
+
+18.    s = input("Enter a string:")
+l = len(s)
+a = l//2
+print  (s[:a])
+print (s[a:])
+
+Enter a string:VydehiDhulipala
+VydehiD
+hulipala

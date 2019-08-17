@@ -1,0 +1,126 @@
+1.   def div(a, b):
+    return True if a % b == 0 else False
+print(div(15, 3))
+print(div(16, 7))
+
+True
+False
+
+2.  p = input().upper()
+np = p[::-1]
+if np == p:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+abccba
+Palindrome
+
+3. x = input("X: ")
+y = input("Y : ")
+z = input("Z:")
+if x == y == z:
+    print("Equilateral Triangle")
+elif x == y or y == z or z == x:
+    print("Isoceles Triangle")
+else:
+    print("Scalene Traingle")
+	
+X: 9
+Y : 5
+Z:4
+Scalene Traingle
+
+4.  n = int(input("Enter a number: "))
+if n%2 == 0:
+    print("Even")
+else:
+    print("Odd")
+	
+	
+Enter a number: 6
+Even
+
+
+5.  x = int(input("Enter age"))
+if x <=12:
+    print("Child")
+elif x == 13 or x <=17:
+    print("Teen")
+elif x == 18 or x <= 50:
+    print("Adult")
+elif x == 51 or x <=100:
+    print("Senior Citizen")
+else:
+    if x > 100:
+        print("Congratulations")
+		
+Enter age17
+Teen
+
+6.  
+
+7.   n= input('Enter a String :')
+length=len(n)%2
+if length==0:
+    s=n.upper()
+    print(s)
+
+else:
+    s=n.lower()
+    print(s)
+	
+	Enter a String :yesterday
+yesterday
+​
+
+
+8.   s = str(input("Enter a string"))
+if s != 'Egg':
+    print("VEG")
+else:
+    print("NON-VEG")
+	
+	Enter a string vegetables
+VEG
+
+
+9.  if not 1:
+    print('False')
+else:
+    print('True')
+
+True
+
+      if 1:
+    print('True')
+else:
+    print('False')
+	
+	True
+	
+	
+   if 'a' > 'A':
+    print('Weird !!')
+else:
+    print('Makes Sense')
+
+  Weird !!
+  
+  
+  a=[1,2,3,4]
+if 1>1:
+    a=a[::-1]
+else:
+    a=a[-1::-1]
+
+print(a)
+
+[4, 3, 2, 1]
+
+
+
+
+
+10.  
+
