@@ -1,0 +1,76 @@
+1)
+    f = open('alpha1.txt', 'w')
+
+    for i in range(97, 123):
+        print(chr(i),file=f)
+
+    f.close()
+2)
+import sys
+
+print(sys.argv)
+
+3)
+f= open('file','w')
+f.write('line with some characters')
+f.close()
+
+f=open('file','r')
+print(f.tell())
+print(f.read(4))
+print(f.tell())
+
+Output:-
+0
+line
+4
+
+4)
+with open('tables.txt','r') as rf:
+    with open('copyfile.txt','w') as wf:
+        wf.write(rf.read())
+5)
+
+with open('alphabet.txt','r') as rf:
+    with open('newalphUCLC.txt','w') as wf:
+        wf.write(rf.read().swapcase())
+        
+6)
+with open('newalphUCLC.txt','r') as rf:
+    print(len(rf.read().split(' ')) - 1)
+    
+7)
+with open('newalphUCLC.txt','r') as rf:
+    print(len(rf.read().split(' ')) - 1)
+
+with open('newalphUCLC.txt','r') as rf:
+    print(len(rf.read().split(',')) - 1)
+    
+with open('newalphUCLC.txt','r') as rf:
+    print(len(rf.read().split('a')) - 1)
+    
+8)
+diff.py
+import sys
+with open(sys.argv[1], 'r') as f1:
+    with open(sys.argv[2], 'r') as f2:
+        if f2.read() == f1.read():
+            print("True")
+        else:
+            print("False")
+9)
+filename = input("Enter the filename:")
+with open(filename,'r') as rf:
+    print(len(rf.read().split()))
+        
+        Or
+
+filename = input("Enter the file name:")
+no_words = 0
+with open(filename,'r') as rf:
+    for line in rf:
+        words = line.split()
+        no_words +=len(words)
+print("Number of words:",no_words)
+
+10)

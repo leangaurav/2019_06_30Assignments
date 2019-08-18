@@ -99,7 +99,7 @@ def play_game():
             #z = word.index(value)
             #print (ii)
             for k in range(0, len(ii)):
-                         h[ii[k]] = value
+                h[ii[k]] = value
                         
             print (h)
             print ()
