@@ -65,33 +65,38 @@ maximum number is : 90
 
 ## 3. WAF: second_maximum() Create a new version of above code to return the second largest number
 
-def second_maximum(d1):
-    if(len(d1) > 2 ):
-        if d1[0] > d1[1]:
-            f_max = d1[0]
-            s_max = d1[1]
+def second_max(b1):
+    if len(b1) >= 2:
+        if b1[0] > b1[1]:
+            f_max = b1[0]
+            s_max = b1[1]
         else:
-            f_max = d1[1]
-            s_max = d1[0]
-        for i in range(2,len(d1)):
-            if d1[i] > f_max:
+            f_max = b1[1]
+            s_max = b1[0]
+        #print("Intial fmax and smax are : ", f_max,s_max)
+        for i in range(2,len(b1)):
+            if b1[i] > f_max:
                 s_max = f_max
-                f_max = d1[i]
-            
-            else:
-                d1[i] < s_max 
-                s_max = d1[i]
-        f_s = f_max,s_max
-        return f_s
+                f_max = b1[i]
+                
+            elif b1[i] > s_max:
+                s_max = b1[i]
+        f_s = (f_max,s_max)
+        print("First and second maximum in list are :", f_s)
     else:
-        print("Enter list with atleast 3 numbers ")
-                    
-print("first and second maximum number is :" , second_maximum([10,28,98,78]))
-
+        print("Enter list with atleast 2 numbers ")
+        
+second_max([40,30,20,10])
+second_max([10,20,30,40])
+second_max([40,20,30,10])
+second_max([-4,-3,-2,-1])
 
 o/p:
 
-first and second maximum number is : (98, 78)
+First and second maximum in list are : (40, 30)
+First and second maximum in list are : (40, 30)
+First and second maximum in list are : (40, 30)
+First and second maximum in list are : (-1, -2)
 
 
 
@@ -126,26 +131,19 @@ Mean of list of number is :  6.0
 ## end. Ex: find_in_range([3,10, 5, 8, 2, 7], 5, 9), List of numbers = [3,10, 5, 8, 2, 7]
 ## start = 5   end = 9  list returned should be [5, 8, 7]
 
-def find_in_range(f1,x,y):
-    if x and y in f1:
-        a = x
-        b = y
-        print("start and end range is :", a,b)
-    else:
-        print("start and end range not found in list ")
-    g1 = []
-    for i in range(len(f1)):
-        if f1[i] >= a and f1[i] <= b:
-            g1.append(f1[i])
-        
-    print("List of number in the range is : ", g1)
 
-find_in_range([3,10, 5, 8, 2, 7], 5, 10)
+
+def find_in_range(l,s,e):
+    g1 = []
+    for i in range(len(l)):
+        if l[i] >= s and l[i] <= e:
+            g1.append(l[i])
+    return g1
+print(find_in_range([3,10, 5, 8, 2, 7], 5, 9))
 
 o/p:
 
-start and end range is : 5 10
-List of number in the range is :  [10, 5, 8, 7]
+[5, 8, 7]
 
         
         
