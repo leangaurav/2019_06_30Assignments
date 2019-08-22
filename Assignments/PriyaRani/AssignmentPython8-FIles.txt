@@ -7,6 +7,12 @@
     f.close()
 2)
 import sys
+with open(sys.argv[0],'r') as file1:
+    for line in file1:
+        print(line,end='')
+    Or
+    
+import sys
 
 print(sys.argv)
 
@@ -32,14 +38,54 @@ with open('tables.txt','r') as rf:
 5)
 
 with open('alphabet.txt','r') as rf:
-    with open('newalphUCLC.txt','w') as wf:
+    with open('alphabet.txt','w') as wf:
         wf.write(rf.read().swapcase())
         
+       Or
+f = open('normal.txt', 'r')
+r = open('reverse.txt','w')
+a = []
+for line in f:
+	for i in line:
+		if i.isupper():
+			a.append(i.lower())
+		else :
+			a.append(i.upper())
+
+	line =(''.join(a))
+	r.write(line)  
+f.close()
+r.close() 
+
 6)
+import sys
+with open(sys.argv[1],'r') as file1:
+    count =0
+    for line in file1:
+        print(line)
+        for i in line:
+            if i == ' ':
+                count +=1
+            if 
+print("Total number of spaces:", count)
+
+or
+
 with open('newalphUCLC.txt','r') as rf:
     print(len(rf.read().split(' ')) - 1)
     
 7)
+import sys
+d={}
+with open(sys.argv[1],'r') as file1:
+    for line in file1:
+        print(line)
+        for i in line:
+            d[i]=d.get(i,0)+1
+            
+print(d)
+
+Or
 with open('newalphUCLC.txt','r') as rf:
     print(len(rf.read().split(' ')) - 1)
 

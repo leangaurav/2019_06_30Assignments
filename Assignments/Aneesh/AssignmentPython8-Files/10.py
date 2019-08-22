@@ -10,5 +10,5 @@ for line in f:
 	    print (a[i])
 	    print ( a[i][::-1])
 	    if a[i] == a[i][::-1]:
-	        word += 1    			
+	        word += 1
 print ("Total number of palindromes in file is:",word)
