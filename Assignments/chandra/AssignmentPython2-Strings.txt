@@ -1,0 +1,71 @@
+1 Guess output
+
+  a) s[-1] =d
+  b) s[::-1] = reverse = detneirO tcejbO si nohtyP
+  c) s[:-1] = Python is Object Oriente  (???)
+  d) s[1:1] = no output
+  e) s[4:10] =  4 start 10 end = on is
+
+2)what error you see :
+
+empty list , 1 elemnt is not present : Index out of Range
+
+3) In this "s" is not defined. s[1] out of range after running.
+
+4) Find output of following:
+ 
+a)  s = 'a b cd'   i) 6 ii) abc (??)  iii)3
+
+b)  s = 'a#b#c#d#' i) ['a#b#c#d#'] ii) ['a', 'b', 'c', 'd', ''] iii) a$b$c$d$
+
+c) av ??  ( S =  Gaurav , S = S[::-2][::-2]
+
+d) 1>2  False
+
+e) 0,1,2 ( , separated output)
+
+f) Strings are immutable - abcba and 0,0,0,
+
+5 : remove space from string :
+
+s = input ("Enter a string with spaces :")
+s1 = s.replace(" ",'')
+print(s1)
+
+6 : [] list , indexing
+
+7: ??
+
+8.rstrip is available in str class ?
+
+
+9 . For loops
+
+a)
+
+b)
+
+c)
+
+
+10) input string and replace space with newline:
+
+s = input ("Enter a string with spaces :")
+s1 = s.replace(" ",'\\n')
+print(s1)
+
+
+11) able to split ?? but further ( name separated by _)
+
+s = input ("Enter first and last name with spaces :")
+s1 = print(s.upper())
+s2= s1.split(" ")
+print(s2)
+
+
+12) string in 2 halves:
+s = input("Enter a string ")
+l = len(s)
+print("length of string is",l)
+i =l//2
+print(s[:i] , s[i:])

@@ -1,0 +1,154 @@
+
+
+1) Input tem in fah and print in Celcius
+ #r = (9/5) *c +32
+
+def Cel_toFah (c):
+  F =  (9/5) *c +32
+  return F
+  
+Fah = int(input("Input temp in degree Cel:"))
+r = Cel_toFah(Fah)
+print (r)
+
+
+2)
+
+# square and cube
+
+def square (s):
+    value = s *s 
+    return value
+
+def cube (c):
+    value = c *c *c
+    return value
+
+Sq = int(input("Enter a number to find its square and cube::"))
+S = square (Sq)
+C = cube (Sq)
+print("Square is:", S,"Cube is :" ,C)
+
+
+3)
+
+# input n and m , n2 + m2
+
+def cal (n,m):
+   value = (n*n) + (m*m)
+   return value
+
+N = int(input("Enter n :"))
+M = int(input("Enter m : "))
+
+V = cal(N,M)
+print ("Required Value is :", V)
+
+4)
+
+# m raised to power n
+
+def power (m,n):
+    value = pow(m,n)
+    return value
+
+M = int(input("Enter m:"))
+N = int(input("Enter n:"))
+
+V = power(M,N)
+print("Required Value is :",V)
+
+5)
+
+# Simple interest Calculator
+
+def SimpleInt(P,R,T):
+    value = (P*R*T)/ 100
+    return value
+
+P = int(input("Enter Pricipal value invested :"))
+R = int(input("Enter Rate of Interest :"))
+T = int(input("Enter Time in years :"))
+
+SI = SimpleInt(P,R,T)
+print("Simple Interest Earned is :",SI)
+
+6) Compound Interest 
+
+def CompoundInt(P,R,N,T):
+    
+  Value = P*((1+(R/N))**T)
+    
+  return Value
+
+
+
+P = int(input("Enter Pricipal :"))
+
+R = int(input("Enter Rate of Interest :"))
+
+N = int(input("Enter Coumpounding frequency :"))
+
+T = int(input("Enter the time :"))
+
+
+CI = CompoundInt(P,R,T,N)
+
+print("Compund interest amount is :",CI)
+
+
+
+7 ) Sum of natural numbers : ( will use for loop )
+
+def sum(n):
+ s = 0
+ while n > 0:
+     s = s+ n
+     n = n-1
+ return s
+
+N = int(input("Enter a positive non zero number to find sum till that number:"))
+Sum = sum(N)
+print(Sum)
+
+
+
+
+8) Input 2 numbers and swap them : (tmp and pythonic logic)
+
+def swapping(N1,N2):
+  temp = N1
+  N1 = N2
+  N2 = temp
+  print("Value of number one after swapping",N1)
+  print("Value of number two after swapping",N2)
+  return N1,N2
+  
+
+N1 = int(input("Enter number one :"))
+N2 = int(input("Enter number two:"))
+
+
+9 . Ascii value of all whitespace characters
+
+
+
+10. Ascii value of input character
+
+n = input("Enter a character :")
+print("Ascii value of character is :",ord(n))
+
+
+12. % and sum of marks:
+
+M = int(input("Enter marks in Maths :"))
+S = int(input("Enter marks in Science :"))
+E = int(input("Enter marks in English :"))
+SST = int(input("Enter marks in SST :"))
+H = int(input("Enter marks in Hindi :"))
+
+Sum = M + S+ E+SST+H
+print ("Total Marks = ",Sum)
+Per = int((Sum / 500 ) * 100)
+print ("Percentage = ",Per ,"%")
+
