@@ -1,0 +1,174 @@
+AssignmentPython3-FunctionsIntro.pdf
+
+1) WAP to input 2 strings and swap the strings.
+
+# input 2 strings and swap them
+#WAP to input 2 strings and swap the strings.
+
+def swap_str(st1,st2):
+    temp = st1
+    st1 =  st2
+    st2 = temp
+    print("String 1 after swapping :", st1)
+    print("String 2 after swapping :" ,st2)
+
+
+
+    
+a1 = input("Enter first string:")
+a2 = input("Enter second string:")
+swap_str(a1,a2)
+
+
+
+
+
+2)#WAP to generate 4 random numbers in the range 0-26 and print their average
+
+
+import random
+def rand_avr(n1,n2,n3,n4):
+    
+   
+    avr = ((n1+n2+n3+n4)/4)
+    print("Four random numbers are :", n1 , n2 , n3 , n4)
+    print("Average of four numbers is: " , avr)
+          
+print()
+n1 = random.randint(0,26)
+n2 = random.randint(0,26)
+n3 = random.randint(0,26)
+n4 = random.randint(0,26)
+rand_avr(n1,n2,n3,n4) 
+
+
+3. WAP to generate and print a random uppercase or lowercase alphabet.Try :
+a) Create a string containing all alphabets and then select a random alphabet
+b)Check the module string.
+
+# WAP to generate and print a random uppercase or lowercase alphabet
+import string, random
+
+s = string.ascii_letters
+print(s)
+p = random.randrange(len(s))
+print(s[p])
+
+
+4.# WAF get_si() that takes Principle, Rate and Time as arguments and returns 
+
+
+def get_si(P,R,T):
+    
+    SI = (P*R*T)/100
+    return SI
+
+
+P = int(input("Enter the Principal Amount :"))
+R = float(input("Enter the rate of Interest:"))       
+T = float(input("Enter the time in years:"))
+S = get_si(P,R,T)
+print("Simple Interest calculated is :", S)  
+
+
+5) WAF get_amount() that takes Principle, Rate and Time as arguments and returns the.Total amount using the get_si() function from above to calculate the SI. Also provide Rate = 10 and Time = 1 as default arguments.
+
+def get_amount(S1,P):
+    amount = S1+P
+    return amount
+
+P = int(input("Enter the Principal Amount :"))
+S1 = get_si(P,R=10,T=1)
+print("Simple Interest calculated is :", S1) 
+A = get_amount(S1,P)
+print("Total Amount is:",A)
+
+
+
+6 # WAP get_ci() that takes Principle, Rate and Time as arguments and returns the Compound Interest.
+
+def get_ci(P,R,T):
+    CI = P*((1+(R/100))**T)
+    return CI
+
+P = int(input("Enter the Principal Amount :"))
+R = float(input("Enter the rate of Interest:"))       
+T = float(input("Enter the time in years:"))
+C1 = get_ci(P,R,T)
+print("Total amount Calculated is :", C1)
+
+7) # WAP get_q_r() taking 2 numbers as parameters and returns the quotient and remainder in the form of a tuple.
+
+
+def get_q_r(n1,n2):
+    rq= (n1/n2 , n1%n2)
+    return rq
+
+T1 = float(input("Enter First number :"))
+T2 = float(input("Enter second number:"))
+result = get_q_r(T1,T2)
+print(result)
+
+
+
+8)# WAP to find the length of hypotenuse of a right angled triangle, input the height and base from user.
+
+import math
+def get_hy(h,b):
+    hy = math.sqrt(b**2+h**2)
+    return hy
+
+
+h = float(input("Enter height of triangle :"))
+b = float(input("Enter base of triangle :"))
+print("Hypotenuse of right angled triangle is:")
+h = get_hy(h,b)
+print(h)
+
+
+9) # WAP to input number of seconds and print in days, hours, minutes and seconds
+
+def seconds_day(s):
+    day = s// (24 * 3600)
+    s = s % (24 * 3600)
+    hour = s // 3600
+    s %= 3600
+    minutes = s // 60
+    s % 60
+    seconds = s
+    print("Seconds converted to day is:",day ,":days",hour ,":hours",minutes,":minutes",seconds,":Seconds")
+    
+time = int(input("Enter time in seconds:")) 
+print ("Converted time is ::")
+seconds_day(time)
+
+
+10) Check your version of python interpreter without opening the interpreter:
+
+C:\Users\chasharm>python
+Python 3.7.3 (default, Mar 27 2019, 17:13:21) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+
+11) Find output 
+
+2 -2
+
+12) Find Output
+
+None
+
+
+13) # WAP to input the real and imaginary part of a complex number and print it on screen.
+
+def real_im(r,i):
+   
+    print("re:{} im:{}".format(r,i))
+    
+    
+r=input("Enter the real part of number: ")
+i=input("Enter the imaginary part of number: ")   
+real_im(r,i)
