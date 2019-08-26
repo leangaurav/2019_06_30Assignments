@@ -1,0 +1,125 @@
+### Assignment_8Files
+
+## 1)1. Write a program in python that stores alphabets from a to z in a text file
+import string
+
+with open('alphabets1.txt', 'w') as f:
+    for i in range(97, 123):
+	    print(chr(i),end = '', file = f)
+		
+with open('alphabets2.txt', 'w') as f2:
+    print(string.ascii_lowercase,file = f2)	
+	
+
+## 2. Write a program to read itself and print on the screen (Use Command Line Arguments).
+
+import sys
+
+with open(sys.argv[0], 'r') as f1:
+    print(f1.read())
+	
+	
+	
+## 3. Predict output of the following piece of code:
+
+f = open('file','w')
+f.write('line with some characters')
+f.close()
+
+
+f = open('file','r')
+print(f.tell())
+print(f.read(4))
+print(f.tell())
+
+
+o/p:
+0
+Line
+4
+
+## 4. Write a program to read a file and copy it into a new file
+
+with open('alphabets1.txt', 'r') as f1:
+    with open('alphabets1copy.txt', 'w') as f2:
+	    for line in f1:
+		    f2.write(line)
+	
+## 5. Write a program to read a file and copy the contents to a new file such that the case gets
+## reversed. i.e. upper case becomes lower case and vice versa
+
+
+with open('sample1.txt', 'r') as f1:
+    with open('alphabets1changecase.txt', 'w') as f2:
+	    for line in f1:
+		    f2.write(line.swapcase())
+			
+## 6. Write a program that take a file name as command line argument, opens it and then counts
+## number of space characters in that file
+
+import sys
+
+with open(sys.argv[1],'r') as f:
+    for line in f:
+        count_space = line.count(' ')
+    print("Number of spaces in file is :" , count_space)	
+	
+##7. Modify the above program to count the occurrence of each symbol i.e. count of alphabet ‘a’,
+## count of spaces, count of commas and so forth
+
+import sys
+
+with open(sys.argv[1], 'r') as f2:
+	d = {}
+	for line in f2:
+		for i in line:
+			d[i] = d.get(i,0) + 1
+	print(d)
+	
+## 8. Write a script called diff.py that take two file names as arguments and checks if the content of
+## both the files is same and prints true or false.
+
+import sys
+with open(sys.argv[1], 'r') as f1:
+    with open(sys.argv[2], 'r') as f2:
+        if f2.read() == f1.read():
+            print("True")
+        else:
+            print("False")
+
+
+
+## 9. WAP to count the number of words in a file.
+
+
+import sys
+
+with open(sys.argv[1], 'r') as f:
+
+    for line in f:
+        w_l = line.split(' ')
+    print (w_l)	
+    print(len(w_l))
+	
+## 10. Update the above program to count the number of palindromes present in the file.
+
+
+import sys
+
+with open (sys.argv[1],'r') as f:
+    pal=[]
+    co_pal = 0
+    for line in f:
+        wor = line.lower().split()
+    print(wor)
+    for i in range(len(wor)):
+        if wor[i] == wor[i][: : -1]:
+            co_pal += 1
+            pal.append(wor[i])
+    print("Count of palindromes is :", co_pal)
+    print("List of palindromes   :", pal)
+
+
+##11. Update the program again to count and print number of anagrams in the file.
+
+Doubt
