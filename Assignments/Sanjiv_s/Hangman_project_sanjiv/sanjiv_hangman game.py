@@ -133,11 +133,11 @@ def play_game():
 
 
       count=0
-      for b in rnd_wrd:
-        if b==user_guess:
-          correct_guess[count]=b
+      for b in range(len(rnd_wrd)):
+        if rnd_wrd[b]==user_guess:
+          correct_guess[b]=rnd_wrd[b]
           print("Correct guess !! ",' '.join(correct_guess),'\t\t' ,images[wrong])
-        k+=1
+        
 
 
         if (''.join(correct_guess))==rnd_wrd:
@@ -147,14 +147,14 @@ def play_game():
 
 
 
-      if user_guess not in rnd_wrd:
-        wrong+=1
-        print('\n\t\t\t',images[wrong],'\t\t\t\t',' '.join(correct_guess),"Nope wrong guess!!! \n\n\n")
-        
-      if wrong==8:
-        print("Out of turns !!! You lose ")
-        exit()
-                    
+        if user_guess not in rnd_wrd:
+          wrong+=1
+          print('\n\t\t\t',images[wrong],'\t\t\t\t',' '.join(correct_guess),"Nope wrong guess!!! \n\n\n")
+          
+        if wrong==8:
+          print("Out of turns !!! You lose ")
+          exit()
+                      
       
     else:
       if user_guess==rnd_wrd:
