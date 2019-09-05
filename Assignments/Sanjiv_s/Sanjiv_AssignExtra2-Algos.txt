@@ -1,0 +1,68 @@
+# Sanjiv's Assignment
+
+Q1.	def reverse_list(li):
+    		for i in range(len(li)//2):
+        		li[i],li[len(li)-i-1]=li[len(li)-i-1],li[i]
+    		print(li)
+    	reverse_list([1,2,3,4,5])
+	
+	
+Q1.(y two times ? :p)
+
+	def count_even_odd(li):
+    		ecount=0
+    		ocount=0
+    		for i in li:
+        		if i==True:
+            			ocount+=1
+        		else:
+            			ecount+=1
+    		print(ecount)
+    		print(ocount)
+	count_even_odd([1,2,4,6,8])
+
+
+
+Q2.	def maximum(li):
+    		maxm=0
+    		for i in range(1,len(li)-1):
+        		if li[i]>li[i-1]:
+            			maxm=li[i]
+        		elif li[i]<li[i-1]:
+            			maxm=li[i-1]
+        		else:
+            			pass
+    		print(maxm)
+	maximum([2,1,6,8,4,3,15,5,9])
+            
+
+
+Q3.	def second_maximum(li):
+    		a=[]
+    		li.sort()
+    		print(li[len(li)-2])
+	second_maximum([2,1,6,8,4,3,15,5,9])
+
+
+Q4.	def mean(li):
+    		mean=0
+    		for i in li:
+        		mean+=i
+    		print("Mean=",mean/len(li))
+	mean([1,2,3,4,5])
+
+
+Q5.	def find_in_range(li,n,m):
+    		a=[]
+    		for i in li:
+        		if n<=i<m:
+            			a.append(i)
+    		print(a)
+	find_in_range([1,2,3,4,5,6,7,8,9],5,8)
+
+            
+            
+    
+		
+
+    	

@@ -1,0 +1,163 @@
+# Sanjiv's Assignment
+
+Q1.	a) Guido
+	   62
+	
+	b) Guido
+	   62
+	   Bjarne
+	   67
+
+
+Q2.	class Student:
+    	    def __init__(self,name,age):
+                self.n=name
+        	self.a=age
+	s=Student("Sanjiv",18)
+	print(s.n,s.a)	
+
+
+Q3.	a) Constructor
+	   Constructor
+	   destructor
+	   destructor
+
+	b) ?
+
+
+Q4.	class Student:
+    	    def __init__(self,n,r):
+        	self.name=n
+        	self.roll=r
+    	    def set_marks(self,marks_list):
+        	self.mrks=marks_list
+    	    def print_details(self):
+        	avg=0
+        	for i in self.mrks:
+        	    avg+=i
+        	print(self.name,self.roll,"avg=",avg/5)
+
+	s = Student('abc', 20)
+	s.set_marks([80,60,90,70,99])
+	s.print_details()
+
+
+Q5.	None
+	Inside str
+	Inside repr
+
+
+Q6.	class Student:
+    	    def __init__(self,n,r):
+        	self.name=n
+        	self.roll=r
+    	    def set_marks(self,marks_list):
+        	self.mrks=marks_list
+    	    def __str__(self):
+        	return str(self)
+
+	s = Student('abc', 20)
+	s.set_marks([80,60,90,70,99])
+	s.print_details()
+
+
+Q7.	class Circle:
+    		def __init__(self):
+        		self.r=float(input())
+        
+    		def get_area(self,):
+        		self.area=3.14*self.r**2
+        		return self.area
+    
+    		def get_perimeter(self):
+        		self.perimeter=3.14*self.r*2
+        		return self.perimeter
+
+	t=Circle()
+	print(t.get_area())
+	print(t.get_perimeter())
+        
+
+
+Q8.	?
+
+
+Q9.	class BankAccount:
+    		def __init__(self):
+        		self.balace=0
+    
+    		def deposit(self):
+        		self.name=input("Enter name: ")
+        		self.balance=int(input("Enter balance: "))
+        		self.balance=int(input("Enter amount to deposit: "))+self.balance
+        
+    		def withdraw(self):
+        		self.wit=int(input("Enter the amount you wish to withdraw: "))
+        		if self.balance>self.wit:
+            			self.balance=self.balance-self.wit
+        		else:
+            			print("Insufficient balance !!!")
+    		def __str__(self):
+        		return "name=",self.name," balance=",self.balance
+    
+	t=BankAccount()
+	t.deposit()
+	t.withdraw()
+	print(t.__str__())
+        
+Q10.
+
+import math
+
+class Complex(object):
+    def __init__(self, real, imaginary):
+        self.r = real
+        self.i = imaginary
+
+    def __add__(self, no):
+        real = self.r + no.r
+        imaginary = self.i + no.i
+        return Complex(real, imaginary)
+
+    def __sub__(self, no):
+        real = self.r - no.r
+        imaginary = self.i - no.i
+        return Complex(real, imaginary)
+
+    def __mul__(self, no):
+        real = self.r * no.r - self.i * no.i
+        imaginary = self.r * no.i + self.i * no.r
+        return Complex(real, imaginary)
+
+    def __div__(self, no):
+        x = float(no.r ** 2 + no.i ** 2)
+        y = self * Complex(no.r, -no.i)
+        real = y.r / x
+        imaginary = y.i / x
+        return Complex(real, imaginary)
+
+    def mod(self):
+        real = math.sqrt(self.r ** 2 + self.i ** 2)
+        return Complex(real, 0)
+
+    def __str__(self):
+        if self.i == 0:
+            result = "%.2f+0.00i" % (self.r)
+        elif self.r == 0:
+            if self.i >= 0:
+                result = "0.00+%.2fi" % (self.i)
+            else:
+                result = "0.00-%.2fi" % (abs(self.i))
+        elif self.i > 0:
+            result = "%.2f+%.2fi" % (self.r, self.i)
+        else:
+            result = "%.2f-%.2fi" % (self.r, abs(self.i))
+        return result
+
+
+if __name__=='__main__':
+    c = map(float, input().split())
+    d = map(float, input().split())
+    x = Complex(*c)
+    y = Complex(*d)
+    print(*map(str, [x+y, x-y, x*y, x/y, x.mod(), y.mod()]), sep='\n')
