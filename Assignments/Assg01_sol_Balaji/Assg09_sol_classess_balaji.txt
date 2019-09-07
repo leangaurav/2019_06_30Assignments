@@ -1,0 +1,295 @@
+## Assg 09 classes
+
+# 1(i).find output of following
+
+class Student:
+    pass
+
+s = Student()
+s.name = "Guido"
+s.age = 62
+print(s.name)
+print(s.age)
+
+
+#o/p
+#Guido
+#62
+
+# 1(ii)
+
+class Student:
+    pass
+s1 = Student()
+s1.name = "Guido"
+s1.age = 62
+s2 = Student()
+s2.name = "Bjarne"
+s2.age = 67
+print(s1.name,s1.age)
+print(s2.name,s2.age)
+
+#o/p:
+#Guido 62
+#Bjarne 67
+
+
+##2. For the Student class in above example, add constructor with 2 arguments for name and age,
+## to set the name and age attributes. Create a student object, initialize it with some values and
+## print its attributes.
+
+class Student:
+    def __init__(self,age,name):
+        self.age = age
+        self.name = name
+
+s1 = Student(50,'First')
+s2 = Student(60,'second')
+
+
+print("age : {} Name : {}".format(s1.age,s1.name))
+print("age : {} Name : {}".format(s2.age,s2.name))
+
+
+#o/p:
+#age: 50 name: First
+#age: 60 name: second
+
+#3(i).Find output
+class Test:
+    def __init__(self):
+        print("Constructor")
+    def __del__(self):
+        print("Destructor")
+s1 = Test()
+s2 = Test()        
+
+
+#o/p:
+#Constructor
+#Constructor
+#Destructor
+#Destructor
+
+#3(ii)
+
+class Test:
+    def __init__(self):
+        print("Constructor")
+    def __del__(self):
+        print("Destructor")
+        
+s1 = Test()
+Test()
+s2 = Test()
+s3 =s1
+del(s1)        
+
+#Constructor
+#Constructor
+#Destructor
+#Constructor
+#Destructor
+#Destructor
+
+
+
+#4. Add a method set_marks(marks_ list), that takes a list of marks in 5 subjects and stores in a
+#new attribute marks. Also add a method print_details(), to student class to print average of
+#marks and all details of student. (Hint : average will be calculated as (total marks)/5 )
+#Test your class against the following code:
+#if __name__ == ‘__main__’:
+#s = Student(‘abc’, 20)
+#s.set_marks([80,60,90,70,99])
+#s.print_details()
+
+class Student:
+    def __init__(self,age,name):
+        self.age = age
+        self.name = name
+        
+    def set_marks(self, mark_list):
+        self.mark_list = mark_list
+        print ("marks in 5 subject is  : {}".format(mark_list))
+	
+    def print_details (self):
+        print("age :{} name : {}" .format(s1.age, s1.name))
+        self.avg1 = (sum(self.mark_list))/5
+        print("average marks is ", self.avg1)
+        
+        
+if __name__ == '__main__':
+    
+    s1 = Student(18,'Bala')
+    s1.set_marks([80,60,90,70,99])
+    s1.print_details()
+    
+    
+#o/p
+
+#marks in 5 subject is  : [80, 60, 90, 70, 99]
+#age :18 name : Bala
+#average marks is  79.8
+
+
+
+#5.(i) Find Output Once Again:
+
+class Test:
+        def __str__(self):
+            print("Inside str")
+        def __repr__(self):
+             print("Inside repr")
+t = Test()
+print(t)
+print(str(t))
+print(repr(t))
+
+
+#o/p
+#Inside str
+#None
+#Inside str
+#Trackback <most recent call last.:
+#File "Ques_5_i.py", line9, in <module>
+#    print(str(t))
+#TypeError: __str__ returned non-sring <type NoneType>
+
+#5.(ii) Find Output Once Again:
+
+class Test:
+        def __mul__(lhs,rsh):
+            t = Test()
+            t.val = lhs.val * rsh.val
+t1 = Test()
+t2 = Test()
+t1.val = 10
+t2.val = 30
+t3 = t1 * t2
+print(t3.val,t2.val,t1.val)
+
+
+#o/p
+
+#AttributeError: 'NoneType' object has no attribute 'val'
+
+
+
+#6.Add str method to Student class in place of the print_details method, so that the student object
+# can be converted directly to string and can also be printed on the screen.
+
+class Student:
+    def __init__(self,age,name):
+        self.age = age
+        self.name = name
+        
+    def set_marks(self, mark_list):
+        self.mark_list = mark_list
+        print ("marks in 5 subject is  : {}".format(mark_list))
+        
+    def __str__(self):
+       print("name {} age {} ".format(self.name,self.age))
+        
+        
+if __name__ == '__main__':
+    
+    s1 = Student(18,'Bala')
+    s1.set_marks([80,60,90,70,99])
+    s1.__str__()
+    
+# o/p:
+#marks in 5 subject is  : [80, 60, 90, 70, 99]
+# name Bala  age 18
+
+
+#7. Create a class Circle, that stores the radius and contains 2 methods:
+# get_area, get_perimeter, which give the area and perimeter respectively of the circle.
+
+
+class circle:
+
+    def __init__(self,rad):
+        self.rad = rad
+    def get_area(self):
+        area1 = 3.14 * self.rad * self.rad
+        print("Area of circle is ", area1)
+    def get_perimeter(self):
+        peri = 3.14 *self.rad *2
+        print("Perimeter of circle is ", peri)
+
+
+c1 = circle(7)
+c1.get_area()
+c1.get_perimeter()        
+
+#o/p:
+
+#Area of circle is  153.86
+#Perimeter of circle is  43.96
+
+
+#8. Create a class SelfManaged such that it keeps track of the number of objects currently alive.
+#Create a class method get_current_count(), that gives the number of objects currently alive in memory
+#[Hint: use a class attribute to keep count of number of objects and use __init__ and __del__
+#methods to update the value of count count]
+
+
+# Didnot understand
+
+
+
+
+
+
+#9. Create a class BankAccount, which contains attributes balance and name, and methods
+#deposit() and withdraw(), to add and deposit some money in account.
+#the balance should be set to 0 in the constructor, and withdrawal should be allowed only if
+#sufficient balance is there. Also overload the str method to allow printing the details directly.
+
+
+class BankAccount:
+    def __init__(self,name,balance = 0):
+        self.name = name
+        self.balance = balance
+		
+    def deposit(self,deposit):
+        self.deposit = deposit
+        self.balance = self.deposit + self.balance
+        
+    def withdraw(self,withdraw):
+        self.withdraw = withdraw
+        if self.balance > self.withdraw:
+            self.balance = self.balance-self.withdraw
+        else:
+             print("Insufficient Funds Enter lesser amount ")
+			 
+    def __str__(self):
+        return "name: {}  balance: {} ".format(self.name,self.balance)
+        
+        
+a = BankAccount('bala',1000)
+a.deposit(500)
+a.withdraw(600)
+print(a.__str__())
+    
+#o/p:
+
+#name : bala balance : 900
+
+
+
+#10. Complete the question with all test cases passing here:
+#https://www.hackerrank.com/challenges/class-1-dealing-with-complex-numbers/problem
+
+        
+        
+        
+        
+        
+
+
+
+
+
+
+
