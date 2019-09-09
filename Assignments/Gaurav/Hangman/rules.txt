@@ -1,0 +1,28 @@
+------------------------------ Hangman ------------------------------
+Hangman is a word Guessing game. Each time you are given a random word.
+You have to guess it alphabet by alphabet.
+
+A total of 8 turns is given to guess the entire word correctly.
+A wrong guess reduces the number of turns remaining.
+
+You may guess the entire word in a go. In such case if word is correct you win, otherwise you loose directly even if few turns are still left.
+
+The state of the game is displayed w.r.t the images of a human being hanged.
+It starts with an empty post and ends with the complete human form when you loose.
+
+
+    ---|
+       |
+       |
+       |
+ ______|
+
+
+
+   |---|
+   O   |
+  /|\  |
+  / \  |
+ ______|
+
+------------------------------ Hangman ------------------------------
