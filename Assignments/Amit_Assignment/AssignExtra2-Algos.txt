@@ -1,0 +1,36 @@
+1) a=[10,20,30]
+a1=a.reverse()
+print(a1,a)
+
+def swap(l,p1,p2):
+    l[p1],l[p2] = l[p2],l[p1]
+    return l
+l= [1,2,3,4,5]
+p1  = int(input( "Enter the index1 to be swap  : "))
+p2 =  int (input( "Enter the index2 to be swap  : "))
+print(swap(l,p1,p2))
+
+2) 
+z=[1,2,3,4,5,6,7,8,9,0]
+even=0
+odd=0
+for i in z:
+    if z[i] %2 == 0:
+        even += 1
+        
+    else:
+        z[i] %3 == 0
+        odd +=1
+print("number of even  : ", even)
+print("number of odd  : ",odd )
+
+3) MAX without function.
+list= input("Enter the list of numbers : ")
+a = list.split()
+a.sort() 
+print("Largest element is:", a[-1]) 
+4) Second large numbe in a list 
+list= input("Enter the list of numbers : ")
+a = list.split()
+a.sort() 
+print("second element is:", a[-2]) 
