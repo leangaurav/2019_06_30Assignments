@@ -1,0 +1,62 @@
+Q1.
+10 20
+10 20
+
+10
+1
+11
+5
+12
+
+10 20
+40 30
+
+10
+1
+11
+5
+12
+
+
+Q2.
+StopIteration: 
+
+Q3.
+
+namely __iter__() and __next__()
+
+Q4.
+
+def is_iterable(in_type):
+# write your code here to return True or False
+    return '__iter__' in dir(in_type)
+print(is_iterable(list)) # should print True
+print(is_iterable(int)) # should print False
+
+Q5.
+
+def gen_fib(n):
+    a=0
+    b=1
+    while True:
+        if (a>n):return        
+        yield a
+        a,b = b,a+b
+        
+for i in gen_fib(10):
+    print(i)
+    
+Q6.
+
+fl=lambda x:x**x
+def apply_lambda(data,fn):
+    x=[]
+    for i in data:
+        x.append(fn(i))
+    yield x   
+
+g=apply_lambda([1,2,3],fl)    
+for i in g:
+    print(i)
+    
+        
